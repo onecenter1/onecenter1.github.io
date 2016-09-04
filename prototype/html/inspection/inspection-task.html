@@ -1,0 +1,2598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script type="text/javascript" src="../../js/demo.js"></script>
+
+    <script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+<!--
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+        {
+            Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+        }
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body>
+<div class="bodywindows"></div>
+<!--点击编辑巡检子项的弹出层-->
+<div class="w-pop inspectionwin directorywin" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 999; left: 100px;" id="r-customadd">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>编辑巡检子项</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closedirectory"></a>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con" style="height: 230px;">
+                            <ul class="fixedvaluefromul">
+                                <li><span>目录：1. 机房环境  检查机房环境相关项</span></li>
+                                <li><span>巡检项：温度   机房温度,预置检查项</span></li>
+                            </ul>
+<br>
+                            <div style=" ;border: 1px #626262 solid;width: 97%;margin: auto;overflow-y: scroll;height: 65%;overflow: hidden;">
+                                <div class="tab-header">
+                                    <div class="tab-header-l">
+                                        <div class="tab-header-r">
+                                            <div class="tab-header-m">
+                                                <div class="theadpart" style="width:100%;">
+                                                    <table>
+                                                        <thead>
+                                                        <tr>
+                                                            <th width="9%"><span>巡检子项</span></th>
+                                                            <th width="28%"> <span>描述</span> </th>
+                                                            <th width="9%"> <span>结果</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul class="fixedvaluefromul" style="overflow: hidden;height: 100%;">
+
+                                    <li>
+                                        <span><input name="input2" type="text"></span>
+                                        <span><input name="input2" type="text" style="width: 200px;">  </span>
+                                        <span class="ico ico-cancel locate-right"></span>
+                                    </li>
+                                    <li>
+                                        <span class="arrowadd locate-left" style="position: relative;"></span>
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--点击编辑巡检目录的弹出层-->
+<div class="w-pop directorywin" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 999; left: 100px;">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>编辑巡检目录</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closedirectory"></a>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con" style="height: 230px;">
+
+                            <div class="common" style=" ;border: 1px #626262 solid;width: 97%;margin: auto;overflow-y: scroll;height: 100%;overflow: hidden;">
+                                <div class="tab-header">
+                                    <div class="tab-header-l">
+                                        <div class="tab-header-r">
+                                            <div class="tab-header-m">
+                                                <div class="theadpart" style="width:100%;">
+                                                    <table>
+                                                        <thead>
+                                                        <tr>
+                                                            <th width="9%"><span>巡检目录</span></th>
+                                                            <th width="28%"> <span>描述</span> </th>
+                                                            <th width="9%"> <span>操作</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tbodypart" style="height: 55%;">
+                                    <table style="height: 100%;">
+                                        <tbody class="">
+                                        <tr>
+                                            <td width="9%"><input type="text" value="机房环境"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查机房环境相关项"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cbg">
+                                            <td width="9%"><input type="text" value="周边环境"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查机房配套设施"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="9%"><input type="text" value="网络环境"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查机房内网络设备健康情况"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cbg">
+                                            <td width="9%"><input type="text" value="服务器"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查机房内服务器健康情况。"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+
+                                            </td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="arrowadd locate-left" style="position: relative;"></span>
+
+                            </div>
+
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--点击编辑巡检目录里的添加子的弹出层-->
+<div class="w-pop directorywin  zixiang" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 9999; left: 100px;">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>添加关联巡检子项</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico closedirectory" ></a>                </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class=" tab-con" style="overflow: hidden;">
+
+<!--第二块的复数-->
+<div class="f-right-btn table-nextwinplural" style="display: block;">
+<ul class="fieldlist">
+    <!--左边表格-->
+    <div class="faxianinfo" style="border: 1px #626262 solid;">
+        <div style="float: left;width: 44%;margin-left: 1%;border: 1px #aaa solid;">
+            <div class="common" style="width: 325px">
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div style="width:100%;" class="theadpart">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox21" name="checkbox"> </span></th>
+                                            <th width="41%"> <span>指标名称</span> </th>
+                                            <th width="22%"><span>单位</span></th>
+                                            <th width="22%"><span>指标描述</span></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbodypart">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox" name="checkbox">
+                                                     </span>
+                            </td>
+                            <td width="40%"><span class=" redlight">ping时延</span></td>
+                            <td width="30%">毫秒</td>
+                            <td width="15%"> </td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">广播包率</span></td>
+                            <td width="30%">包/秒</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">吞吐量</span></td>
+                            <td width="30%">Kbps</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">丢包率</span></td>
+                            <td width="30%">包/秒</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--中间切换-->
+        <div style="float: left;width: 5%;position: relative;left: 0%;top: 110px;">
+            <div class="tab-tree-arrow"> <a class="tree-arrow-right"></a>
+                <a class="tree-arrow-left"></a> </div>
+        </div>
+        <!--右边表格-->
+        <div style="float: left;width: 44%;border: 1px #aaa solid;">
+            <div class="common" style="width: 325px;">
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div style="width:100%;" class="theadpart">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox26" name="checkbox">
+                                                     </span></th>
+                                            <th width="41%"> <span>指标名称</span> </th>
+                                            <th width="22%"><span>单位</span></th>
+                                            <th width="22%"><span>指标描述</span></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbodypart">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">CPU利用率</span></td>
+                            <td width="30%">%</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">内存利用率</span></td>
+                            <td width="30%">%</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="clear: left"></div>
+
+    </div>
+</ul>
+<div class="pop-bottom-btn locate-right">
+    <a class="btn-body closezixiang">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--点击目录3的编辑巡检子项的弹出层-->
+<div class="w-pop inspectionwin3 directorywin" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 999; left: 100px;">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>编辑巡检目录</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closedirectory"></a>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con" style="height: 280px;overflow: hidden;">
+                            <ul class="fixedvaluefromul">
+                                <li><span>目录：1. 机房环境  检查机房环境相关项</span></li>
+                                <li><span>巡检项：温度   机房温度,预置检查项</span></li>
+                                <li><span class="locate-right openzixiang" style="padding: 5px;">添加关联巡检子项</span></li>
+
+                            </ul>
+                            <div class="common" style=" ;border: 1px #626262 solid;width: 97%;margin: auto;overflow-y: scroll;height: 75%;overflow: hidden;">
+                                <div class="tab-header">
+                                    <div class="tab-header-l">
+                                        <div class="tab-header-r">
+                                            <div class="tab-header-m">
+                                                <div class="theadpart" style="width:100%;">
+                                                    <table>
+                                                        <thead>
+                                                        <tr>
+                                                            <th width="9%"><span>巡检目录</span></th>
+                                                            <th width="28%"> <span>描述</span> </th>
+                                                            <th width="9%"> <span>操作</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tbodypart" style="height: 75%;">
+                                    <table style="height: 100%;">
+                                        <tbody class="">
+                                        <tr>
+                                            <td width="9%"><input type="text" value="电源模块"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查设备的电源模块是否正常"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cbg">
+                                            <td width="9%"><input type="text" value="风扇"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查设备的风扇是否正常"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="9%"><input type="text" value="指示灯"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查设备指示灯"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cbg">
+                                            <td width="9%"><input type="text" value="CPU利用率"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查设备的CPU利用率。"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="9%"><input type="text" value="内存利用率"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="检查设备的内存利用率。"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="arrowadd locate-left" style="position: relative;"></span>
+
+                            </div>
+
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--点击添加关联巡检项及其子    目录3-->
+<div class="w-pop  addinginspec" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 999; left: 100px;">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>添加关联巡检项及其子项</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico closeadding" ></a>                </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class=" tab-con" style="overflow: hidden;">
+<!--第一块-->
+<div class="f-right-btn table-prevwin">
+<ul class="fieldlist">
+<li> <span class="fixedvalue">资源类型</span> <span class="colon">：</span>
+                                         <span class="fixedvalue">
+                                             <div class="select-bodylist">
+                                                 <div class="select-l">
+                                                     <div class="select-r">
+                                                         <div class="select-m">
+                                                             <span class="select_txt min-120" id="select_txt">windows(WMI)</span>
+                                                             <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <ul id="suckertree1" class="suckerdiv optionlist min-150" style="display: none;">
+                                                     <li><a href="#" class="subfolderstyle">主机 </a><a class="sthreeliston"></a>
+                                                         <ul class="optionlist" style="display: none;">
+                                                             <li><a href="#">windows(SNMP)</a></li>
+                                                             <li><a href="#">windows(WMI)</a></li>
+                                                             <li><a href="#">windows(SNMP)</a></li>
+                                                             <li><a href="#">windows(WMI)</a></li>
+                                                             <li><a href="#">windows(SNMP)</a></li>
+                                                             <li><a href="#">windows(WMI)</a></li>
+                                                         </ul>
+
+                                                     </li>
+                                                     <li><a href="#">网络设备</a><a class="sthreelistup"></a></li>
+                                                     <li><a href="#">应用</a><a class="sthreelistup"></a>
+
+                                                     </li>
+                                                     <li><a href="#">基础服务</a><a class="sthreelistup"></a></li>
+
+                                                     <li><a href="#" class="subfolderstyle">Folder 2&gt;</a><a class="sthreeliston"></a>
+                                                         <ul class="optionlist" style="display: none;">
+                                                             <li><a href="#">Sub Item 2.1</a></li>
+                                                             <li><a href="#">Folder 2.1&gt;</a>
+                                                                 <!--<ul class="option">-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.1</a></li>-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.2</a></li>-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.3</a></li>-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.4</a></li>-->
+                                                                 <!--</ul>-->
+                                                             </li>
+                                                         </ul>
+
+                                                     </li>
+                                                     <li><a href="#">Item 4</a><a class="sthreelistup"></a></li>
+                                                 </ul>
+                                             </div>
+                                         </span>
+                                            <span style="margin-left: 57px;" class="fixedvalue">
+                                             <div class="select-bodylist">
+                                                 <div class="select-l">
+                                                     <div class="select-r">
+                                                         <div class="select-m">
+                                                             <span class="select_txt min-120" id="select_txt">windows(WMI)</span>
+                                                             <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                 <ul id="suckertree1" class="suckerdiv optionlist min-150" style="display: none;">
+                                                     <li><a href="#" class="subfolderstyle">主机 </a><a class="sthreeliston"></a>
+                                                         <ul class="optionlist" style="display: none;">
+                                                             <li><a href="#">windows(SNMP)</a></li>
+                                                             <li><a href="#">windows(WMI)</a></li>
+                                                             <li><a href="#">windows(SNMP)</a></li>
+                                                             <li><a href="#">windows(WMI)</a></li>
+                                                             <li><a href="#">windows(SNMP)</a></li>
+                                                             <li><a href="#">windows(WMI)</a></li>
+                                                         </ul>
+
+                                                     </li>
+                                                     <li><a href="#">网络设备</a><a class="sthreelistup"></a></li>
+                                                     <li><a href="#">应用</a><a class="sthreelistup"></a>
+
+                                                     </li>
+                                                     <li><a href="#">基础服务</a><a class="sthreelistup"></a></li>
+
+                                                     <li><a href="#" class="subfolderstyle">Folder 2&gt;</a><a class="sthreeliston"></a>
+                                                         <ul class="optionlist" style="display: none;">
+                                                             <li><a href="#">Sub Item 2.1</a></li>
+                                                             <li><a href="#">Folder 2.1&gt;</a>
+                                                                 <!--<ul class="option">-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.1</a></li>-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.2</a></li>-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.3</a></li>-->
+                                                                 <!--<li><a href="#">Sub Item 2.1.4</a></li>-->
+                                                                 <!--</ul>-->
+                                                             </li>
+                                                         </ul>
+
+                                                     </li>
+                                                     <li><a href="#">Item 4</a><a class="sthreelistup"></a></li>
+                                                 </ul>
+                                             </div>
+                                         </span>
+                                       <span class="fixedvalue" style="margin-left: 55px;">
+                                            <div style="display: inline-block;position: relative;height: 23px;">
+                                                <input type="text" value="搜索资源名称IP类型" class="text-box indexviewsearch" >
+                                                <span class="ico ico-search locate-right indexviewsearchdel" style="position: relative;top: -20px;"></span>
+                                            </div>
+                                        </span>
+</li>
+<!--左边表格-->
+<div class="faxianinfo" style="border: 1px #626262 solid;">
+    <div style="float: left;width: 44%;margin-left: 1%;border: 1px #aaa solid;">
+        <div class="common" style="width: 325px">
+            <div class="tab-header margin-top0">
+                <div class="tab-header-l">
+                    <div class="tab-header-r">
+                        <div class="tab-header-m">
+                            <div style="width:100%;" class="theadpart">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox21" name="checkbox"> </span></th>
+                                        <th width="41%"> <span>资源名称</span> </th>
+                                        <th width="22%"><span>IP地址</span></th>
+                                        <th width="22%"><span>资源类型</span></th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tbodypart">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr class="cbg">
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr>
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr class="cbg">
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr>
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr class="cbg">
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--中间切换-->
+    <div style="float: left;width: 5%;position: relative;left: 0%;top: 110px;">
+        <div class="tab-tree-arrow"> <a class="tree-arrow-right"></a>
+            <a class="tree-arrow-left"></a> </div>
+    </div>
+    <!--右边表格-->
+    <div style="float: left;width: 44%;border: 1px #aaa solid;">
+        <div class="common" style="width: 325px;">
+            <div class="tab-header margin-top0">
+                <div class="tab-header-l">
+                    <div class="tab-header-r">
+                        <div class="tab-header-m">
+                            <div style="width:100%;" class="theadpart">
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox26" name="checkbox">
+                                                     </span></th>
+                                        <th width="46%"><span>显示名称</span> </th>
+                                        <th width="39%"><span>IP地址</span></th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tbodypart">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr class="cbg">
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr>
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                        <td width="30%">192.168.0.1</td>
+                        <td width="15%">Cisco交换机</td>
+                    </tr>
+                    <tr class="cbg">
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                        <td width="30%">&nbsp;</td>
+                        <td width="15%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                        <td width="30%">&nbsp;</td>
+                        <td width="15%">&nbsp;</td>
+                    </tr>
+                    <tr class="cbg">
+                        <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                        <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                        <td width="30%">&nbsp;</td>
+                        <td width="15%">&nbsp;</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div style="clear: left"></div>
+
+
+
+</div>
+</ul>
+
+
+<div style="padding: 5px;position: relative;left: 49%;">
+    <ul>
+        <li><input id="subinspection" name="subinspection" type="radio" checked>
+            <label for="subinspection">指标作为资源子巡检项</label>
+        </li><br/>
+        <li><input id="subinspection2" name="subinspection" type="radio">
+            <label for="subinspection2">指标作为独立巡检项</label>
+        </li>
+    </ul>
+</div>
+<div class="pop-bottom-btn locate-right">
+    <a class="btn-body nextwin">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>下一步<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+</div>
+<!--第二块-->
+<div class="f-right-btn table-nextwin" style="display: none;">
+<ul class="fieldlist">
+    <!--左边表格-->
+    <div class="faxianinfo" style="border: 1px #626262 solid;">
+        <div style="float: left;width: 44%;margin-left: 1%;border: 1px #aaa solid;">
+            <div class="common" style="width: 325px">
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div style="width:100%;" class="theadpart">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox21" name="checkbox"> </span></th>
+                                            <th width="41%"> <span>指标名称</span> </th>
+                                            <th width="22%"><span>单位</span></th>
+                                            <th width="22%"><span>指标描述</span></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbodypart">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox" name="checkbox">
+                                                     </span>
+                            </td>
+                            <td width="40%"><span class=" redlight">ping时延</span></td>
+                            <td width="30%">毫秒</td>
+                            <td width="15%"> </td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">广播包率</span></td>
+                            <td width="30%">包/秒</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">吞吐量</span></td>
+                            <td width="30%">Kbps</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">丢包率</span></td>
+                            <td width="30%">包/秒</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--中间切换-->
+        <div style="float: left;width: 5%;position: relative;left: 0%;top: 110px;">
+            <div class="tab-tree-arrow"> <a class="tree-arrow-right"></a>
+                <a class="tree-arrow-left"></a> </div>
+        </div>
+        <!--右边表格-->
+        <div style="float: left;width: 44%;border: 1px #aaa solid;">
+            <div class="common" style="width: 325px;">
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div style="width:100%;" class="theadpart">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox26" name="checkbox">
+                                                     </span></th>
+                                            <th width="41%"> <span>指标名称</span> </th>
+                                            <th width="22%"><span>单位</span></th>
+                                            <th width="22%"><span>指标描述</span></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbodypart">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">CPU利用率</span></td>
+                            <td width="30%">%</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">内存利用率</span></td>
+                            <td width="30%">%</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="clear: left"></div>
+
+    </div>
+</ul>
+<div class="pop-bottom-btn locate-right">
+    <a class="btn-body prevwin">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>上一步<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body opentheItemwin3">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+<!--第二块的复数-->
+<div class="f-right-btn table-nextwinplural" style="display: none;">
+<ul class="fieldlist">
+    <!--左边表格-->
+    <div class="faxianinfo" style="border: 1px #626262 solid;">
+        <div style="float: left;width: 44%;margin-left: 1%;border: 1px #aaa solid;">
+            <div class="common" style="width: 325px">
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div style="width:100%;" class="theadpart">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox21" name="checkbox"> </span></th>
+                                            <th width="41%"> <span>指标名称</span> </th>
+                                            <th width="22%"><span>单位</span></th>
+                                            <th width="22%"><span>指标描述</span></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbodypart">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox" name="checkbox">
+                                                     </span>
+                            </td>
+                            <td width="40%"><span class=" redlight">ping时延</span></td>
+                            <td width="30%">毫秒</td>
+                            <td width="15%"> </td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">广播包率</span></td>
+                            <td width="30%">包/秒</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">吞吐量</span></td>
+                            <td width="30%">Kbps</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">丢包率</span></td>
+                            <td width="30%">包/秒</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--中间切换-->
+        <div style="float: left;width: 5%;position: relative;left: 0%;top: 110px;">
+            <div class="tab-tree-arrow"> <a class="tree-arrow-right"></a>
+                <a class="tree-arrow-left"></a> </div>
+        </div>
+        <!--右边表格-->
+        <div style="float: left;width: 44%;border: 1px #aaa solid;">
+            <div class="common" style="width: 325px;">
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div style="width:100%;" class="theadpart">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox26" name="checkbox">
+                                                     </span></th>
+                                            <th width="41%"> <span>指标名称</span> </th>
+                                            <th width="22%"><span>单位</span></th>
+                                            <th width="22%"><span>指标描述</span></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbodypart">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">CPU利用率</span></td>
+                            <td width="30%">%</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">内存利用率</span></td>
+                            <td width="30%">%</td>
+                            <td width="15%"></td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">Latte_ZB_Switch_4506_</span></td>
+                            <td width="30%">192.168.0.1</td>
+                            <td width="15%">Cisco交换机</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+                        <tr class="cbg">
+                            <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">
+                                             </span></td>
+                            <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                            <td width="30%">&nbsp;</td>
+                            <td width="15%">&nbsp;</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="clear: left"></div>
+
+    </div>
+</ul>
+<div class="pop-bottom-btn locate-right">
+    <a class="btn-body prevwin">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>上一步<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body jumptonextwin3">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>下一步<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+
+<!--第三块-->
+<div class="common table-nextwin3" style="display: none;border: 1px #626262 solid;width: 97%;margin: auto;
+                        overflow-y: scroll;height: 145px;overflow: hidden;">
+
+
+    <div class="tab-header">
+        <div class="tab-header-l">
+            <div class="tab-header-r">
+                <div class="tab-header-m">
+                    <div class="theadpart" style="width:100%;">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th width="9%"><span>巡检子项</span></th>
+                                <th width="28%"> <span>描述</span> </th>
+                                <th width="9%"> <span>操作</span></th>
+                            </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tbodypart" style="height: 29%;">
+        <table style="height: 100%;">
+            <tbody class="">
+            <tr style="height: 30px;">
+                <td width="9%"><input type="text" value="CPU利用率"></td>
+                <td width="28%"><input type="text" class="min-150" value="CPUl利用率低于告警阀值"></td>
+                <td width="13%">
+                    <span class="ico ico-cancel locate-right"></span>
+                    <span class="pop-arrow-down locate-left"></span>
+                </td>
+            </tr>
+            <tr style="height: 30px;" class="cbg">
+                <td width="9%"><input type="text" value="内存利用率"></td>
+                <td width="28%"><input type="text" class="min-150" value="检查设备的内存利用率"></td>
+                <td width="13%">
+                    <span class="ico ico-cancel locate-right"></span>
+                    <span class="pop-arrow-up locate-right"></span>
+                </td>
+            </tr>
+
+
+            </tbody>
+        </table>
+        <div style="overflow: hidden;margin-top: 10px;">
+            <a class="btn-body locate-right">
+                <div class="btn-l">
+                    <div class="btn-r">
+                        <div class="btn-m"> <span class=""></span>取消<span class="pull"></span> </div>
+                    </div>
+                </div>
+            </a>
+            <a class="btn-body locate-right hidetarget">
+                <div class="btn-l">
+                    <div class="btn-r">
+                        <div class="btn-m "> <span class=""></span>确定<span class="pull"></span> </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--点击编辑巡检项的弹出层-->
+<div class="w-pop directorywin Itemwin" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 999; left: 100px;">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>编辑巡检目录</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closedirectory"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con" style="height: 280px;overflow: hidden;">
+                            <ul class="fixedvaluefromul">
+                                <li><span>目录：1. 机房环境  检查机房环境相关项</span></li>
+                                <li><span class="locate-right">添加关联巡检项及其子项</span></li>
+
+                            </ul>
+                            <div class="common" style=" ;border: 1px #626262 solid;width: 97%;margin: auto;overflow-y: scroll;height: 75%;overflow: hidden;">
+                                <div class="tab-header">
+                                    <div class="tab-header-l">
+                                        <div class="tab-header-r">
+                                            <div class="tab-header-m">
+                                                <div class="theadpart" style="width:100%;">
+                                                    <table>
+                                                        <thead>
+                                                        <tr>
+                                                            <th width="9%"><span>巡检项</span></th>
+                                                            <th width="28%"> <span>描述</span> </th>
+                                                            <th width="9%"> <span>操作</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tbodypart" style="height: 75%;">
+                                    <table style="height: 100%;">
+                                        <tbody class="">
+                                        <tr>
+                                            <td width="9%"><input type="text" value="温度"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="机房温度,预置检查项"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cbg">
+                                            <td width="9%"><input type="text" value="湿度"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="机房湿度,预置检查项"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="9%"><input type="text" value="痕迹"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="机房是否有异常痕迹,预置检查项"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cbg">
+                                            <td width="9%"><input type="text" value="清洁"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="机房清洁状况,预置检查项，是否清洁。"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td width="9%"><input type="text" value="异响"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="机房是否有异常响动,预置检查项。"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+
+                                            </td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="arrowadd locate-left" style="position: relative;"></span>
+
+                            </div>
+
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--弹出层的目录3的弹出层-->
+<div class="w-pop directorywin Itemwin3" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 999; left: 100px;">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>编辑巡检项</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closedirectory"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con" style="height: 280px;overflow: hidden;">
+                            <ul class="fixedvaluefromul">
+                                <li><span>目录：3. 网络设备   检查机房内网络设备健康情况</span></li>
+                                <li><span class="locate-right openaddinginspec" style="padding: 5px;">添加关联巡检项及其子项</span></li>
+
+                            </ul>
+                            <div class="common" style=" ;border: 1px #626262 solid;width: 97%;margin: auto;overflow-y: scroll;height: 75%;overflow: hidden;">
+                                <div class="tab-header">
+                                    <div class="tab-header-l">
+                                        <div class="tab-header-r">
+                                            <div class="tab-header-m">
+                                                <div class="theadpart" style="width:100%;">
+                                                    <table>
+                                                        <thead>
+                                                        <tr>
+                                                            <th width="9%"><span>巡检项</span></th>
+                                                            <th width="28%"> <span>描述</span> </th>
+                                                            <th width="9%"> <span>操作</span></th>
+                                                        </tr>
+                                                        </thead>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tbodypart" style="height: 29%;">
+                                    <table style="height: 100%;">
+                                        <tbody class="">
+                                        <tr>
+                                            <td width="9%"><input type="text" value="qzcore[三层交换机]"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="192.168.1.1[Cisco]"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-down locate-left"></span>
+                                            </td>
+                                        </tr>
+                                        <tr class="cbg">
+                                            <td width="9%"><input type="text" value="core1[三层交换机]"></td>
+                                            <td width="28%"><input type="text" class="min-150" value="192.168.1.205[Cisco]"></td>
+                                            <td width="13%">
+                                                <span class="ico ico-cancel locate-right"></span>
+                                                <span class="pop-arrow-up locate-right"></span>
+
+
+                                            </td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span class="arrowadd locate-left" style="position: relative;"></span>
+
+                            </div>
+
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div  class="w-pop min-908" style="visibility:hidden; position:absolute; z-index:99;" id="inspection-preset">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <!--<span class="pop-ico pop-quit"></span>
+            <span class="pop-title"></span>-->
+            <span>添加巡检任务</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico" onclick="MM_showHideLayers('inspection-preset','','hide')"></a>                </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class="tab-con">
+
+<div class="common">
+<div class="p-right accordion-main" style="width: 100%;overflow: hidden; display: inline-block;">
+
+<div class="tablemaintop Spinnerswitch accordion-list accordion-listall">
+    <span class="tablelefttopico"></span>
+                         <span class="textcolor-limegreen">基本信息
+                           <span style="position: relative;left: 85%;">
+                                   <a class="list-targethide">应用</a>
+
+                               </span>
+                         </span>
+    <span class="Spinnerdown Spinnerup"></span>
+</div>
+
+<div class="f-right according-content" style="display: none;">
+
+<ul class="fixedvaluefromul">
+
+<li><span class="fixedvaluefrom">巡检任务名称：</span><span>
+                                     <input name="input2" type="password" class="text-box min200">    </span>
+    <span class="fixedvaluefrom">巡检方式</span>
+                                 <span class="fixedvaluefrom">
+                                      <div class="select-body">
+                                          <div class="select-l"><div class="select-r"><div class="select-m">
+                                              <span class="select_txt min-120">手动</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                          </div></div></div>
+
+                                          <div class="option min-150">
+                                              <a href=".tab1" class="clickobjtarget">手动</a>
+                                              <a href=".tab2" class="clickobjtarget">每天(自动)</a>
+                                              <a href=".tab3" class="clickobjtarget">每周(自动)</a>
+                                              <a href=".tab4" class="clickobjtarget">每月(自动)</a>
+                                              <a href=".tab5" class="clickobjtarget">每季(自动)</a>
+                                              <a href=".tab6" class="clickobjtarget">每年(自动)</a>
+                                          </div>
+                                      </div>
+                                </span>
+</li>
+
+<li class="resours-modeltop"><span class="fixedvaluefrom">描述：</span>
+<span>  <textarea rows="5" cols="10" style="height: 80px;width: 200px;"></textarea></span>
+<div class="tab1 resours-modelall pollingtime"></div>
+<div class="tab2 resours-modelall pollingtime">
+                                     <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>00</a>
+                                             <a>01</a>
+                                             <a>02</a>
+                                             <a>03</a>
+                                             <a>04</a>
+                                             <a>05</a>
+                                         </div>
+                                     </div>
+                                </span>：
+                                 <span>
+                                       <div class="select-body">
+                                           <div class="select-l"><div class="select-r"><div class="select-m">
+                                               <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                           </div></div></div>
+                                           <div class="option min-80" style="display: none;">
+                                               <a>00</a>
+                                               <a>01</a>
+                                               <a>02</a>
+                                               <a>03</a>
+                                               <a>04</a>
+                                               <a>05</a>
+                                           </div>
+                                       </div>
+                                 </span>
+</div>
+<div class="tab3 resours-modelall pollingtime">
+                                     <span class="">
+                                         <input type="checkbox">周一
+                                          <input type="checkbox">周二
+                                          <input type="checkbox">周三
+                                          <input type="checkbox">周四
+                                          <input type="checkbox">周五
+                                          <input type="checkbox">周六
+                                          <input type="checkbox">周日
+                                     </span>
+    <br>
+                                         <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>00</a>
+                                             <a>01</a>
+                                             <a>02</a>
+                                             <a>03</a>
+                                             <a>04</a>
+                                             <a>05</a>
+                                         </div>
+                                     </div>
+                                </span>：
+                                         <span>
+                                       <div class="select-body">
+                                           <div class="select-l"><div class="select-r"><div class="select-m">
+                                               <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                           </div></div></div>
+                                           <div class="option min-80" style="display: none;">
+                                               <a>00</a>
+                                               <a>01</a>
+                                               <a>02</a>
+                                               <a>03</a>
+                                               <a>04</a>
+                                               <a>05</a>
+                                           </div>
+                                       </div>
+                                 </span>
+</div>
+<div class="tab4 resours-modelall pollingtime">
+    <div class="select-body">
+        <div class="select-l"><div class="select-r"><div class="select-m">
+            <span class="select_txt min-120">最后一天</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+        </div></div></div>
+        <div class="option min-150" style="display: none;">
+            <a>最后一天</a>
+            <a>1号</a>
+            <a>2号</a>
+            <a>3号</a>
+            <a>4号</a>
+            <a>5号</a>
+        </div>
+    </div>
+    <br>
+                                         <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>00</a>
+                                             <a>01</a>
+                                             <a>02</a>
+                                             <a>03</a>
+                                             <a>04</a>
+                                             <a>05</a>
+                                         </div>
+                                     </div>
+                                </span>：
+                                         <span>
+                                       <div class="select-body">
+                                           <div class="select-l"><div class="select-r"><div class="select-m">
+                                               <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                           </div></div></div>
+                                           <div class="option min-80" style="display: none;">
+                                               <a>00</a>
+                                               <a>01</a>
+                                               <a>02</a>
+                                               <a>03</a>
+                                               <a>04</a>
+                                               <a>05</a>
+                                           </div>
+                                       </div>
+                                 </span>
+</div>
+<div class="tab5 resours-modelall pollingtime">
+                                     <span class="">
+                                         <input type="checkbox" checked>第一个月
+                                          <input type="checkbox">第二个月
+                                          <input type="checkbox">第三个月
+                                      <div class="select-body">
+                                          <div class="select-l"><div class="select-r"><div class="select-m">
+                                              <span class="select_txt min-120">最后一天</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                          </div></div></div>
+                                          <div class="option min-150" style="display: none;">
+                                              <a>最后一天</a>
+                                              <a>1号</a>
+                                              <a>2号</a>
+                                              <a>3号</a>
+                                              <a>4号</a>
+                                              <a>5号</a>
+                                          </div>
+                                      </div>
+
+                                     </span>
+    <br>
+                                         <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>00</a>
+                                             <a>01</a>
+                                             <a>02</a>
+                                             <a>03</a>
+                                             <a>04</a>
+                                             <a>05</a>
+                                         </div>
+                                     </div>
+                                </span>：
+                                         <span>
+                                       <div class="select-body">
+                                           <div class="select-l"><div class="select-r"><div class="select-m">
+                                               <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                           </div></div></div>
+                                           <div class="option min-80" style="display: none;">
+                                               <a>00</a>
+                                               <a>01</a>
+                                               <a>02</a>
+                                               <a>03</a>
+                                               <a>04</a>
+                                               <a>05</a>
+                                           </div>
+                                       </div>
+                                 </span>
+</div>
+<div class="tab6 resours-modelall pollingtime">
+    <div class="select-body">
+        <div class="select-l"><div class="select-r"><div class="select-m">
+            <span class="select_txt min-120">1月</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+        </div></div></div>
+        <div class="option min-150" style="display: none;">
+            <a>1月</a>
+            <a>2月</a>
+            <a>3月</a>
+            <a>4月</a>
+            <a>5月</a>
+            <a>6月</a>
+            <a>7月</a>
+            <a>8月</a>
+            <a>9月</a>
+            <a>10月</a>
+            <a>11月</a>
+            <a>12月</a>
+        </div>
+    </div>
+    <div class="select-body">
+        <div class="select-l"><div class="select-r"><div class="select-m">
+            <span class="select_txt min-120">最后一天</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+        </div></div></div>
+        <div class="option min-150" style="display: none;">
+            <a>最后一天</a>
+            <a>1号</a>
+            <a>2号</a>
+            <a>3号</a>
+            <a>4号</a>
+            <a>5号</a>
+        </div>
+    </div>
+    <br>
+                                         <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>00</a>
+                                             <a>01</a>
+                                             <a>02</a>
+                                             <a>03</a>
+                                             <a>04</a>
+                                             <a>05</a>
+                                         </div>
+                                     </div>
+                                </span>：
+                                         <span>
+                                       <div class="select-body">
+                                           <div class="select-l"><div class="select-r"><div class="select-m">
+                                               <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                           </div></div></div>
+                                           <div class="option min-80" style="display: none;">
+                                               <a>00</a>
+                                               <a>01</a>
+                                               <a>02</a>
+                                               <a>03</a>
+                                               <a>04</a>
+                                               <a>05</a>
+                                           </div>
+                                       </div>
+                                 </span>
+</div>
+</li>
+
+
+
+</ul>
+
+
+
+
+
+
+</div>
+
+<div class="tablemaintop Spinnerswitch accordion-list accordion-listall">
+    <span class="tablelefttopico"></span>
+                         <span class="textcolor-limegreen">巡检报告常规信息设置
+                           <span style="position: relative;left: 76%;">
+                                   <a class="list-targethide">应用</a>
+                               </span>
+                         </span>
+    <span class="Spinnerdown"></span>
+</div>
+
+<div class="h-nobg f-right according-content" style="display: none;height: 56%;">
+    <div class="h-type" style="padding: 5px;">  巡检报告常规信息设置    </div>
+    <ul class="fixedvaluefromul">
+
+        <li><span class="fixedvaluefrom">选择显示项</span>
+                                 <span>
+                                     <input name="input2" type="checkbox"><span class="padding-left10">报告生成时间</span>
+                                     <span style="padding-left: 22px;"></span>
+                                     <input  name="input2" type="checkbox" checked><span >最后编辑时间</span>
+                                       <span style="padding-left: 32px;"></span>
+                                     <input  name="input2" type="checkbox" checked><span>最后编辑人姓名</span>
+                                  </span>
+        </li>
+
+        <li>
+            <div style="margin-left: 11.7%;">
+                <input type="checkbox">
+                <div class="select-body">
+                    <div class="select-l"><div class="select-r"><div class="select-m">
+                        <span class="select_txt min-80">资源类型名称</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                    </div></div></div>
+
+                    <div class="option min-120">
+                        <a>资源类型名称</a>
+                    </div>
+                </div>
+
+                <input type="checkbox">
+                <div class="select-body">
+                    <div class="select-l"><div class="select-r"><div class="select-m">
+                        <span class="select_txt min-80">资源分组名称</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                    </div></div></div>
+
+                    <div class="option min-120">
+                        <a>资源分组名称</a>
+                    </div>
+                </div>
+
+                <input type="checkbox">
+                <div class="select-body">
+                    <div class="select-l"><div class="select-r"><div class="select-m">
+                        <span class="select_txt min-80">业务名称</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                    </div></div></div>
+
+                    <div class="option min-120">
+                        <a>业务名称</a>
+                    </div>
+                </div>
+            </div>
+
+        </li>
+
+    </ul>
+    <hr style="background-color: black;height: 2px;border: none;">
+    <ul class="fixedvaluefromul">
+
+        <li><span class="fixedvaluefrom">自定义显示项</span><br>
+                                 <span> <span>字段显示名称：</span><span class="color-red">*</span>
+                                     <input name="input2" type="text"></span>
+                                 <span> <span>字段类型：</span><span class="color-red">*</span>
+                                        <div class="select-body">
+                                            <div class="select-l"><div class="select-r"><div class="select-m">
+                                                <span class="select_txt min-120">文本框</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                            </div></div></div>
+
+                                            <div class="option min-150">
+                                                <a href=".text1" class="clickobjtarget">文本框</a>
+                                                <a href=".text2" class="clickobjtarget">文本面板</a>
+                                                <a href=".text3" class="clickobjtarget">日期时间选择框</a>
+                                            </div>
+                                        </div>
+                                       </span>
+            <span class="text1 resours-modelall">     </span>
+            <span class="text2 resours-modelall">    <input type="text" class="text-box">    </span>
+            <span class="text3 resours-modelall">  </span>
+            <span class="ico ico-cancel locate-right"></span>
+
+        </li>
+        <li>
+            <span class="arrowadd locate-left" style="position: relative;"></span>
+
+        </li>
+
+
+    </ul>
+</div>
+
+<div class="tablemaintop Spinnerswitch accordion-list accordion-listall" style="overflow: hidden;">
+    <span class="tablelefttopico"></span>
+
+                         <span class="textcolor-limegreen">巡检报告巡检内容设置
+                               <span class="list-targethide" style="position: relative;left: 68%;">
+
+                               <a class="opendirectory">编辑巡检目录</a>
+                                        <a class="">应用</a>
+                               </span>
+                         </span>
+    <span class="Spinnerdown"></span>
+
+
+
+
+
+</div>
+
+
+<div class="h-nobg f-right according-content" style="display: none;padding: 10px;height: 55%;">
+
+    <div style="border: 1px #626262 solid;height: 100%;width: 97%;overflow-y: auto;">
+        <ul class="fieldlist accordion-main">
+
+            <li class="accordion-list faxianinfolist" style="overflow: hidden;padding: 8px;">
+                <span class="locate-right list-targethide" >应用</span>
+                <span class="locate-right list-targethide"style="padding-right: 10px;"><a class="openItemwin">编辑巡检项</a></span>
+                <span class="locate-left"> 1. 机房环境：检查机房环境相关项 </span>
+            </li>
+            <div class="accordion-content faxianinfo"style="border: 1px solid rgb(98, 98, 98); display: none;">
+                <div class="common">
+                    <div class="tab-header margin-top0">
+                        <div class="tab-header-l">
+                            <div class="tab-header-r">
+                                <div class="tab-header-m">
+                                    <div class="theadpart" style="width:100%;">
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th width="9%"><span>巡检项</span></th>
+                                                <th width="28%"> <span>描述</span> </th>
+                                                <th width="13%"> <span>参照值</span></th>
+                                                <th width="10%"><span>单位</span></th>
+                                                <th width="19%"> <span>巡检值</span></th>
+                                                <th width="22%"> <span>情况概要</span></th>
+                                                <th width="9%"> <span>结果</span></th>
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tbodypart">
+                        <table>
+                            <tbody class="">
+                            <tr>
+                                <td width="9%"> 温度</td>
+                                <td width="28%"> 机房温度,预置检查项</td>
+                                <td width="13%">
+                                    <input type="text" style="width: 50px;">~<input type="text" style="width: 50px;">
+                                </td>
+                                <td width="10%">    <input type="text" style="width: 50px;"></td>
+                                <td width="19%">人工手检</td>
+                                <td width="22%"><input type="text" value="温度达标"></td>
+                                <td width="9%"><span class="inspectionopenwin">编辑巡检子项</span></td>
+                            </tr>
+                            <tr class="cbg">
+                                <td width="9%"> 温度</td>
+                                <td width="28%"> 机房温度,预置检查项</td>
+                                <td width="13%">
+                                    <input type="text" style="width: 50px;">~<input type="text" style="width: 50px;">
+                                </td>
+                                <td width="10%">    <input type="text" style="width: 50px;"></td>
+                                <td width="19%">人工手检</td>
+                                <td width="22%"><input type="text" value="温度达标"></td>
+                                <td width="9%"><span class="inspectionopenwin">编辑巡检子项</span></td>
+                            </tr>
+                            <tr>
+                                <td width="9%"> 温度</td>
+                                <td width="28%"> 机房温度,预置检查项</td>
+                                <td width="13%">
+                                    <input type="text" style="width: 50px;">~<input type="text" style="width: 50px;">
+                                </td>
+                                <td width="10%">    <input type="text" style="width: 50px;"></td>
+                                <td width="19%">人工手检</td>
+                                <td width="22%"><input type="text" value="温度达标"></td>
+                                <td width="9%"><span class="inspectionopenwin">编辑巡检子项</span></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--list-targethide-->
+            <li class="accordion-list faxianinfolist" style="overflow: hidden;padding: 8px;">
+                <span class="locate-right list-targethide" >应用</span>
+                <span class="locate-right list-targethide"style="padding-right: 10px;"><a >编辑巡检项</a></span>
+                <span class="locate-left">2. 周边设备：检查机房配套设施</span>
+            </li>
+            <ul class="faxianinfo" style="border: 1px solid rgb(98, 98, 98); display: none;">
+                <li>A:\</li>
+                <li>C:\</li>
+            </ul>
+
+            <li class="accordion-list faxianinfolist" style="overflow: hidden;padding: 8px;">
+                <span class="locate-right list-targethide">应用</span>
+                <span class="locate-right list-targethide"style="padding-right: 10px;"><a class="openItemwin3">编辑巡检项</a></span>
+                <span class="locate-left">3. 网络设备：检查机房内网络设备健康情况</span>
+            </li>
+            <div class="accordion-content faxianinfo" style="display: block;border: 1px solid rgb(98, 98, 98); display: none;">
+                <div class="common">
+                    <div class="tab-header margin-top0">
+                        <div class="tab-header-l">
+                            <div class="tab-header-r">
+                                <div class="tab-header-m">
+                                    <div class="theadpart" style="width:100%;">
+                                        <table>
+                                            <thead>
+                                            <tr>
+                                                <th width="15%"><span>巡检项</span></th>
+                                                <th width="10%"> <span>描述</span> </th>
+                                                <th width="15%"> <span>参考值</span></th>
+                                                <th width="10%"><span>单位</span></th>
+                                                <th width="15%"> <span>巡检值</span></th>
+                                                <th width="10%"> <span>情况概要</span></th>
+                                                <th width="5%"> <span>操作</span></th>
+
+                                            </tr>
+                                            </thead>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tbodypart">
+                        <table>
+                            <tbody class="report-thistd-border">
+                            <tr style="height: 100px;">
+                                <td width="10%">
+                                    <ul>
+                                        <!--ico-unfold-->
+                                        <li> <span class="ico ico-shrinkage hidetableli" style="position: relative;left: -9px;top: 6px;"></span>  <span>core1[三层交换机]</span>   </li>
+                                        <li class="hidethisli">   qzcore[三层交换机]    </li>
+                                        <li class="hidethisli">    内存利用率   </li>
+                                        <li class="hidethisli">    Ping时延   </li>
+                                    </ul>
+                                </td>
+                                <td width="10%">
+                                    <ul>
+                                        <li><span>电源模块</span>   </li>
+                                        <li class="hidethisli">CPU平均利用率</li>
+                                        <li class="hidethisli">    内存利用率   </li>
+                                        <li class="hidethisli">    Ping时延   </li>
+                                    </ul>
+                                </td>
+                                <td width="10%">
+                                    <ul>
+                                        <li>&nbsp;    </li>
+                                        <li class="hidethisli">     </li>
+                                        <li class="hidethisli">  <input type="text" style="width: 50px;">~<input type="text" style="width: 50px;">
+                                           </li>
+                                        <li class="hidethisli">    <input type="text" style="width: 50px;">~<input type="text" style="width: 50px;">
+                                          </li>
+                                        <li class="hidethisli">   <input type="text" style="width: 50px;">~<input type="text" style="width: 50px;">
+                                           </li>
+                                    </ul>
+                                </td>
+                                <td width="10%">
+                                    <ul>
+                                        <li> &nbsp; </li>
+                                        <li class="hidethisli">        <input type="text" style="width: 50px;"></li>
+                                        <li class="hidethisli">          <input type="text" style="width: 50px;"> </li>
+                                        <li class="hidethisli">    % </li>
+                                    </ul>
+                                </td>
+                                <td width="10%">
+                                    <ul>
+                                        <li><span>部分自检</span>   </li>
+                                        <li class="hidethisli">  人工手检</li>
+                                        <li class="hidethisli">    人工手检 </li>
+                                        <li class="hidethisli"> 系统手检  </li>
+                                    </ul>
+                                </td>
+
+                                <td width="10%">
+
+                                    <ul>
+                                        <li> <input type="text" value="交换机正常">  </li>
+                                        <li class="hidethisli"> <input type="text" value="低于告警阀值"></li>
+                                        <li class="hidethisli">  <input type="text" value="低于告警阀值"></li>
+                                        <li class="hidethisli">   <input type="text" value="低于告警阀值"> </li>
+                                    </ul>
+                                </td>
+                                <td width="10%">
+
+                                    <ul>
+                                        <li>   <span class="opendirectory3">编辑</span> </li>
+                                        <li class="hidethisli"> &nbsp;</li>
+                                        <li class="hidethisli"> &nbsp;</li>
+                                        <li class="hidethisli"> &nbsp; </li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <li class="accordion-list faxianinfolist" style="overflow: hidden;padding: 8px;">
+                <span class="locate-right list-targethide" >应用</span>
+                <span class="locate-right list-targethide"style="padding-right: 10px;"><a >编辑巡检目录</a></span>
+                <span class="locate-left">4. 服务器：检查机房内服务器健康情况</span>
+            </li>
+            <ul class="faxianinfo" style="border: 1px solid rgb(98, 98, 98); display: none;">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </ul>
+
+
+
+    </div>
+
+</div>
+
+<div class="tablemaintop Spinnerswitch accordion-list accordion-listall">
+    <span class="tablelefttopico"></span>
+                         <span class="textcolor-limegreen">巡检报告结论设置
+                           <span style="position: relative;left: 79%;">
+                                   <a class="list-targethide">应用</a>
+                               </span>
+                         </span>
+    <span class="Spinnerdown"></span>
+</div>
+
+<div>
+    <ul class="fixedvaluefromul">
+
+        <li>
+                                 <span> <span>1、结论名称：</span><span class="color-red">*</span>
+                                     <input name="input2" type="text" value="机房环境"></span>
+            <span> <span>描述：</span>   <input type="text" value="检查机房环境相关项" style="width: 200px;">  </span>
+            <span class="ico ico-cancel locate-right"></span>
+        </li>
+        <li>
+            <span class="arrowadd locate-left" style="position: relative;"></span>
+        </li>
+    </ul>
+</div>
+
+
+
+</div>
+<!--按钮-->
+<div style="height:30px;position: absolute;left: 80%;top: 92%;">
+    <a class="btn-body locate-right ">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m "> <span class=""></span>完成<span class="pull"></span> </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body locate-right">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m"> <span class=""></span>报告预览<span class="pull"></span> </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<div class="main-content">
+<div class="mtab-con-l">
+    <div class="mtab-con-r">
+      <div class="mtab-con-m"></div>
+    </div>
+  </div>
+<div class="main-con">
+  <div class="h-btn margin-top0"><span>巡检任务名称：</span>
+    <input name="input2" type="text"  class="text-box min140" />
+   
+    <a class="btn-body locate-right" onclick="MM_showHideLayers('inspection-preset','','show')" >
+    <div class="btn-l">
+      <div class="btn-r">
+        <div class="btn-m"> <span class="ico ico-add"></span> <span>添加</span></div>
+      </div>
+    </div>
+    </a>
+
+    <span>巡检方式：</span>
+    <div class="select-body">
+      <div class="select-l">
+        <div class="select-r">
+          <div class="select-m"> <span class="select_txt min-120">- -</span>
+              <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="option min-150">
+          <a>手动</a>
+          <a>每天(自动)</a>
+          <a>每周(自动)</a>
+          <a>每季(自动)</a>
+          <a>每年(自动)</a>
+      </div>
+    </div>
+     <span>状态：</span>
+    <div class="select-body">
+      <div class="select-l">
+        <div class="select-r">
+          <div class="select-m"> <span class="select_txt min-60"> - - </span>
+              <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="option min-80">
+          <a>启用</a>
+          <a>停用</a>
+      </div>
+    </div>
+      <a class="btn-body">
+          <div class="btn-l">
+              <div class="btn-r">
+                  <div class="btn-m"> <span class="ico ico-search"></span> <span>搜 索</span></div>
+              </div>
+          </div>
+      </a>
+  </div>
+  <div class="common">
+  <div class="tab-header margin-top0">
+    <div class="tab-header-l">
+      <div class="tab-header-r">
+        <div class="tab-header-m">
+          <div class="theadpart" style="width:100%;">
+            <table>
+              <thead>
+                <tr>
+                  <th width="10%"><span>状态</span></th>
+                  <th width="10%"> <span>任务名称</span> </th>
+                  <th width="10%"> <span>创建人</span></th>
+                  <th width="10%"> <span>最近一次编辑时间</span></th>
+                  <th width="10%"> <span>巡检方式</span></th>
+                    <th width="10%"> <span>最后一次执行时间</span></th>
+                  <th width="20%"> <span>描述</span></th>
+                  <th width="10%" class="tcenter last"><span>操作</span></th>
+                  </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tbodypart">
+    <table>
+      <tbody>
+        <tr>
+          <td width="10%" ><input type="radio"  />启用<input type="radio"/>停用</td>
+          <td width="10%"> 中心机房季度巡检</td>
+          <td width="10%">王铮</td>
+          <td width="10%">2014-05-06 20:14:20</td>
+          <td width="10%"> 自动(每季)</td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+          <td width="10%">对中心机房进行季度性巡检，巡检包括机房环</td>
+          <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+          </tr>
+        <tr class="cbg">
+          <td width="10%" ><input name="radio" type="radio"  />
+          启用<input type="radio" name="radio" value="radio" />停用</td>
+          <td width="10%">中心机房季度巡检报告</td>
+          <td width="10%">王铮</td>
+          <td width="10%">2014-05-06 20:14:20</td>
+          <td width="10%"> 自动(每年) </td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+          <td width="20%">对中心机房进行季度性巡检，巡检包括机房环</td>
+          <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr>
+            <td width="10%" ><input type="radio"  />启用<input type="radio"/>停用</td>
+            <td width="10%"> 中心机房季度巡检</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每季)</td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="10%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr class="cbg">
+            <td width="10%" ><input name="radio" type="radio"  />
+                启用<input type="radio" name="radio" value="radio" />停用</td>
+            <td width="10%">中心机房季度巡检报告</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每年) </td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="20%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr>
+            <td width="10%" ><input type="radio"  />启用<input type="radio"/>停用</td>
+            <td width="10%"> 中心机房季度巡检</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每季)</td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="10%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr class="cbg">
+            <td width="10%" ><input name="radio" type="radio"  />
+                启用<input type="radio" name="radio" value="radio" />停用</td>
+            <td width="10%">中心机房季度巡检报告</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每年) </td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="20%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr>
+            <td width="10%" ><input type="radio"  />启用<input type="radio"/>停用</td>
+            <td width="10%"> 中心机房季度巡检</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每季)</td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="10%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr class="cbg">
+            <td width="10%" ><input name="radio" type="radio"  />
+                启用<input type="radio" name="radio" value="radio" />停用</td>
+            <td width="10%">中心机房季度巡检报告</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每年) </td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="20%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr>
+            <td width="10%" ><input type="radio"  />启用<input type="radio"/>停用</td>
+            <td width="10%"> 中心机房季度巡检</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每季)</td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="10%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr class="cbg">
+            <td width="10%" ><input name="radio" type="radio"  />
+                启用<input type="radio" name="radio" value="radio" />停用</td>
+            <td width="10%">中心机房季度巡检报告</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每年) </td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="20%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr>
+            <td width="10%" ><input type="radio"  />启用<input type="radio"/>停用</td>
+            <td width="10%"> 中心机房季度巡检</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每季)</td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="10%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr class="cbg">
+            <td width="10%" ><input name="radio" type="radio"  />
+                启用<input type="radio" name="radio" value="radio" />停用</td>
+            <td width="10%">中心机房季度巡检报告</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每年) </td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="20%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr>
+            <td width="10%" ><input type="radio"  />启用<input type="radio"/>停用</td>
+            <td width="10%"> 中心机房季度巡检</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每季)</td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="10%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+        <tr class="cbg">
+            <td width="10%" ><input name="radio" type="radio"  />
+                启用<input type="radio" name="radio" value="radio" />停用</td>
+            <td width="10%">中心机房季度巡检报告</td>
+            <td width="10%">王铮</td>
+            <td width="10%">2014-05-06 20:14:20</td>
+            <td width="10%"> 自动(每年) </td>
+            <td width="10%">   2014-05-06 20:14:20   </td>
+            <td width="20%">对中心机房进行季度性巡检，巡检包括机房环</td>
+            <td width="10%"><span class="ico ico-edit"></span><span class="ico ico-del"></span><span>立即执行</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="font-page">
+    <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+        <div class="amount">第
+            <input type="text" class="page-number" name="input" />
+          页</div>
+      <a class="next">下一页</a> <a class="end">末页</a> </div>
+  </div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+
+
+<script type="text/javascript">
+    $(".mainnavfrom ul li").click(function(){
+        $(".mainnavfrom ul li").removeClass("clickon");
+        $(this).addClass("clickon");
+    })
+
+</script>
+</body>
+</html>

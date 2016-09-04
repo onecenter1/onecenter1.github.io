@@ -1,0 +1,145 @@
+
+
+
+<anychart>
+    <margin all="0" />
+
+  <settings>
+    <animation enabled="True"/>
+  </settings>
+
+  <charts>
+    <chart plot_type="Doughnut">
+
+
+
+
+        <!--中间文字部分-->
+        <chart_settings>
+            <!--中间的背景颜色-->
+            <!--<chart_background>-->
+                <!--<fill type="Solid"  color="#0B1D0C" opacity="1"  />-->
+                <!--&lt;!&ndash;<param name="wmode" value="transparent"/>&ndash;&gt;-->
+                <!--<border enabled="false" /> <corners type="Square" />-->
+            <!--</chart_background>-->
+
+
+            <!--<data_plot_background>-->
+                <!--<fill opacity="0.1" color="#0B1D0C" />-->
+            <!--</data_plot_background>-->
+
+
+            <title enabled="false" />
+            <legend enabled="true" ignore_auto_item="True" position="float" >
+                <title enabled="false"/>
+                <background enabled="false"/>
+                <font color="White" bold="true" family="宋体" size="20"/>
+                <!--<background enabled="True">-->
+                    <!--<fill enabled="True" type="solid" color="#68696b"/>-->
+                    <!--<border type="solid" color="#434448"/>-->
+                    <!--<inside_margin all="8" top="4" bottom="4" />-->
+                    <!--<corners type="Rounded" all="5" />-->
+                <!--</background>-->
+                <items>
+                    <item><text><![CDATA[10个]]></text></item>
+                </items>
+            </legend>
+            <chart_background enabled="False"/>
+        </chart_settings>
+
+      <data_plot_settings enable_3d_mode="false">
+
+        <pie_series radius="120"  inner_radius="70"  start_angle="280" style="Aqua"   >
+
+            <pie_style>
+                <border enabled="False"/>
+            </pie_style>
+
+            <!--鼠标移上某一块的时候显示内容-->
+          <!--<tooltip_settings enabled="true">-->
+            <!--<position anchor="CenterTop" padding="10"/>-->
+            <!--<format>${%Value}{scale:(1000)(1000)(1000)|( th)( mil)( bil),numDecimals:2}</format>-->
+          <!--</tooltip_settings>-->
+            <!--<position anchor="Center" valign="Center" halign="Center" padding="0"/>-->
+           <!--设置每一块是否用线条连接起来-->
+          <label_settings enabled="true" mode="Outside" multi_line_align="Center"  >
+                        <font size="11" color="White">
+                          <effects>
+                            <drop_shadow enabled="true" distance="1" opacity="0.9" blur_x="1" blur_y="1"/>
+                          </effects>
+                        </font>
+              <!--移上文字是否线条也选中-->
+              <states>
+                  <hover>
+                      <font underline="true" />
+                  </hover>
+              </states>
+            <format>{%YPercentOfSeries}{numDecimals:0}%</format>
+              <!--<font size="14" bold="true" color="DarkColor(%Color)"/>-->
+          </label_settings>
+
+            <!--线条的颜色-->
+            <connector color="%Color" opacity="0.5" />
+          <!--<marker_settings enabled="true">-->
+            <!--<marker type="None" />-->
+            <!--<states>-->
+              <!--<hover>-->
+                <!--<marker type="Circle" anchor="CenterTop" />-->
+              <!--</hover>-->
+            <!--</states>-->
+          <!--</marker_settings>-->
+
+        </pie_series>
+      </data_plot_settings>
+
+        <styles>
+            <pie_style name="ExplodedStyle">
+
+                <effects enabled="True">
+                    <drop_shadow enabled="True" distance="2" color="#C23716" opacity="1"/>
+                    <inner_shadow enabled="True"  distance="2" color="#C23716" angle="180" opacity="0.5"/>
+                    <glow enabled="True" distance="3" color="#C23716"/>
+                </effects>
+                <fill type="Gradient">
+                    <gradient angle="0" type="Radial">
+                        <key position="0" color="#E86843" />
+                        <key position="1" color="#E7613C" />
+                    </gradient>
+                </fill>
+                <border enabled="False"/>
+            </pie_style>
+        </styles>
+
+
+      <data>
+
+          <!--6371664-->
+          <!--7216301         32.2%-->
+          <!--1486621-->
+          <!--786622-->
+          <!--900000-->
+        <series name="Series 1" type="Pie"  hatch_palette="Default" >
+
+            <!--<point name = "All other outlets" y="" color="DarkSeaGreen"/>-->
+            <point x="900000"  style=""  name = "1" y="7216301"/>
+            <point x="900000" style="" name = "2" y="6371664"/>
+            <point x="900000" style="" name = "3" y="786622"/>
+          <point x="900000" style="" name = "4" y="1486621"/>
+          <!--<point name="你好啊！" y="1111111"/>-->
+        </series>
+      </data>
+      <!--<chart_settings>-->
+        <!--<title enabled="true" padding="20">-->
+          <!--<text>图表信息</text>-->
+        <!--</title>-->
+        <!--<legend enabled="true" ignore_auto_item="true" position="Left">-->
+          <!--<title enabled="true"/>-->
+          <!--<items>-->
+            <!--<item source="points" />-->
+          <!--</items>-->
+        <!--</legend>-->
+      <!--</chart_settings>-->
+
+    </chart>
+  </charts>
+</anychart>

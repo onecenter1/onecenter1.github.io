@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+/* body{ padding: 0 15px;} */
+html,body{ overflow:hidden;background:url(../images/bg.png) 50% center repeat;}	
+/*******************************************header begin**************************************************/
+.header{ height: 77px;	background: url(../images/header_bg.png) repeat-x;	overflow-y: hidden;	margin-bottom: 5px; }	
+.navbar{ border:0px;}
+.logo{ height: 77px; width: 245px; float: left;	background: url(../images/logo.png) no-repeat;}
+.navbar-toggle .icon-bar{ background-color: #fff;}
+.navbar-toggle:hover{ background-color: gray;}
+.header_ul .menus{ background: url(../images/ico/header_nav.png) 0 0 no-repeat; width: 88px; height: 27px; color: #fff;
+	display: block; font-size: 12px; text-align: center; padding-top: 50px; padding-bottom: 27px; margin: 0 1px;}
+.top_set span#topset-content ul li a.about:hover{ background-position:-5px -54px;}
+.top_set span#topset-content ul li a.password:hover{ background-position:-45px -54px;}
+.top_set span#topset-content ul li a.user:hover{ background-position:-88px -54px;}
+.top_set span#topset-content ul li a.skin:hover{ background-position:-133px -54px;}
+.top_set span#topset-content ul li a.help:hover{ background-position:-172px -54px;}
+.top_set span#topset-content ul li a.close:hover{ background-position:-211px -54px;}	
+.header_ul .menus:hover{ background-color:#428bca; }	
+.header_ul .home{ background-position: 0 0;}	
+.header_ul .business{ background-position: 0 -90px;}	
+.header_ul .topology{ background-position: 0 -180px;}
+.header_ul .resources{ background-position: 0 -270px;}
+.header_ul .warning{ background-position: 0 -360px;}
+.header_ul .analysis{ background-position: 0 -810px;}
+.header_ul .configuration{ background-position: 0 -892px;}
+.header_ul .inspection{ background-position: 0 -450px;}
+.header_ul .report{ background-position: 0 -630px;}
+/* .header_ul a.home:hover{ background-position:-114px 0;}
+.header_ul a.business:hover{ background-position:-114px -89px;}
+.header_ul a.topology:hover{ background-position:-114px -178px;}
+.header_ul a.resources:hover{ background-position:-114px -267px;}
+.header_ul a.configuration:hover{ background-position:-114px -267px;}
+.header_ul a.analysis:hover{ background-position:-114px -801px;}
+.header_ul a.configuration:hover{ background-position:-114px -890px;}
+
+.header_ul a.warning:hover{ background-position:-114px -356px;}
+.header_ul a.inspection:hover{ background-position:-114px -445px;}
+.header_ul a.cmdb:hover{ background-position:-114px -534px;}
+.header_ul a.report:hover{ background-position:-114px -623px;}
+.header_ul a.system:hover{ background-position:-114px -712px;} */
+.header-page{ width: 30px; height: 63px; margin-top: 10px; float: left;}
+.header-page span{ background: url(../images/header-right.png) no-repeat; display: block; width: 30px; height: 32px;}
+.header-page .header-pageup { background-position: 0 -47px;}
+.header-page .header-pagedown { background-position: -45px -49px;}
+.header-pageup:hover{ background-position:0 0;}
+.header-pagedown:hover{ background-position:-45px 0;}	
+.top_set{ margin-top: 13px; color:#fff;}
+.top_set a{ background: url(../images/ico/header-topset.png) no-repeat; display: block; width: 36px; height: 35px;}
+.top_set .about{ background-position: -5px -1px;}
+.top_set .password{ background-position: -45px -1px;}
+.top_set .user{ background-position: -88px -1px;}
+.top_set .skin{ background-position: -133px -1px;}
+.top_set .help{ background-position: -172px -1px;}
+.top_set .close{ background-position: -211px -1px;}
+.self-list{ list-style: none; margin: 0px; padding: 0px;}
+.self-list li{ float: left;}
+.navbar-nav{ float: left; margin: 0;}
+.header_right{ width: 280px; height: 77px; float: right; margin-left: -280px; margin-top: -77px;}
+.navbar-collapse{ width:100%;}
+.header_ul{ margin-right: 280px; margin-left: 245px; margin-top: -77px; float: left;}
+/*********************************header end************************************************************/
+/*********************************content begin************************************************************/
+.modal .modal-content .modal-body,.modal .modal-content span{ color: #000; font-size: 12px;}
+.panel{ color: #fff;}
+.panel .table thead tr th{ padding: 0px;}
+.panel-body table tr,.panel-body table tr td{ line-height: 28px;}
+.panel-body tbody tr:hover{ background-color: gray; cursor: pointer; color: #fff;}
+.panel-body table tr td{ padding: 0px 5px;}
+.panel-body .progress{ margin-bottom: 0px; margin-top: 5px;}
+.table > thead > tr > th{ vertical-align: inherit;}
+.tcenter span{ display: block;}
+.hide{ display: none;}
+.tcenter{text-align: center;}
+.locate-right{float: right;}
+.panel-body{overflow-x:hidden;padding: 5px;}
+/*********************************content end************************************************************/
+@media (max-width: 768px){
+	.header-page{ display: none;}
+	.header_ul{margin-left: 0px;width: 100%;}
+	/* .header_ul,.header_ul li{float: none;} */
+	.header_right{margin-left: 0px;}
+	.header_right,.header_ul{ margin-top: 0px;}
+	.header{ height: auto;}
+	.header_right{float: left;}
+}
+
+

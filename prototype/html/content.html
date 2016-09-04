@@ -1,0 +1,1499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Onecenter4.0</title>
+<link  href="../css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="../css/icon.css">
+  <link rel="stylesheet" type="text/css" href="../css/widget.css">
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+    
+
+
+<script type="text/javascript">
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body>
+
+<div class="bodywindows"></div>
+<!--点击关注网络设备的设置按钮弹出层-->
+
+
+<div  class="w-pop interwint" style="margin-top:30px; width:800px; position:absolute; z-index:999;left:250px; display: none;">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>关注网络设置</span>
+            <div class="pop-close-r closeinterwin">
+                <a class="pop-close-ico" onclick="MM_showHideLayers('r-customadd','','hide')"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class="tab-con">
+    <div class="f-right-btn">
+        <ul class="fieldlist">
+            <li> <span class="fixedvalue">请选择资源</span> <span class="colon">：</span>
+
+                <div class="select-body">
+                    <div class="select-l">
+                        <div class="select-r">
+                            <div class="select-m"> <span class="select_txt min-120">全部主机</span>
+                                <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option min-150"> <a>全部主机</a> <a>网络</a> <a>应用</a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+        <tr>
+            <td width="47%" class="tree-views">
+
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" style="position: relative;top: -12px;">
+                    <tr>
+                    <input type="text" value="请输入IP地址和资源名称"
+
+                           class="text-box min320 indexviewsearch" style="width: 98%">
+                    <span class="ico ico-cancel locate-right indexviewsearchdel" style="position: relative;top: -20px;" ></span>
+                     </tr>
+                <tr valign="middle">
+                    <td width="18" align="center" valign="middle"><input type="checkbox" name="checkbox12" id="checkbox12" /></td>
+                    <td width="18" align="center"><a class="tree-a-down"></a></td>
+                    <td width="299" valign="middle">全部资源</td>
+                </tr>
+                <tr valign="middle">
+                    <td>&nbsp;</td>
+                    <td height="22" colspan="2">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox13" id="checkbox13" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-a-down"></a></td>
+                                <td width="269">主机</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="2" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td width="18"><input type="checkbox" name="checkbox14" id="checkbox14" /></td>
+                                        <td height="22">Windows</td>
+                                    </tr>
+                                </table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td width="18"><input type="checkbox" name="checkbox15" id="checkbox15" /></td>
+                                            <td height="22">Linux</td>
+                                        </tr>
+                                    </table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td width="18"><input type="checkbox" name="checkbox16" id="checkbox16" /></td>
+                                            <td height="22">HP-ux</td>
+                                        </tr>
+                                    </table></td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox17" id="checkbox17" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-a-down"></a></td>
+                                <td width="269">AIX</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="2" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td width="18"><input type="checkbox" name="checkbox17" id="checkbox18" /></td>
+                                        <td height="22">Server-AIX1</td>
+                                    </tr>
+                                </table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td width="18"><input type="checkbox" name="checkbox17" id="checkbox19" /></td>
+                                            <td height="22">Server-AIX2</td>
+                                        </tr>
+                                    </table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td width="18"><input type="checkbox" name="checkbox17" id="checkbox20" /></td>
+                                            <td height="22">Server-AIX3</td>
+                                        </tr>
+                                    </table></td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox18" id="checkbox21" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                <td width="269">网络</td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox19" id="checkbox22" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                <td width="269">应用</td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox20" id="checkbox23" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                <td width="269">基础服务</td>
+                            </tr>
+                        </table></td>
+                </tr>
+
+            </table>
+
+            </td>
+
+            <td width="6%" style="vertical-align:middle;">
+                <div class="tab-tree-arrow">
+                    <a class="tree-arrow-right"></a>
+                    <a class="tree-arrow-left"></a>
+                </div>
+            </td>
+            <td width="47%" class="tree-views"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr valign="middle">
+                    <td width="18" align="center" valign="middle"><input type="checkbox" name="checkbox12" id="checkbox12" /></td>
+                    <td width="18" align="center"><a class="tree-a-down"></a></td>
+                    <td width="299" valign="middle">全部资源</td>
+                </tr>
+                <tr valign="middle">
+                    <td>&nbsp;</td>
+                    <td height="22" colspan="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="30"><input type="checkbox" name="checkbox13" id="checkbox13" /></td>
+                            <td width="16" align="center" valign="middle"><a class="tree-a-down"></a></td>
+                            <td width="269">主机</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="2" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td width="18"><input type="checkbox" name="checkbox14" id="checkbox14" /></td>
+                                    <td height="22">Windows</td>
+                                </tr>
+                            </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td width="18"><input type="checkbox" name="checkbox15" id="checkbox15" /></td>
+                                        <td height="22">Linux</td>
+                                    </tr>
+                                </table>
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td width="18"><input type="checkbox" name="checkbox16" id="checkbox16" /></td>
+                                        <td height="22">HP-ux</td>
+                                    </tr>
+                                </table></td>
+                        </tr>
+                    </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox17" id="checkbox17" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-a-down"></a></td>
+                                <td width="269">AIX</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td colspan="2" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td width="18"><input type="checkbox" name="checkbox17" id="checkbox18" /></td>
+                                        <td height="22">Server-AIX1</td>
+                                    </tr>
+                                </table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td width="18"><input type="checkbox" name="checkbox17" id="checkbox19" /></td>
+                                            <td height="22">Server-AIX2</td>
+                                        </tr>
+                                    </table>
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td width="18"><input type="checkbox" name="checkbox17" id="checkbox20" /></td>
+                                            <td height="22">Server-AIX3</td>
+                                        </tr>
+                                    </table></td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox18" id="checkbox21" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                <td width="269">网络</td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox19" /></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                <td width="269">应用</td>
+                            </tr>
+                        </table>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td width="30"><input type="checkbox" name="checkbox20"/></td>
+                                <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                <td width="269">基础服务</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table></td>
+        </tr>
+    </table>
+
+</div>
+<div class="" style="height: 30px;width: 100%;line-height: 30px!important;">
+    <span class="font-bold" style="position: relative;top: 8px;">选择指标</span>
+    <a class="btn-body locate-right" style="position: relative;top: 3px;">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m"> <span>高级设置</span> <span class="pull"></span> </div>
+            </div>
+        </div>
+    </a>
+
+</div>
+<div class="common margin-top6">
+    <div class="tab-header margin-top0">
+        <div class="tab-header-l">
+            <div class="tab-header-r">
+                <div class="tab-header-m">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tbodypart">
+        <table>
+            <tbody id="windowliobj">
+            <tr>
+                <td width="5%"><input type="checkbox" name="checkbox2"  /></td>
+                <td width="10%">  <a>Ping延时</a></td>
+                <td width="10%">% </td>
+                <td width="10%"><input type="checkbox" name="checkbox2"  /></td>
+                <td width="10%"> <a>Ping延时</a></td>
+                <td width="10%">% </td>
+            </tr>
+            <tr class="cbg">
+                <td width="5%"><input type="checkbox" name="checkbox2"  /></td>
+                <td width="10%">  <a>Ping延时</a></td>
+                <td width="10%">% </td>
+                <td width="10%"><input type="checkbox" name="checkbox2"  /></td>
+                <td width="10%"> <a>Ping延时</a></td>
+                <td width="10%">% </td>
+            </tr>
+            <tr>
+                <td width="5%"><input type="checkbox" name="checkbox2"  /></td>
+                <td width="10%">  <a>Ping延时</a></td>
+                <td width="10%">% </td>
+                <td width="10%"><input type="checkbox" name="checkbox2"  /></td>
+                <td width="10%"> <a>Ping延时</a></td>
+                <td width="10%">% </td>
+            </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<div  class="w-pop" style="margin-top:50px; width:400px; position:absolute; z-index:999;left:500px; visibility:hidden" id="pop-host">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+            <span>主机</span>
+            	 <div class="pop-close-r">
+                  <a class="pop-close-ico" onclick="MM_showHideLayers('pop-host','','hide')"></a>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+            	  <div class="pop-content">
+                   <div class="pop-content">
+                     <div class="tab-con">
+                      <div class="h-nobg f-right" >
+                        <ul class="fieldlist">
+                           <li class="i-host-tittle"><a class="i-host-ico"></a><a>Windows</a></li>
+                            <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                             <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                               <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                 <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                       </ul>
+                        <ul class="fieldlist">
+                           <li class="i-host-tittle"><a class="i-host-ico"></a><a>Solaris</a></li>
+                            <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                             <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                               <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                 <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                       </ul>
+                        <ul class="fieldlist">
+                           <li class="i-host-tittle"><a class="i-host-ico"></a><a>Aix</a></li>
+                            <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                             <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                               <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                 <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                       </ul>
+                      </div>
+
+                     </div>
+                   </div>
+                   <div class="pop-bottom-btn">
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>确定<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>取消<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+</div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+     </div>
+    </div>
+<div  class="w-pop" style="margin-top:50px; left:500px; width:400px; position:absolute; z-index:999; visibility:hidden;" id="topn">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+            <span>TOPN</span>
+            	 <div class="pop-close-r">
+                  <a class="pop-close-ico" onclick="MM_showHideLayers('topn','','hide')" ></a>                </div>
+          </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+            	  <div class="pop-content">
+                   <div class="pop-content">
+                     <div class="tab-con locate-center">
+                       <a class="i-equi on"> <span class="icu-ico"></span> <span>CPU</span> </a>
+                       <a class="i-equi "> <span class="memory-ico"></span> <span>内存</span> </a>
+                       <div class="h-slide position-none margin-bottom12">
+                         <div class="h-slide-l">
+                           <div class="h-slide-r">
+                             <div class="h-slide-m">
+                               <div class="h-slide-m-con"> <a class="on">主机</a> <a>应用</a> <a>网络设备</a> </div>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="pop-bottom-btn">
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>确定<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>取消<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+</div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+     </div>
+    </div>
+
+    <div class="fulltool">
+    <ul>
+        <li class="full-ico full-ico-scroon"></li>
+        <a href="indexviewmode/thefirstview.html"  target="allcontent"><li class="full-ico full-ico-min"></li></a>
+        <li class="full-ico full-ico-edit costombtn"></li>
+    </ul>
+
+</div>
+<div id="content">
+<div class="home-page-c">
+<div class="module">
+     <div class="h-l">
+           <div class="h-r">
+                 <div class="h-m">
+                 <span class="ico ico-cancel locate-right"></span>
+                 <span class="r-set"></span>
+                 <span class="ico ico-refrash locate-right"></span>
+
+
+                  <span>告警一览</span>
+            </div>
+        </div>
+</div>
+
+<div class="h-middle-l">
+      <div class="h-middle-r">
+             <div class="h-middle-m">
+             <div class="h-middle-content">
+                <div class="content-top-l"><div class="content-top-r"><div class="content-top-m"></div></div></div>
+                <div class="content-middle-l">
+                  <div class="content-middle-r">
+                    <div class="content-middle-m indexinfoswitch">
+                        <!--主页告警一览内容切换-->
+                      <div class="content-middle-con indexviewwaning">
+                        <ul class="alert-con">
+                          <li class=" alert-bg deadly"><span class="alert-tittle">致命</span><span class="alert-data">58个</span></li>
+                          <li class="alert-bg serious"><span class="alert-tittle">严重</span><span class="alert-data">100个</span></li>
+                          <li class="alert-bg warning"><span class="alert-tittle">警告</span><span class="alert-data">30个</span></li>
+                          <li class="alert-bg major"><span class="alert-tittle">主要</span><span class="alert-data">60个</span></li>
+                        </ul>
+                        <div class="alert-pic" style="margin-top: -13px;">
+
+                          <object type="application/x-shockwave-flash" id="__AnyChart___0" width="430px" height="250px"
+                                              data="../js/AnyChartswf/Preloader.swf" style="visibility: visible">
+                            <param name="movie"  value="../js/AnyChartswf/Preloader.swf" />
+                            <param name="bgcolor" value="#FFFFFF" />
+                            <param name="allowScriptAccess" value="always" />
+                            <!--<param name="quality" value="high" />-->
+                            <param name="wmode" value="transparent" />
+                            <param name="flashvars"
+                                       value="__externalobjid=__AnyChart___0
+                                       &amp;swffile=../js/AnyChartswf/AnyChart.swf
+                                       &amp;xmlfile=config.xml&amp;__enableevents=1
+                                       &amp;preloaderInit= &amp;preloaderLoading=Loading...
+                                       &amp;init=Initializing...&amp;loadingConfig=Loading config...
+                                       &amp;loadingTemplates=Loading templates...&amp;loadingResources=Loading resources...
+                                       &amp;noData=No Data&amp;waitingForData=Waiting for data..." />
+                          </object>
+                        </div>
+                      </div>
+                        <div class="content-middle-con indexviewwaning">
+                            <ul class="alert-con">
+                                <li class=" alert-bg deadly"><span class="alert-tittle">致命</span><span class="alert-data">25个</span></li>
+                                <li class="alert-bg serious"><span class="alert-tittle">严重</span><span class="alert-data">80个</span></li>
+                                <li class="alert-bg warning"><span class="alert-tittle">警告</span><span class="alert-data">35个</span></li>
+                                <li class="alert-bg major"><span class="alert-tittle">主要</span><span class="alert-data">15个</span></li>
+                            </ul>
+                            <div class="alert-pic" style="margin-top: -13px;">
+
+                                 <!--主机-->
+                                <object type="application/x-shockwave-flash" id="__AnyChart___0" width="430px" height="250px"
+                                        data="../js/AnyChartswf/Preloader.swf" style="visibility: visible">
+                                    <param name="movie"  value="../js/AnyChartswf/Preloader.swf" />
+                                    <param name="bgcolor" value="#FFFFFF" />
+                                    <param name="allowScriptAccess" value="always" />
+                                    <!--<param name="quality" value="high" />-->
+                                    <param name="wmode" value="transparent" />
+                                    <param name="flashvars"
+                                           value="__externalobjid=__AnyChart___0
+                                       &amp;swffile=../js/AnyChartswf/AnyChart.swf
+                                       &amp;xmlfile=config2.xml&amp;__enableevents=1
+                                       &amp;preloaderInit= &amp;preloaderLoading=Loading...
+                                       &amp;init=Initializing...&amp;loadingConfig=Loading config...
+                                       &amp;loadingTemplates=Loading templates...&amp;loadingResources=Loading resources...
+                                       &amp;noData=No Data&amp;waitingForData=Waiting for data..." />
+                                </object>
+                            </div>
+                        </div>
+                        <div class="content-middle-con indexviewwaning">
+                            <ul class="alert-con">
+                                <li class=" alert-bg deadly"><span class="alert-tittle">致命</span><span class="alert-data">0个</span></li>
+                                <li class="alert-bg serious"><span class="alert-tittle">严重</span><span class="alert-data">0个</span></li>
+                                <li class="alert-bg warning"><span class="alert-tittle">警告</span><span class="alert-data">0个</span></li>
+                                <li class="alert-bg major"><span class="alert-tittle">主要</span><span class="alert-data">0个</span></li>
+                            </ul>
+                            <div class="alert-pic"  style="margin-top: -13px;">
+                                <object type="application/x-shockwave-flash" id="__AnyChart___0" width="430px" height="250px"
+                                        data="../js/AnyChartswf/Preloader.swf" style="visibility: visible">
+                                    <param name="movie"  value="../js/AnyChartswf/Preloader.swf" />
+                                    <param name="bgcolor" value="#FFFFFF" />
+                                    <param name="allowScriptAccess" value="always" />
+                                    <!--<param name="quality" value="high" />-->
+                                    <param name="wmode" value="transparent" />
+                                    <param name="flashvars"
+                                           value="__externalobjid=__AnyChart___0
+                                       &amp;swffile=../js/AnyChartswf/AnyChart.swf
+                                       &amp;xmlfile=config3.xml&amp;__enableevents=1
+                                       &amp;preloaderInit= &amp;preloaderLoading=Loading...
+                                       &amp;init=Initializing...&amp;loadingConfig=Loading config...
+                                       &amp;loadingTemplates=Loading templates...&amp;loadingResources=Loading resources...
+                                       &amp;noData=No Data&amp;waitingForData=Waiting for data..." />
+                                </object>
+                                         <!--设备-->
+                            </div>
+                        </div>
+                        <div class="content-middle-con indexviewwaning">
+                            <ul class="alert-con">
+                                <li class=" alert-bg deadly"><span class="alert-tittle">致命</span><span class="alert-data">0个</span></li>
+                                <li class="alert-bg serious"><span class="alert-tittle">严重</span><span class="alert-data">10个</span></li>
+                                <li class="alert-bg warning"><span class="alert-tittle">警告</span><span class="alert-data">0个</span></li>
+                                <li class="alert-bg major"><span class="alert-tittle">主要</span><span class="alert-data">0个</span></li>
+                            </ul>
+                            <div class="alert-pic" style="margin-top: -13px;">
+                                <object type="application/x-shockwave-flash" id="__AnyChart___0" width="430px" height="250px"
+                                        data="../js/AnyChartswf/Preloader.swf" style="visibility: visible">
+                                    <param name="movie"  value="../js/AnyChartswf/Preloader.swf" />
+                                    <param name="bgcolor" value="#FFFFFF" />
+                                    <param name="allowScriptAccess" value="always" />
+                                    <!--<param name="quality" value="high" />-->
+                                    <param name="wmode" value="transparent" />
+                                    <param name="flashvars"
+                                           value="__externalobjid=__AnyChart___0
+                                       &amp;swffile=../js/AnyChartswf/AnyChart.swf
+                                       &amp;xmlfile=config4.xml&amp;__enableevents=1
+                                       &amp;preloaderInit= &amp;preloaderLoading=Loading...
+                                       &amp;init=Initializing...&amp;loadingConfig=Loading config...
+                                       &amp;loadingTemplates=Loading templates...&amp;loadingResources=Loading resources...
+                                       &amp;noData=No Data&amp;waitingForData=Waiting for data..." />
+                                </object>
+                                 <!--网络设备-->
+                            </div>
+                        </div>
+                  </div>
+                      <!--点击切换主页告警一览视图-->
+                      <div class="h-slide">
+                          <div class="h-slide-l">
+                              <div class="h-slide-r">
+                                  <div class="h-slide-m">
+                                      <!--切换按钮-->
+                                      <div class="h-slide-m-con indexviewswitch">
+                                          <a class="on">全部</a>
+                                          <a >主机</a>
+                                          <a>设备</a>
+                                          <a>网络应用</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="content-bottom-l"><div class="content-bottom-r"><div class="content-bottom-m"></div></div></div>
+             </div>
+        </div>
+     </div>
+</div>
+<div class="h-bottom-l">
+      <div class="h-bottom-r">
+            <div class="h-bottom-m">
+          </div>
+     </div>
+</div>
+</div>
+<div class="module">
+     <div class="h-l">
+           <div class="h-r">
+             <div class="h-m">
+                 <span class="ico ico-cancel locate-right"></span>
+                 <span class="r-set" onclick="MM_showHideLayers('topn','','show')"></span>
+                 <span class="ico ico-refrash locate-right"></span>
+                 <span class="ico ico-chart locate-right getovertrun2"></span>
+                  <span class="ico ico-list locate-right getovertrunico" ></span>
+                  <span>TOPN</span>
+             </div>
+        </div>
+</div>
+<div class="h-middle-l">
+      <div class="h-middle-r">
+             <div class="h-middle-m">
+             <div class="h-middle-content">
+                <div class="content-top-l"><div class="content-top-r"><div class="content-top-m"></div></div></div>
+                <div class="content-middle-l">
+                      <div class="content-middle-r">
+                             <div class="content-middle-m">
+
+                               <div  class="content-middle-con indexwindowover2">
+                               <div class="common">
+                               <div class="tab-header">
+                                 <div class="tab-header-l">
+                                       <div class="tab-header-r">
+                                               <div class="tab-header-m">
+                                                 <div class="theadpart">
+                              <table width="100%">
+                                <thead>
+                                  <tr>
+                                    <th width="5%"><span>序号</span></th>
+                                    <th width="27%">
+                                    	<a class="rank-down"></a>
+                                        <a class="rank-pull" id="show_rank"></a>
+                                        <span>资源名称</span>                                    </th>
+                                    <th width="21%"><a class="rank-up"></a><a class="rank-pull"></a><span>资源类型</span></th>
+                                    <th width="20%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                                    <th width="27%"><a class="rank-up"></a><span>CPU利用率</span></th>
+                                  </tr>
+                            </thead>
+                        </table>
+
+                                                </div>
+                                               </div>
+                                             </div>
+                                        </div>
+                               </div>
+                               <div class="tbodypart">
+                              <table width="100%">
+                                <tbody>
+                                <tr>
+                                    <td width="6%" align="center" class="tcenter">1</td>
+                                    <td width="27%">SEVER-CRP</td>
+                                    <td width="20%"> Windows</td>
+                                    <td width="20%">192.168.1.216</td>
+                                    <td width="27%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+                                    <span class="gt">45.00%</span></td>
+                                  </tr>
+                                <tr class="cbg">
+                                    <td align="center" class="tcenter">2</td>
+                                    <td>SEVER-CRP</td>
+                                    <td>Windows</td>
+                                    <td>192.168.1.216</td>
+                                    <td width="27%"><div class="rate rate-t-red"><span class="rate-red" style="width:85%"></span></div>
+                                        <span class="gt">85.00%</span></td>
+                                </tr>
+                                  <tr>
+                                    <td width="6%" align="center" class="tcenter">3</td>
+                                    <td width="27%">SEVER-CRP</td>
+                                    <td width="20%"> Windows</td>
+                                    <td width="20%">192.168.1.216</td>
+                                    <td width="27%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+                                    <span class="gt">45.00%</span></td>
+                                  </tr>
+                                <tr class="cbg">
+                                    <td align="center" class="tcenter">4</td>
+                                    <td>SEVER-CRP</td>
+                                    <td>Windows</td>
+                                    <td>192.168.1.216</td>
+                                    <td width="27%"><div class="rate rate-t-yellow"><span class="rate-yellow" style="width:65%"></span></div>
+                                        <span class="gt">65.00%</span></td>
+                                </tr>
+                                  <tr>
+                                    <td width="6%" align="center" class="tcenter">5</td>
+                                    <td width="27%">SEVER-CRP</td>
+                                    <td width="20%"> Windows</td>
+                                    <td width="20%">192.168.1.216</td>
+                                    <td width="27%"><div class="rate rate-t-orange"><span class="rate-orange" style="width:75%"></span></div>
+                                    <span class="gt">75.00%</span></td>
+                                  </tr>
+                                <tr class="cbg">
+                                    <td align="center" class="tcenter">6</td>
+                                    <td>SEVER-CRP</td>
+                                    <td>Windows</td>
+                                    <td>192.168.1.216</td>
+                                    <td width="27%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+                                        <span class="gt">45.00%</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                               </div>
+                               </div>
+                               <div style="display: none" class="content-middle-pic indexovertrun2">
+                               <img src="../images/ex/h-zhuxt.png" />
+                               </div>
+                               </div>
+                  </div>
+                </div>
+                <div class="content-bottom-l"><div class="content-bottom-r"><div class="content-bottom-m"></div></div></div>
+             </div>
+        </div>
+     </div>
+</div>
+<div class="h-bottom-l">
+      <div class="h-bottom-r">
+            <div class="h-bottom-m">
+          </div>
+     </div>
+</div>
+</div>
+<div class="module">
+  <div class="h-l">
+    <div class="h-r">
+      <div class="h-m">
+      <span class="ico ico-cancel locate-right"></span>
+      <span class="r-set"  onclick="MM_showHideLayers('pop-host','','show')"></span>
+      <span class="ico ico-refrash locate-right"></span>
+       <span>关注主机</span> </div>
+    </div>
+  </div>
+  <div class="h-middle-l">
+    <div class="h-middle-r">
+      <div class="h-middle-m">
+        <div class="content-middle-con" style="height:230px;">
+            <div class="h-info">
+              <div class="h-info-l">
+                <div class="h-info-r">
+                                  <div class="h-info-m">
+                                  <span>当前状态：可用</span>
+                                  <span>IP地址：192.168.0.1</span>
+                                  <span>操作系统：Windows</span>
+                                  <span>主机名称：Rzoupd_do012</span>
+                                  </div>
+                </div>
+              </div>
+            </div>
+                   <div class="info-con">
+                     <div class="info-top-l"><div class="info-top-r"><div class="info-top-m"></div></div></div>
+                     <div class="info-middle-l">
+                            <div class="info-middle-r">
+                              <div class="info-middle-m">
+                               <ul class="info-content">
+                                 <li class="info-pic"><span class="color-green">CPU平均利用率</span><span><img src="../images/ex/h-cpu.png" /></span></li>
+                                 <li class="info-line"></li>
+                                  <li class="info-pic padding-top10"><span class="color-orange">CPU平均利用率</span><span><img src="../images/ex/neicun.png" /></span></li>
+                               </ul>
+                              </div>
+                            </div>
+                     </div>
+                     <div class="info-bottom-l"><div class="info-bottom-r"><div class="info-bottom-m"></div></div></div>
+
+            </div>
+
+                   <div class="info-con">
+                     <div class="info-top-l">
+                       <div class="info-top-r">
+                         <div class="info-top-m"></div>
+                       </div>
+                     </div>
+                     <div class="info-middle-l">
+                       <div class="info-middle-r">
+                         <div class="info-middle-m">
+                           <ul class="info-content">
+                             <li class="info-line line-height"> <span class="color-green">分区E利用率：</span>
+                             <div class="rate rate-t margin-top5"><span class="rate-green" style="width:45%"></span></div><div class="gt color-green margin-top5">45.00%</div></li>
+                            <li class="info-line line-height"> <span class="color-red">分区D利用率：</span>
+                              <div class="rate rate-t-red margin-top5"><span class="rate-red" style="width:90%"></span></div><div class="gt color-red margin-top5">90.00%</div></li>
+                            <li class="info-line line-height"> <span class="color-yellow">分区C利用率：</span>
+                              <div class="rate rate-t-yellow margin-top5"><span class="rate-yellow" style="width:75%"></span></div><div class="gt color-yellow margin-top5">75.00%</div></li>
+                            <li class="info-line line-height"> <span class="color-orange">分区B利用率：</span>
+                              <div class="rate rate-t-orange margin-top5"><span class="rate-orange" style="width:65%"></span></div><div class="gt color-orange margin-top5">65.00%</div></li>
+                           </ul>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="info-bottom-l">
+                       <div class="info-bottom-r">
+                         <div class="info-bottom-m"></div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="info-con">
+                     <div class="info-top-l">
+                       <div class="info-top-r">
+                         <div class="info-top-m"></div>
+                       </div>
+                     </div>
+                     <div class="info-middle-l">
+                       <div class="info-middle-r">
+                         <div class="info-middle-m">
+                          <div class="info-content">
+                           <a class="interface"> <div class="border-right"><span class="interface-eq interface-green"></span></div>
+                           <div class="interface-right-con"><div>本地连接</div><div>Inter(R) 8266LBS</div>
+                           <div class="color-green">接口正常</div></div> </a>
+                           <a class="interface"> <div class="border-right"><span class="interface-eq interface-red"></span></div>
+                           <div class="interface-right-con"><div>本地连接</div><div>Inter(R) 8266LBS</div>
+                           <div class="color-red">接口正常</div></div> </a>
+                           <a class="interface"> <div class="border-right"><span class="interface-eq interface-green"></span></div>
+                           <div class="interface-right-con"><div>本地连接</div><div>Inter(R) 8266LBS</div>
+                           <div class="color-green">接口正常</div></div> </a>
+                       </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="info-bottom-l">
+                       <div class="info-bottom-r">
+                         <div class="info-bottom-m"></div>
+                       </div>
+                     </div>
+                   </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-bottom-l">
+    <div class="h-bottom-r">
+      <div class="h-bottom-m"> </div>
+    </div>
+  </div>
+</div>
+<div class="module">
+  <div class="h-l">
+    <div class="h-r">
+      <div class="h-m">
+       <span class="ico ico-cancel locate-right"></span>
+      <span class="r-set openinterfacewin"></span>
+      <span class="ico ico-refrash locate-right"></span>
+       <span>关注网络设备</span> </div>
+    </div>
+  </div>
+  <div class="h-middle-l">
+    <div class="h-middle-r">
+      <div class="h-middle-m">
+        <div class="content-middle-con" style="height:230px;">
+          <div class="h-info">
+            <div class="h-info-l">
+              <div class="h-info-r">
+                <div class="h-info-m"> <span>当前状态：可用</span> <span>IP地址：192.168.0.1</span> <span>操作系统：Windows</span> <span>主机名称：Rzoupd_do012</span> </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-con">
+            <div class="info-top-l">
+              <div class="info-top-r">
+                <div class="info-top-m"></div>
+              </div>
+            </div>
+            <div class="info-middle-l">
+              <div class="info-middle-r">
+                <div class="info-middle-m">
+                  <ul class="info-content">
+                    <li class="info-pic"><span class="color-green">CPU平均利用率</span><span><img src="../images/ex/h-cpu.png" /></span></li>
+                    <li class="info-line"></li>
+                    <li class="info-pic padding-top10"><span class="color-orange">CPU平均利用率</span><span><img src="../images/ex/neicun.png" /></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="info-bottom-l">
+              <div class="info-bottom-r">
+                <div class="info-bottom-m"></div>
+              </div>
+            </div>
+          </div>
+          <div class="info-con min-433">
+            <div class="info-top-l">
+              <div class="info-top-r">
+                <div class="info-top-m"></div>
+              </div>
+            </div>
+            <div class="info-middle-l">
+              <div class="info-middle-r">
+                <div class="info-middle-m info-content">
+                <span class="interface-arrow on"></span>
+                    <span class="interface-arrow inter-arrow-r"></span>
+                    <div class="interface">
+                  <div class="border-right"><a><span class="interface-eq interface-red"></span></a></div>
+                   <div class="border-right"><a><span class="interface-eq interface-green"></span></a></div>
+                    <div class="border-right"><a><span class="interface-eq interface-yellow"></span></a></div>
+                     <div class="border-right"><a><span class="interface-eq interface-green"></span></a></div>
+                      <div class="border-right"><a><span class="interface-eq interface-orange"></span></a></div>
+                       <div class="border-right"><a><span class="interface-eq interface-green"></span></a></div>
+                  </div>
+                <div class="interface-list">
+                    <div class="color-orange-t">接口名称：Fastoiue_0293</div>
+                    <div class="interface-tab"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="interface-td-l">带宽利用率 </td>
+    <td class="interface-td-r">5.5% </td>
+    <td class="interface-td-l">接收速率 </td>
+    <td class="interface-td-r"> 625Kbps</td>
+  </tr>
+  <tr>
+    <td class="interface-td-l">发送速率 </td>
+    <td class="interface-td-r">23Kbps </td>
+    <td class="interface-td-l">接收利用率 </td>
+    <td class="interface-td-r">5.5%</td>
+  </tr>
+  <tr>
+    <td class="interface-td-l">发送利用率</td>
+    <td class="interface-td-r">2.89% </td>
+    <td class="interface-td-l">丢包率 </td>
+    <td class="interface-td-r">0包/秒</td>
+  </tr>
+</table>
+</div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info-bottom-l">
+              <div class="info-bottom-r">
+                <div class="info-bottom-m"></div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="h-bottom-l">
+    <div class="h-bottom-r">
+      <div class="h-bottom-m"> </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="d-page">
+ <a class="d-page-ico d-page-nl"></a>
+
+ <a class="d-page-ico  d-page-greendot"></a>
+ <a class="d-page-ico d-page-dot" href="content-n.html"></a>
+ <a class="d-page-ico d-page-dot"></a>
+ <a class="d-page-ico d-page-dot"></a>
+
+ <a class="d-page-ico d-page-r"></a>
+</div>
+
+</div>
+
+<!--点击设置按钮定制主页-->
+<div class="pop custompage" style="position: fixed;left: 3%;top: 1%; width:1300px;">
+
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span></span>
+            <div class="pop-close-r">
+                <a class="pop-help-ico"></a>
+                <a class="pop-set-ico"></a>
+                <a id="indexclosewindow" class="pop-close-ico"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+
+<div class="pop-tittle">
+    <div class="pop-tittle-l" style="width: 245px">
+        <div class="pop-tittle-m">
+            <span style="position: relative;top: -7px;font-weight: bold;">我的工作台窗口设置</span>
+
+            <span class="indexviewcruent">
+                <span class="full-ico-scroon indexviewcruent-scroon indexclickleftview"></span>
+                <span class="full-ico-min indexviewcruent-min indexclickrightview"></span>
+            </span>
+        </div>
+
+    </div>
+
+
+
+</div>
+<!--！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！第一总块！！！！！！！！！！！！！！！！！！-->
+<div class="pop-content indextc-contentone">
+<div class="tab-con" style="text-align: right;height: 260px;overflow: hidden;">
+    <div class="indexview" style="width: 98.5%;height: 250px;overflow: hidden;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;padding-right: 20px;;">
+              <div class="" style="background-color: #272a37;width: 100%;height: 100%;">
+            <div class="indexleftview">
+              <!--<a class="tab-arrow-ico tab-arrow-l indexviewleftbtn"></a>-->
+              <!--<a class="tab-arrow-ico tab-arrow-r indexviewrightbtn"></a>-->
+              <ul>
+                  <li class="indexleftviewziyuan" style="background: url('../images/ex/gaojingyilantop1.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>告警一览</span>
+                          <!--<span class="currentpage currentpageclick"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewtopn" style="background: url('../images/ex/gaojinyilantop2.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>TOPN</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewgaojin" style="background: url('../images/ex/gaojinyilantop3.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>关注主机</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewliyongl" style="background: url('../images/ex/gaojinyilantop4.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>关注网络设备</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+
+                  <!--靠靠靠靠靠靠靠靠靠-->
+                  <li class="indexleftviewziyuan" style="background: url('../images/ex/gaojinyilantop5.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>关注应用</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewtopn" style="background: url('../images/ex/gaojinyilantop6.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>可用性一览</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewgaojin" style="background: url('../images/ex/gaojinyilantop2.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>资源一览</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewliyongl" style="background: url('../images/ex/gaojingyilantop1.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>资源一览</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+
+                  <!--噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢-->
+                  <li class="indexleftviewziyuan" style="background: url('../images/ex/gaojinyilantop3.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>资源一览</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewtopn" style="background: url('../images/ex/gaojinyilantop4.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>资源一览</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <li class="indexleftviewgaojin" style="background: url('../images/ex/gaojinyilantop6.png')0 0 no-repeat">
+                      <div class="indexviewlitext">
+                          <span>资源一览</span>
+                          <!--<span class="currentpage"></span>-->
+                          <span class="currentdel currentdelete"></span>
+                      </div>
+                  </li>
+                  <!--视图添加到此-->
+                  <li class="toaddindexview">
+
+                  </li>
+
+
+              </ul>
+          </div>
+
+              </div>
+        </div>
+
+
+  <div style="clear: left;"></div>
+
+
+
+</div>
+
+<span>
+      <div class="d-page" style="height: 30px;margin-top: 5px;">
+          <span style="position: relative;left: -33%;top: -7px;"> 单击"+"号添加类型/拖动排序</span>
+          <a class="d-page-ico d-page-nl"></a>
+
+          <a class="d-page-ico  d-page-greendot"></a>
+          <a class="d-page-ico d-page-dot" href="content-n.html"></a>
+          <a class="d-page-ico d-page-dot"></a>
+          <a class="d-page-ico d-page-dot"></a>
+
+          <a class="d-page-ico d-page-r"></a>
+
+
+              <a class="btn-body locate-right">
+                  <div class="btn-l">
+                      <div class="btn-r">
+                          <div class="btn-m indexclosewindow">
+                              <span class=""></span>取消<span class="pull"></span>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+              <a class="btn-body locate-right">
+                  <div class="btn-l">
+                      <div class="btn-r">
+                          <div class="btn-m indexclosewindow">
+                              <span class=""></span>提交<span class="pull"></span>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+          </div>
+
+
+</span>
+<div class="tab-con" style="text-align: right">
+    <div class="" style="width: 100%;height: 100%;">
+
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN1.png')0 0 no-repeat;">
+
+            <div class="butviewtext" style="z-index: 1">
+                <span>告警一览</span>
+            </div>
+
+            <div class="butlistwindow"  style="z-index: 1">
+
+            </div>
+
+            <div class="addviewto" >
+                <img src="../images/comm/icon/addindexico.png" alt="">
+            </div>
+
+            <!--<img style="position: absolute;left: 5;top: 5;width:100%;height:100%;z-index:-99;" src="../images/ex/TOPN6.png" />-->
+          </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN6.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>TOPN</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN2.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>关注主机</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>关注网络设备</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN4.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>关注应用</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN5.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>可用性一览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN4.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>资源概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>告警概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN2.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>设备概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN1.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>应用概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+
+    </div>
+    <div style="clear: left;"></div>
+</div>
+
+</div>
+
+<!--！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！第二总块！！！！！！！！！！！！！！！！！！！！-->
+
+<div class="pop-content indextc-contenttwo">
+
+<div class="indexviewcontenttwo">
+    <div class="indexviewtwo">
+        <div class="indexviewtwotwo">
+            <div class="indexleftviewtwo">
+                <!--<a class="tab-arrow-ico tab-arrow-l indexviewleftbtn"></a>-->
+                <!--<a class="tab-arrow-ico tab-arrow-r indexviewrightbtn"></a>-->
+                <div class="indexviewcontenttwo2">
+                    <ul>
+                        <li class="indexleftviewziyuan" style="background: url('../images/ex/gaojingyilantop1.png')0 0 no-repeat">
+                            <div class="indexviewlitext">
+                                <span>告警一览</span>
+                                <!--<span class="currentpage currentpageclick"></span>-->
+                                <span class="currentdel"></span>
+                            </div>
+                        </li>
+                        <li class="indexleftviewtopn" style="background: url('../images/ex/gaojinyilantop2.png')0 0 no-repeat">
+                            <div class="indexviewlitext">
+                                <span>TOPN</span>
+                                <!--<span class="currentpage"></span>-->
+                                <span class="currentdel"></span>
+                            </div>
+                        </li>
+                        <li class="indexleftviewgaojin" style="background: url('../images/ex/gaojinyilantop3.png')0 0 no-repeat">
+                            <div class="indexviewlitext">
+                                <span>关注主机</span>
+                                <!--<span class="currentpage"></span>-->
+                                <span class="currentdel"></span>
+                            </div>
+                        </li>
+
+                        <!--视图添加到此-->
+                        <li class="toaddindexview">
+
+                        </li>
+
+
+                    </ul>
+
+
+
+                </div>
+
+                <div class="d-page" style="position: relative;top: 94%;left: 14%;">
+
+
+                <a class="btn-body locate-right">
+                    <div class="btn-l">
+                        <div class="btn-r">
+                            <div class="btn-m indexclosewindow">
+                                <span class=""></span>取消<span class="pull"></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="btn-body locate-right">
+                    <div class="btn-l">
+                        <div class="btn-r">
+                            <div class="btn-m indexclosewindow">
+                                <span class=""></span>提交<span class="pull"></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div style="clear: left;"></div>
+
+
+
+</div>
+
+<div class="tab-con">
+    <div class="tab-conrightcontent" style="width: 58%;height:519px;float: left;background-color: #272a37;margin-top: 4px;">
+
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN6.png')100% 100% no-repeat;">
+
+            <div class="butviewtext" style="z-index: 1">
+                <span>告警一览</span>
+            </div>
+
+            <div class="butlistwindow"  style="z-index: 1">
+
+            </div>
+
+            <div class="addviewto"  style="z-index: 1">
+                <img src="../images/comm/icon/addindexico.png" alt="">
+            </div>
+
+            <!--<img style="position: absolute;left: 5;top: 5;width:100%;height:100%;z-index:-99;" src="../images/ex/TOPN6.png" />-->
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN5.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>TOPN</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN1.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>关注主机</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN2.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>关注网络设备</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>关注应用</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN4.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>可用性一览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN6.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>资源概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>告警概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>设备概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>应用概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>设备概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../images/ex/TOPN3.png')100% 100% no-repeat; ">
+            <div class="butviewtext">
+                <span>应用概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+
+    </div>
+
+    <div style="clear: left;"></div>
+
+
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+<!--<script type="text/javascript" src="../js/index.js"></script>-->
+<script type="text/javascript" src="../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" language="JavaScript" src="../js/AnyChart/AnyChart.js"></script>
+
+<script type="text/javascript">
+
+</script>
+
+<script type="text/javascript" language="JavaScript">
+    var chart = new AnyChart('../js/AnyChartswf/AnyChart.swf', '../js/AnyChartswf/Preloader.swf');
+    chart.width = "430px";
+    chart.height = "250px";
+//    chart.wmode="transparent";
+    chart.setXMLFile("config.xml");
+    chart.write("chartContainer");
+</script>
+
+
+
+
+</body>
+</html>

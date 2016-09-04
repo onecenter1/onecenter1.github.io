@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<link rel="stylesheet" type="text/css" href="../../css/widget.css" />
+
+<script type="text/javascript" src="../../js/demo.js"></script>
+
+
+
+</head>
+<body>
+
+
+<div class="bodywindows">
+
+</div>
+
+
+<div class="h-btn">
+<div class=" locate-left">
+<span>视图</span>
+<div class="select-body">
+  <div class="select-l">
+    <div class="select-r">
+      <div class="select-m"> 
+      <span class="select_txt min-120">自定义视图</span>
+          <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="option min-150"> <a>自定义视图1</a> <a>自定义视图2</a> <a>自定义视图3</a> </div>
+</div>
+</div>
+<div class=" locate-left">
+<div class="r-h-warp">
+<a class="r-h-ico r-h-add"></a>
+<a class="r-h-ico r-h-delete"></a>
+<a class="r-h-ico r-h-edit"></a>
+</div>
+</div>
+<div class=" locate-left">
+<span>时长</span>
+<div class="select-body">
+  <div class="select-l">
+    <div class="select-r">
+      <div class="select-m"> <span class="select_txt min-120">定义视图名称</span>
+          <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+      </div>
+    </div>
+  </div>
+  <div class="option min-150"> <a>定义视图名称1</a> <a>定义视图名称2</a> <a>定义视图名称3</a> </div>
+</div>
+</div>
+<div class=" locate-left">
+
+<div class="select-body">
+  <div class="select-l">
+     <div class="select-r">
+        <div class="select-m">
+        <span>2014/03/22 18：07：28</span>           </div>
+        </div>
+   </div>
+   <div class="select-trigger-warp">
+   <a class="select-trigger-date"></a>   </div>
+</div>
+
+</div>
+
+
+
+
+<div class="locate-left">
+    <div class="select-body">
+        <div class="select-l">
+            <div class="select-r">
+                <div class="select-m"> <span class="select_txt min-120">小时</span>
+                    <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="option min-150"> <a>小时</a> <a>天</a> <a>周</a> </div>
+    </div>
+
+
+</div>
+    <a class="btn-body locate-right">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class="ico ico-excel"></span><span>执行</span><span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body locate-right">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m" id="getwindowreport">
+                    <span class="ico ico-excel" ></span><span >邮件订阅</span><span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+
+</div>
+
+<div class="h-caption">
+<span class="r-td-height">上研CRM服务器状态报表（2014-04-22 12：00——2014-04-22 16：00）</span>
+<div class="locate-right">
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class="ico ico-excel"></span><span>导出Excel</span><span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class="ico ico-word"></span>
+                <span>导出Word</span>
+                
+                <span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class="ico ico-pdf"></span>
+                <span>导出PDF</span>
+                
+                <span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+</div>   
+
+
+</div>
+<div class=""><img src="../../images/ex/xingneng1.png" /></div>
+<div class="" style="text-align:center"><img src="../../images/ex/xingneng2.png" /></div>
+
+
+
+
+
+<!--点击邮件订阅出现弹出层==================================================================================-------------------------------->
+
+<div id="windowreport"  class="w-pop" style="position: fixed;left: 5%;top: 1%;; width:908px;display: none;">
+
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>邮件订阅</span>
+            <div class="pop-close-r">
+                <a class="pop-help-ico"></a>
+                <a class="pop-set-ico"></a>
+                <a  class="pop-close-ico closewindowone"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+
+<div class="pop-content">
+
+<div class="tab-con">
+
+<table id="page2"  width="100%"  border="0" cellspacing="0" cellpadding="0" class="table-pop">
+    <tr>
+        <td class="tab-l-tittle">报表名称</td>
+        <td><label> 资源统计报表-ERP部A3</label></td>
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">邮件订阅</td>
+        <td>
+            <input type="radio" checked value="是" id="mailyes" name="mail"><label for="mailyes">是</label>
+            <input type="radio" value="否" id="mailno" name="mail"><label for="mailno">否</label>
+        </td>
+    </tr>
+    <tr>
+    <td class="tab-l-tittle">报告周期</td>
+    <td>
+        <input type="radio" value="日报" checked id="riport" name="report"><label for="riport">日报</label>
+        <input type="radio" value="周报" id="zhouport" name="report"><label for="zhouport">周报</label>
+        <input type="radio" value="月报" id="yueport" name="report"><label for="yueport">月报</label>
+    </td>
+</tr>
+    <tr>
+        <td class="tab-l-tittle">时间范围</td>
+        <td>
+
+            <label>每天</label>
+            <div class="select-body">
+            <div class="select-l">
+               <div class="select-r">
+                  <div class="select-m">
+               <span class="select_txt min-50">00:00</span> <div class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                   </div></div></div>
+               
+                <div class="option min-80">
+                    <a>01:00</a>
+                    <a>02:00</a>
+                    <a>03:00</a>
+                </div>
+            </div>
+
+
+
+
+
+        </td>
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">生成时间</td>
+        <td>
+            <div class="select-body">
+             <div class="select-l"><div class="select-r"><div class="select-m">
+                <span class="select_txt min-50">十分钟</span> <div  class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                </div></div></div>
+
+                <div class="option min-80">
+                    <a>十分钟</a>
+                    <a>一小时</a>
+                    <a>一个月</a>                </div>
+            </div>
+            <div style="float: left">至</div>
+            <div class="select-body">
+                <div class="select-l"><div class="select-r"><div class="select-m">
+                  <span class="select_txt min-50">十分钟</span> <div  class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                </div></div></div>
+                <div class="option min-80">
+                    <a>十分钟</a>
+                    <a>一小时</a>
+                    <a>一个月</a>                </div>
+            </div>
+            <label>生成日报</label>
+        </td>
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">接收人员</td>
+        <td valign="middle" class="tdlisttable">
+            <a class="tab-arrow-ico tab-arrow-l smallpageleft"></a>
+                                        <span  class="tab-con-m windowcontentpage1">
+                                            <a class="check-btn">系统管理员</a>
+                                            <a class="check-btn">管理员</a>
+                                            <a class="check-btn">普通用户</a>
+                                            <a class="check-btn">系统管理员</a>
+                                            <a class="check-btn">普通用户</a>
+                                            <a class="check-btn">管理员</a>
+                                            <a class="check-btn">系统管理员</a>
+                                            <a class="check-btn">系统管理员</a>
+
+                                        </span>
+
+                                         <span  class="tab-con-m windowcontentpage2">
+                                             <a class="check-btn">系统管理员</a>
+                                            <a class="check-btn">管理员</a>
+                                            <a class="check-btn">普通用户</a>
+                                            <a class="check-btn">系统管理员</a>
+                                            <a class="check-btn">普通用户</a>
+                                            <a class="check-btn">管理员</a>
+                                            <a class="check-btn">系统管理员</a>
+                                            <a class="check-btn">系统管理员</a>
+
+                                         </span>
+            <a class="tab-arrow-ico tab-arrow-r smallpageright"></a> </td>
+    </tr>
+    <tr>
+        <td valign="middle" class="tab-l-tittle">非系统用户邮箱</td>
+        <td>
+            <textarea rows="5" cols="5"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" class="tab-l-tittle">订阅报告文件格式</td>
+        <td>
+            <input type="radio" checked id="PDF" name="dingyue"><label for="PDF">PDF</label>
+            <input type="radio" id="word" name="dingyue"><label for="word">Word</label>
+            <input type="radio" id="excel" name="dingyue"><label for="excel">Excel</label>
+        </td>
+    </tr>
+</table>
+
+
+</div>
+<div class="pop-bottom-btn">
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closewindow">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closewindow">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<!--<script type="text/javascript" src="../../js/public/public.js"></script>-->
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+
+<script type="text/javascript">
+
+
+</script>
+</body>
+</html>

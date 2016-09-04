@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<script type="text/javascript" src="../../js/demo.js"></script>
+</head>
+<body>
+<div  class="w-pop min-908">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+            	<!--<span class="pop-ico pop-quit"></span>
+            	<span class="pop-title"></span>-->
+                <span>自定义指标组</span>
+                <div class="pop-close-r">
+                  <a class="pop-help-ico"></a>
+                  <a class="pop-set-ico"></a>
+                  <a class="pop-close-ico"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+            	  <div class="pop-content">
+                   <div class="tab-con"></div>
+                 </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+     </div>
+    </div>
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+
+
+//    点击按钮出现两个小按钮--------------------------
+   var buttom=  $(".arrowdown");
+   var chushitext=$(".digit");
+   var tempbuttom=$(".l-icon");
+var tempbuttomdelete=$(".l-icon-delete");
+
+   var mark=0;
+buttom.click(function(){
+    if(mark%2==0){
+        chushitext.animate({
+            opacity:0,
+            width:"0px"
+        },50);
+        tempbuttom.css({display:"block"});
+        mark++;
+    }else{
+        chushitext.animate({
+            opacity:1,
+            width:"37px"
+        },200);
+        tempbuttom.css({display:"none"});
+        mark--;
+    }
+});
+
+
+		$("#topmenuul li").bind("click",function(){
+			$("#topmenuul li").removeClass("on");
+			$(this).addClass("on");
+		});
+
+
+
+    $(".content_nav ul li").each(function(e){
+           $($(".content_nav ul li")[1]).click(function(){
+               $($(".content_nav ul li")[1]).css({
+                  backgroundImage: "url(../../images/comm/window/windowsnav.png)"
+               });
+               $($(".content_nav ul li")[0]).css({
+                   backgroundColor:"#181b1f !important"
+               });
+               $("#content_table").hide();
+           });
+        $($(".content_nav ul li")[0]).click(function(){
+            $("#content_table").show();
+        });
+
+
+    });
+
+
+
+
+
+
+
+
+
+//    点击弹出层
+
+        $(".bodywindows");
+        $(".windowhide1").ready(function(){
+            $(".windowhide1").hide();
+            $(".bodywindows").css({
+                display:'none'
+            });
+        });
+
+
+        var lilist= $("#topmenuul li");
+
+//点击修改小图标弹出层
+tempbuttom.each(function(e){
+            $(tempbuttom[e]).bind('click',function(){
+                $(".windowhide1").show(200);
+                $(".bodywindows").css({
+                    display:'block'
+                });
+                console.log(tempbuttom);
+            });
+
+        });
+
+//点击删除小图标出现弹出层
+  var deletewindow=$("#deletewindow");
+deletewindow.each(function(e){
+    $(deletewindow[e]).bind('click',function(){
+        $(".windowhide1").show(200);
+        $(".bodywindows").css({
+            display:'block'
+        });
+    });
+
+});
+
+
+
+        $(".pop-close").click(function(){
+            $(".windowhide1").hide(300);
+            $(".bodywindows").css({
+                display:'none'
+            },50);
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

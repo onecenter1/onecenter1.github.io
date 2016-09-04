@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<script type="text/javascript" src="../../js/demo.js"></script>
+</head>
+<body>
+<div class="r-three">
+<div class="r-tittle">
+<span class="r-set"></span><span>主机监控资产统计</span>
+</div>
+<div class="r-th-content">
+<div class="r-th-pic"><img src="../../images/ex/xingneng.png" width="385" height="441" /></div>
+<div class="common">
+             <div class="theadpart">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <thead>
+                                  <tr>
+                                    <th width="3%" class="tcenter">序列</th>
+                                    <th width="19%">
+                                    	<a class="rank-down"></a>
+                                        <a class="rank-pull" id="show_rank"></a>
+                                        <span>资源名称</span>                                    </th>
+                                    <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                                    <th width="15%"><a class="rank-up"></a><a class="rank-pull"></a><span>Ping时延</span></th>
+                                    <th width="15%"><a class="rank-up"></a><span>CPU利用率</span></th>
+                                    <th width="15%"><a class="rank-up"></a><span>内存利用率</span></th>
+                                  </tr>
+                            </thead>
+                        </table>
+  </div>
+                            <div class="tbodypart">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td width="3%" class="tcenter"><span class="icon icon_uncheck">1</span></td>
+                                    <td width="19%">
+                                    	<div class="cell_inner">
+                                        <span class="status_g"></span>
+                                    	<a onclick="javascript:openwindow('smart3-info.html','',1366,718);">Kid ica server</a>                                    	</div>                                    </td>
+                                    <td width="10%">192.168...</td>
+                                  <td width="15%">Linux主...</td>
+                                    <td width="15%">
+                                      <div class="rate rate_t"><span class="rate_red" style="width:90%"></span><span class="rt">90.99%</span></div>                                	</td>
+                                    <td width="15%">
+                                      <div class="rate rate_t"><span class="rate_green" style="width:45%"></span><span class="gt">45.00%</span></div>                                	</td>
+                                  </tr>	
+                                <tr class="cbg">
+                                    <td class="tcenter"><span class="icon icon_uncheck">2</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">Rill_ZB_...</a></td>
+                                    <td>192.168...</td>
+                                    <td>Linux主...</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_red" style="width:80%"></span><span class="rt">80%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_red" style="width:90%"></span><span class="rt">90%</span></div>                                	</td>
+                                  </tr>
+                                <tr>
+                                    <td class="tcenter"><span class="icon icon_uncheck">3</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">S2652G-1</a></td>
+                                    <td>192.168...</td>
+                                    <td>锐捷交换机</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_orange" style="width:70%"></span><span class="ot">70%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                                <tr class="cbg">
+                                    <td class="tcenter"><span class="icon icon_uncheck">4</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">Ping</a></td>
+                                    <td>192.168...</td>
+                                  <td>Ping</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_orange" style="width:60%"></span><span class="ot">60%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                                <tr>
+                                    <td class="tcenter"><span class="icon icon_uncheck">5</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a>URl</a></td>
+                                    <td>192.168...</td>
+                                  <td>URl</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:50%"></span><span class="gt">50%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                            </tbody>
+                        </table>
+  </div>
+    </div>
+</div>
+</div>
+<div class="r-three">
+<div class="r-tittle">
+<span class="r-set"></span><span>网络监控资产统计</span>
+</div>
+<div class="r-th-content">
+<div class="r-th-pic"><img src="../../images/ex/xingneng.png" alt="" width="385" height="441" /></div>
+<div class="common">
+             <div class="theadpart">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <thead>
+                                  <tr>
+                                    <th width="3%" class="tcenter">序列</th>
+                                    <th width="19%">
+                                    	<a class="rank-down"></a>
+                                        <a class="rank-pull" id="show_rank"></a>
+                                        <span>资源名称</span>                                    </th>
+                                    <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                                    <th width="15%"><a class="rank-up"></a><a class="rank-pull"></a><span>Ping时延</span></th>
+                                    <th width="15%"><a class="rank-up"></a><span>吞吐量</span></th>
+                                    <th width="15%"><a class="rank-up"></a><span>丢包速率</span></th>
+                                  </tr>
+                            </thead>
+                        </table>
+  </div>
+                            <div class="tbodypart">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td width="3%" class="tcenter"><span class="icon icon_uncheck">1</span></td>
+                                    <td width="19%">
+                                    	<div class="cell_inner">
+                                        <span class="status_g"></span>
+                                    	<a onclick="javascript:openwindow('smart3-info.html','',1366,718);">Kid ica server</a>                                    	</div>                                    </td>
+                                    <td width="10%">192.168...</td>
+                                  <td width="15%">Linux主...</td>
+                                    <td width="15%">
+                                      <div class="rate rate_t"><span class="rate_red" style="width:90%"></span><span class="rt">90.99%</span></div>                                	</td>
+                                    <td width="15%">
+                                      <div class="rate rate_t"><span class="rate_green" style="width:45%"></span><span class="gt">45.00%</span></div>                                	</td>
+                                  </tr>	
+                                <tr class="cbg">
+                                    <td class="tcenter"><span class="icon icon_uncheck">2</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">Rill_ZB_...</a></td>
+                                    <td>192.168...</td>
+                                    <td>Linux主...</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_red" style="width:80%"></span><span class="rt">80%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_red" style="width:90%"></span><span class="rt">90%</span></div>                                	</td>
+                                  </tr>
+                                <tr>
+                                    <td class="tcenter"><span class="icon icon_uncheck">3</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">S2652G-1</a></td>
+                                    <td>192.168...</td>
+                                    <td>锐捷交换机</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_orange" style="width:70%"></span><span class="ot">70%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                                <tr class="cbg">
+                                    <td class="tcenter"><span class="icon icon_uncheck">4</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">Ping</a></td>
+                                    <td>192.168...</td>
+                                  <td>Ping</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_orange" style="width:60%"></span><span class="ot">60%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                                <tr>
+                                    <td class="tcenter"><span class="icon icon_uncheck">5</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a>URl</a></td>
+                                    <td>192.168...</td>
+                                  <td>URl</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:50%"></span><span class="gt">50%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                            </tbody>
+                        </table>
+  </div>
+    </div>
+</div>
+</div>
+<div class="r-three">
+<div class="r-tittle">
+<span class="r-set"></span><span>应用资产监控统计</span>
+</div>
+<div class="r-th-content">
+<div class="r-th-pic"><img src="../../images/ex/xingneng.png" alt="" width="385" height="441" /></div>
+<div class="common">
+             <div class="theadpart">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <thead>
+                                  <tr>
+                                    <th width="3%" class="tcenter">序列</th>
+                                    <th width="19%">
+                                    	<a class="rank-down"></a>
+                                        <a class="rank-pull" id="show_rank"></a>
+                                        <span>资源名称</span>                                    </th>
+                                    <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                                    <th width="15%"><a class="rank-up"></a><a class="rank-pull"></a><span>Ping时延</span></th>
+                                    <th width="15%"><a class="rank-up"></a><span>CPU利用率</span></th>
+                                    <th width="15%"><a class="rank-up"></a><span>内存利用率</span></th>
+                                  </tr>
+                            </thead>
+                        </table>
+  </div>
+                            <div class="tbodypart">
+                              <table border="0" cellpadding="0" cellspacing="0">
+                                <tbody>
+                                <tr>
+                                    <td width="3%" class="tcenter"><span class="icon icon_uncheck">1</span></td>
+                                    <td width="19%">
+                                    	<div class="cell_inner">
+                                        <span class="status_g"></span>
+                                    	<a onclick="javascript:openwindow('smart3-info.html','',1366,718);">Kid ica server</a>                                    	</div>                                    </td>
+                                    <td width="10%">192.168...</td>
+                                  <td width="15%">Linux主...</td>
+                                    <td width="15%">
+                                      <div class="rate rate_t"><span class="rate_red" style="width:90%"></span><span class="rt">90.99%</span></div>                                	</td>
+                                    <td width="15%">
+                                      <div class="rate rate_t"><span class="rate_green" style="width:45%"></span><span class="gt">45.00%</span></div>                                	</td>
+                                  </tr>	
+                                <tr class="cbg">
+                                    <td class="tcenter"><span class="icon icon_uncheck">2</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">Rill_ZB_...</a></td>
+                                    <td>192.168...</td>
+                                    <td>Linux主...</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_red" style="width:80%"></span><span class="rt">80%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_red" style="width:90%"></span><span class="rt">90%</span></div>                                	</td>
+                                  </tr>
+                                <tr>
+                                    <td class="tcenter"><span class="icon icon_uncheck">3</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">S2652G-1</a></td>
+                                    <td>192.168...</td>
+                                    <td>锐捷交换机</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_orange" style="width:70%"></span><span class="ot">70%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                                <tr class="cbg">
+                                    <td class="tcenter"><span class="icon icon_uncheck">4</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">Ping</a></td>
+                                    <td>192.168...</td>
+                                  <td>Ping</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_orange" style="width:60%"></span><span class="ot">60%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                                <tr>
+                                    <td class="tcenter"><span class="icon icon_uncheck">5</span></td>
+                                    <td>
+                                    	<span class="status_g"></span>
+                                        <a>URl</a></td>
+                                    <td>192.168...</td>
+                                  <td>URl</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:50%"></span><span class="gt">50%</span></div>                                	</td>
+                                    <td>
+                                      <div class="rate rate_t"><span class="rate_green" style="width:30%"></span><span class="gt">30%</span></div>                                	</td>
+                                  </tr>
+                            </tbody>
+                        </table>
+  </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <script type="text/javascript" src="../../js/demo.js"></script>
+
+    <script type="text/javascript">
+        <!--
+        function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+        {
+            Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+        }
+        function MM_showHideLayers() { //v9.0
+            var i,p,v,obj,args=MM_showHideLayers.arguments;
+            for (i=0; i<(args.length-2); i+=3)
+                with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+                    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+                    obj.visibility=v; }
+        }
+        //-->
+    </script>
+
+</head>
+<body>
+
+<!--点击列表的添加按钮弹出层-->
+<div class="w-pop" style="margin-top: 50px; width: 770px; display: none; position: absolute; z-index: 899; left: 350px;" id="r-customadd">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>添加自定义配置组</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico" onclick="MM_showHideLayers('r-customadd','','hide')"></a>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con">
+                            <div class="f-right-btn">
+                                <ul class="fieldlist">
+                                    <li> <span class="fixedvalue">配置组名称</span> <span class="colon">：</span><input type="text" class="text-box"> </li>
+                                </ul>
+                            </div>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody><tr>
+                                    <td width="47%" class="tree-views"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tbody><tr valign="middle">
+                                            <td width="18" align="center" valign="middle"><input type="checkbox" name="checkbox12" id="checkbox12"></td>
+                                            <td width="18" align="center"><a class="tree-a-down"></a></td>
+                                            <td width="299" valign="middle">全部资源</td>
+                                        </tr>
+                                        <tr valign="middle">
+                                            <td>&nbsp;</td>
+                                            <td height="22" colspan="2">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox13" id="checkbox13"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-a-down"></a></td>
+                                                        <td width="269">主机</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td colspan="2" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tbody><tr>
+                                                                <td width="18"><input type="checkbox" name="checkbox14" id="checkbox14"></td>
+                                                                <td height="22">Windows</td>
+                                                            </tr>
+                                                            </tbody></table>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody><tr>
+                                                                    <td width="18"><input type="checkbox" name="checkbox15" id="checkbox15"></td>
+                                                                    <td height="22">Linux</td>
+                                                                </tr>
+                                                                </tbody></table>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody><tr>
+                                                                    <td width="18"><input type="checkbox" name="checkbox16" id="checkbox16"></td>
+                                                                    <td height="22">HP-ux</td>
+                                                                </tr>
+                                                                </tbody></table></td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox17" id="checkbox17"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-a-down"></a></td>
+                                                        <td width="269">AIX</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td colspan="2" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tbody><tr>
+                                                                <td width="18"><input type="checkbox" name="checkbox17" id="checkbox18"></td>
+                                                                <td height="22">Server-AIX1</td>
+                                                            </tr>
+                                                            </tbody></table>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody><tr>
+                                                                    <td width="18"><input type="checkbox" name="checkbox17" id="checkbox19"></td>
+                                                                    <td height="22">Server-AIX2</td>
+                                                                </tr>
+                                                                </tbody></table>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody><tr>
+                                                                    <td width="18"><input type="checkbox" name="checkbox17" id="checkbox20"></td>
+                                                                    <td height="22">Server-AIX3</td>
+                                                                </tr>
+                                                                </tbody></table></td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox18" id="checkbox21"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                                        <td width="269" height="22">网络</td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox19" id="checkbox22"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                                        <td width="269" height="22">应用</td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox20" id="checkbox23"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                                        <td width="269" height="22">基础服务</td>
+                                                    </tr>
+                                                    </tbody></table></td>
+                                        </tr>
+
+                                        </tbody></table>
+                                    </td>
+                                    <td width="6%" style="vertical-align:middle;">
+                                        <div class="tab-tree-arrow">
+                                            <a class="tree-arrow-right"></a>
+                                            <a class="tree-arrow-left"></a>
+                                        </div>
+                                    </td>
+                                    <td width="47%" class="tree-views">&nbsp;</td>
+                                </tr>
+                                </tbody></table>
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>取消<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="layout_left2" class="zy-shrink-left">
+    <div class="subnav-window" >
+        <ul  class="accordion-main">
+            <li class="accordion-list">
+                <a class="h-subnav "><span class="l-arrow l-arrow-down"></span><span>配置变更管理</span></a>  </li>
+            <ul class="according-content resourcetopmenu">
+                <li class="accordion-main">
+
+                    <ul class="according-content">
+
+                        <li class="accordion-main">
+                            <span class="arrowdown"></span>
+                            <span class="arrowadd" onclick="MM_showHideLayers('r-customadd','','show')"></span>
+                            <a class="h-secnav foxfrolist-top">
+                                <span class="l-arrow l-arrow-right foxfrolistico l-arrow-down"></span>
+                                <span class="">自定义配置组</span>
+                            </a>
+                            <ul class="according-content" style="display: block;margin-left: -10px;">
+                                <li>
+                                    <a class="h-third-nav" href="configuration-host.html" target="rightcontent">
+                                        <span class="l-arrow l-arrow-dot"></span><span>楼层设备管理组</span>
+                                        <span class="digit datainfo" style="opacity: 1; width: 37px;">0</span>
+                                        <span class="l-icon l-icon-edit updategetwin" style="display: none;"></span>
+                                        <span class="l-icon l-icon-delete deletegetwin" onclick="MM_showHideLayers('r-customedit','','show')" style="display: none;"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="h-third-nav" href="configuration-host.html" target="rightcontent">
+                                        <span class="l-arrow l-arrow-dot"></span><span>CRM业务组</span>
+                                        <span class="digit datainfo" style="opacity: 1; width: 37px;">0</span>
+                                        <span class="l-icon l-icon-edit updategetwin" style="display: none;"></span>
+                                        <span class="l-icon l-icon-delete deletegetwin" onclick="MM_showHideLayers('r-customedit','','show')" style="display: none;"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="h-third-nav" href="configuration-host.html" target="rightcontent">
+                                        <span class="l-arrow l-arrow-dot"></span><span>CRM业务组</span>
+                                        <span class="digit datainfo" style="opacity: 1; width: 37px;">0</span>
+                                        <span class="l-icon l-icon-edit updategetwin" style="display: none;"></span>
+                                        <span class="l-icon l-icon-delete deletegetwin" onclick="MM_showHideLayers('r-customedit','','show')" style="display: none;"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                  </ul>
+              </li>
+
+                <li>
+                    <a class="h-secnav foxfrolist-top" href="configuration-Device.html" target="rightcontent">
+                        <span class="l-arrow l-arrow-right foxfrolistico"></span>
+                        <span >设备一览</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="h-secnav foxfrolist-top" href="configuration-info.html" target="rightcontent">
+                    <span class="l-arrow l-arrow-right foxfrolistico"></span>
+                    <span >告警一览</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="h-secnav foxfrolist-top" href="configuration-backup.html" target="rightcontent">
+                    <span class="l-arrow l-arrow-right foxfrolistico"></span>
+                    <span >备份计划</span>
+                    </a>
+                </li>
+          </ul>
+        </ul>
+    </div>
+  </div>
+
+<div class="zy-shrink-right ">
+    <iframe src="configuration-host.html" width="100%" height="625" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" id="rightcontent" name="rightcontent"></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+
+<script type="text/javascript">
+
+    $("#topmenuul li").bind("click",function(){
+        $("#topmenuul li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

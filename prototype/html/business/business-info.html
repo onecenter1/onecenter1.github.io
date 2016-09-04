@@ -1,0 +1,875 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Onecenter4.0</title>
+    <link  href="../../css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css">
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+    <style type="text/css">
+
+
+
+    </style>
+
+
+
+
+    <script type="text/javascript">
+<!--
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+    </script>
+</head>
+<body>
+<div  class="w-pop" style="margin-top:30px; width:745px; position:absolute; z-index:899;left:400px; visibility:hidden; " id="yw-xd">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>业务初始向导</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico closebesinesswin" onclick="MM_showHideLayers('yw-xd','','hide')"></a>                </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class="pop-con">
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-pop">
+        <tr>
+            <td>
+             <div class="step"><a class="on one clickobjtarget" href="#tab1">新建业务服务</a><a class="two clickobjtarget"  href="#tab2">编辑业务视图</a><a class="three clickobjtarget"  href="#tab3">定义服务状态</a><a class="four clickobjtarget"  href="#tab4">定义服务告警规则</a><a class="five clickobjtarget"  href="#tab5">业务视图浏览</a></div>
+             <div class="resours-modeltop">
+             <div class="step-con resours-modelall" id="tab1">
+                <ul class="f-right " >
+                    <li><span style="display:inline-block; zoom:1; *display:inline; float:left; line-height:22px;">1、点击业务视图编辑页左侧导航栏上的</span><a class="ico ico-add locate-left margin-top5" ></a><span>创建一个业务服务如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-menu.png" /></li>
+                    <li><span>2、添加业务服务相关信息并保存，导航栏添加一条业务服务名称，并且在绘图工具中“已有业务”增加一个业务服务图标。如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-r.png" width="91" height="153" /></li>
+                </ul>
+                
+                </div>
+             <div  class="step-con resours-modelall" id="tab2"><ul class="f-right resours-modeltop " id="tab2">
+                    <li><span>1、从绘图工具栏拖拽“业务服务”、“业务单位”、“资源”、“自定义元素”图标到画布上，编辑业务服务的视图结构。如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-ht.png" width="84" height="479" /></li>
+                    <li><span>2、视图编辑完成后点击视图右上方按钮“保存”如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-bc.png" width="346" height="40" /></li>
+                </ul></div>
+                <div  class="step-con resours-modelall" id="tab3"><ul class="f-right resours-modeltop " id="tab3">
+                    <li><span>1、在业务视图编辑中，点击对应“业务服务”名称后小图标打开二级功能菜单，选择”状态定义“，弹出窗口打开状态定义页。如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-set.png" /></li>
+                    <li><span>2、在状态定义设置中选择使用系统默认规则，或者进行自定义规则设置。如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-dy.png" /></li>
+                </ul></div>
+                <div  class="step-con resours-modelall" id="tab4"><ul class="f-right resours-modeltop " id="tab2">
+                    <li><span>在业务视图编辑中，点击对应“业务服务”名称后小图标      打开二级功能菜单，选择”告警设置“，弹出窗口打开告警策略设置页。如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-gj.png" /></li>
+                   
+                </ul></div>
+                <div  class="step-con resours-modelall" id="tab5"><ul class="f-right resours-modeltop " id="tab2">
+                    <li><span>以上步骤完成后，可以通过切换视图模式浏览业务视图。如图：</span></li>
+                    <li><img src="../../images/comm/table/ex-ll.png" /></li>
+                </ul></div>
+                </div>
+            </td>
+            </tr>
+    </table>
+
+</div>
+<div class="pop-bottom-btn" style="display:none;">
+    <a class="btn-body" onclick="MM_showHideLayers('yw-xd','','hide')">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body" onclick="MM_showHideLayers('yw-xd','','hide')" style="display:none;">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closebesinesswin">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+<div  class="w-pop min-908" style="position:absolute; z-index:899;left:250px; margin-top:10px; visibility:hidden;" id="waning-set">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>告警策略设置</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico" onclick="MM_showHideLayers('waning-set','','hide')"></a>                </div>
+      </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+  <div class="tab-con">
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-pop" id="jiankongpage2">
+    <tbody><tr>
+        <td class="tab-l-tittle">规则名称</td>
+        <td><label>
+            <input type="text" class="text-box  min-280" id="textfield" name="textfield">
+        </label><span class="signal">*</span></td>
+    </tr>
+    <tr>
+      <td class="tab-l-tittle">备注</td>
+      <td><textarea class="min-280" rows="3" cols="45" id="textarea2" name="textarea2"></textarea></td>
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">报警方式</td>
+
+        <td><label>
+          <input type="checkbox" id="checkbox16" name="checkbox17">
+        短信 
+        <input type="checkbox" id="checkbox32" name="checkbox18">
+邮件</label></td>
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">接收人员</td>
+        <td valign="middle"><textarea rows="5" cols="45" id="textarea3" name="textarea3"></textarea><a onclick="MM_showHideLayers('user-choose','','show')" class="r-h-ico r-h-add"></a><a class="r-h-ico r-h-delete"></a>            </td>
+    </tr>
+    <tr>
+        <td valign="middle" class="tab-l-tittle">告警规则</td>
+        <td>
+            <ul class="tab-tdul">
+                <li><input type="checkbox" value="" name="">
+                业务不可用时报警（级别：致命）</li>
+                <li><input type="checkbox" value="" name="">
+                业务的指标超过红色阈值时报警（级别：严重）</li>
+                <li><input type="checkbox" value="" name="">
+                  业务的指标超过黄色阈值时报警（级别：警告）</li>
+                <li><input type="checkbox" value="" name="">
+                  业务的指标未知时报警（级别：未知）</li>
+                <li><input type="checkbox" value="" name="">
+                  业务的可用性或性能恢复正常时报警（信息）</li>
+            </ul>        </td>
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">发送条件</td>
+        <td>
+            <ul class="tab-tdul">
+              <li>
+<label>
+<input type="radio" value="radio2" id="radio2" name="radio2">
+</label>                
+立即发送告警</li>
+              <li>
+
+                <input type="radio" value="radio2" id="radio3" name="radio2">
+                同一条告警间隔
+                <input type="text" value="1" id="textfield3" class="text-box min-50" name="textfield3">
+                <div class="select-body">
+                  <div class="select-l">
+                    <div class="select-r">
+                      <div class="select-m"> <span class="select_txt min-50">分钟</span>
+                          <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option min-60" style="display: none;"> <a>小时</a> </div>
+                </div>
+              连续发送，直到告警被确认</li>
+              <li>
+                <input type="radio" value="radio2" id="radio4" name="radio2">
+                <input type="text" value="1" id="textfield4" class="text-box min-50" name="textfield4">
+                <div class="select-body">
+                  <div class="select-l">
+                    <div class="select-r">
+                      <div class="select-m"> <span class="select_txt min-50">分钟</span>
+                          <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="option min-60" style="display: none;"> <a>小时</a> </div>
+                </div>
+                内产生的同一告警只发送一次              </li>
+            </ul>
+            </td>
+    </tr>
+</tbody></table>
+
+
+
+</div>
+<div class="pop-bottom-btn">
+    <a class="btn-body" onclick="MM_showHideLayers('waning-set','','hide')">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closewinresource">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body" onclick="MM_showHideLayers('waning-set','','hide')">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closewinresource">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+<div  class="w-pop min-908" style="position:absolute; z-index:899;left:200px; margin-top:10px; visibility:hidden; " id="zt-dy">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>状态定义</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico" onclick="MM_showHideLayers('zt-dy','','hide')"></a>                </div>
+      </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class="tab-con">
+<div class=" accordion-main" style="background:#272a37;">
+    <div class="tablemaintop Spinnerswitch accordion-list">
+                             <span class="tablelefttopico"></span>
+                             <span class="textcolor-limegreen"> <input type="radio" name="radio" id="radio" value="radio" />
+                             系统默认规则</span>
+                             <span class="Spinnerdown"></span>                         </div>
+    <div style="display: none;" class="h-nobg f-right according-content">
+   <div class="taomainobjto">
+                                   <span class="texttishi"></span>
+                                   <span style="color: #b48737;position: relative;left: 3%;top: 2px;">注：判断优先级为致命->严重->警告->未知->正常</span>
+
+                               </div>
+   <div class="tablemainbg cell_inner"><span class="redlight margin-top5">致命</span></div>
+   <div class="cell_inner"><a class="h-ms">任意一个关联业务服务状态为</a> <span class="redlight margin-top5"></span><a class="h-ms">或者任意一个关联资源状态为</a> <span class="redlight margin-top5"></span></div>
+   <div class="tablemainbg cell_inner"><span class=" orangelight margin-top5">严重</span></div>
+   <div class="cell_inner"><a class="h-ms">任意一个关联业务服务状态为</a> <span class="orangelight margin-top5"></span><a class="h-ms">或者任意一个关联资源状态为</a><span class="orangelight margin-top5"></span></div>
+   <div class="tablemainbg cell_inner"><span class="yellowlight margin-top5">告警</span></div>
+   <div class="cell_inner"><a class="h-ms">任意一个关联业务服务状态为</a> <span class="yellowlight margin-top5"></span><a class="h-ms">或者任意一个关联资源状态为</a><span class="yellowlight margin-top5"></span></div>
+   <div class="tablemainbg cell_inner"><span class="greenlight margin-top5">正常</span></div>
+   <div class=" cell_inner"><a class="h-ms">所有关联业务服务和资源状态为</a> <span class="greenlight margin-top5"></span></div>
+   <div class="tablemainbg cell_inner"><span class="graylight margin-top5">未知</span></div>
+   <div class="cell_inner"><a class="h-ms">所有关联业务服务和资源状态为</a> <span class="graylight margin-top5"></span></div>
+   </div>
+  <div class="tablemaintop Spinnerswitch accordion-list">
+                             <span class="tablelefttopico"></span>
+                             <span class="textcolor-limegreen"> <input type="radio" name="radio" id="radio" value="radio" />自定义规则</span>
+                             <span class="Spinnerdown Spinnerup"></span>                         </div>
+  <div class="h-nobg f-right according-content" style="display: none;">
+   <div class="tablemainbg cell_inner"><span class="redlight margin-top5">致命</span><a class="ico ico-del locate-right margin-top8"></a> <a class="ico ico-add locate-right margin-top8"></a></div>
+   <div class="f-right">
+      <ul>
+        <li>请选择逻辑关系 <input name="a" type="radio" value="" />并  <input name="a" type="radio" value="" />或</li>
+        <li><span><input name="" type="checkbox" value="" /></span>
+        <div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-150">请选择资源类型</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-160">
+                                                     <a>请选择资源类型</a>
+                                                 </div>
+                        </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-50">状态</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-60">
+                                                     <a>状态</a>
+                                                 </div>
+                                             </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-180">不可用</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-210">
+                                                     <a>可用性能严重超标或组件不可用</a>
+                                                      <a>可用性未知</a>
+                                                       <a>可用但性能轻微超标</a>
+                                                        <a>可用但性能轻微超标</a>
+                                                         <a>可用但性未知或组件性能未知</a>
+                                                 </div>
+                                             </div></li>
+        <li><span><input name="" type="checkbox" value="" /></span>
+        <div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-150">主机</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-160">
+                                                     <a>主机</a>
+                                                 </div>
+                        </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-50">状态</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-60">
+                                                     <a>状态</a><a>组件</a><a>指标</a>
+                                                 </div>
+                                             </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-180">分区</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-210">
+                                                     <a>分区</a>
+                                                      <a>网络接口</a>
+                                               </div>
+                                             </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-50">C</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-60">
+                                                     <a>C</a><a>D</a><a>E</a><a>F</a>
+                                                 </div>
+                                             </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-50">状态</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-60">
+                                                     <a>状态</a><a>组件</a><a>指标</a>
+                                                 </div>
+                                             </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-180">不可用</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-210">
+                                                     <a>可用性能严重超标或组件不可用</a>
+                                                      <a>可用性未知</a>
+                                                       <a>可用但性能轻微超标</a>
+                                                        <a>可用但性能轻微超标</a>
+                                                         <a>可用但性未知或组件性能未知</a>
+                                                 </div>
+                      </div></li>
+      </ul>
+   </div>
+   <div class="tablemainbg cell_inner"><span class="orangelight margin-top5">严重</span><a class="ico ico-del locate-right margin-top8"></a> <a class="ico ico-add locate-right margin-top8"></a></div>
+   <div class="f-right">
+      <ul>
+        <li>请选择逻辑关系 <input name="a" type="radio" value="" />并  <input name="a" type="radio" value="" />或</li>
+        <li><span><input name="" type="checkbox" value="" /></span>
+        <div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-150">请选择资源类型</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-160">
+                                                     <a>请选择资源类型</a>
+                                                 </div>
+                        </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-50">状态</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-60">
+                                                     <a>状态</a>
+                                                 </div>
+                                             </div><div class="select-body">
+                                                 <div class="select-l"><div class="select-r"><div class="select-m">
+                                                     <span class="select_txt min-180">不可用</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                 </div></div></div>
+
+                                                 <div style="display: none;" class="option min-210">
+                                                     <a>可用性能严重超标或组件不可用</a>
+                                                      <a>可用性未知</a>
+                                                       <a>可用但性能轻微超标</a>
+                                                        <a>可用但性能轻微超标</a>
+                                                         <a>可用但性未知或组件性能未知</a>
+                                                 </div>
+                                             </div></li>
+      </ul>
+   </div>
+   <div class="tablemainbg cell_inner"><span class="yellowlight margin-top5">告警</span><a class="ico ico-del locate-right margin-top8"></a> <a class="ico ico-add locate-right margin-top8"></a></div>
+   <div class="f-right">
+      <ul>
+        <li>请选择逻辑关系 <input name="a" type="radio" value="" />并  <input name="a" type="radio" value="" />或</li>
+        </ul>
+   </div>
+   <div class="tablemainbg cell_inner"><span class="greenlight margin-top5">正常</span></div>
+   <div class="f-right">
+      <ul>
+        <li class="cell_inner">所有关联业务服务和资源状态为<span class="greenlight" style="position:relative; top:8px;"></span></li>
+        </ul>
+   </div>
+   <div class="tablemainbg cell_inner"><span class="graylight margin-top5">未知</span></a></div>
+   <div class="f-right">
+      <ul>
+        <li class="cell_inner">所有关联业务服务和资源状态为<span class="graylight" style="position:relative; top:8px;"></span></li>
+        </ul>
+   </div>
+   
+   
+  </div>
+                     </div>
+ </div>
+
+<div class="pop-bottom-btn">
+    <a class="btn-body" onclick="MM_showHideLayers('zt-dy','','hide')">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body" onclick="MM_showHideLayers('zt-dy','','hide')">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closebesinesswin">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+<div  class="w-pop businessaddwin" style="margin-top:50px; width:500px; position:absolute; z-index:899;left:400px;display: none;">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>新建业务</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico closebesinesswin"></a>                </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class="pop-con">
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-pop">
+        <tr>
+            <td width="132" class="tab-l-tittle">业务名称</td>
+            <td colspan="2"><input type="text" class="text-box"></td>
+        </tr>
+        <tr>
+            <td class="tab-l-tittle">图标</td>
+            <td width="190" height="80"><span>
+                  <input type="text" class="text-box" name=""><a class="browse"></a></span></td>
+            <td width="168"><div class="p-mainpic">暂无图标</div></td>
+        </tr>
+        <tr>
+          <td class="tab-l-tittle">备注</td>
+          <td colspan="2"><textarea name="textarea" cols="5" rows="3">
+
+                </textarea></td>
+        </tr>
+    </table>
+
+</div>
+<div class="pop-bottom-btn">
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closebesinesswin">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+<div id="edit-yw"  class="w-pop " style="margin-top:50px; width:500px; position:absolute; z-index:899;left:400px; visibility:hidden; ">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>编辑业务服务</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico" onclick="MM_showHideLayers('edit-yw','','hide')"></a>                </div>
+      </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class="pop-con">
+
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-pop">
+        <tr>
+            <td width="132" class="tab-l-tittle">业务名称</td>
+            <td colspan="2"><input type="text" class="text-box" value="ERP系统"></td>
+        </tr>
+        <tr>
+            <td class="tab-l-tittle">图标</td>
+            <td width="190" height="80"><span>
+                  <input type="text" class="text-box" value="系统默认图标">
+                  <a class="browse"></a></span></td>
+            <td width="168"><div class="p-mainpic" style="vertical-align:middle"><img src="../../images/ex/erp.png" width="88" height="77" /></div></td>
+        </tr>
+        <tr>
+          <td class="tab-l-tittle">备注</td>
+          <td colspan="2"><textarea name="textarea" cols="5" rows="3">ERP系统
+
+                </textarea></td>
+        </tr>
+    </table>
+
+</div>
+<div class="pop-bottom-btn">
+    <a class="btn-body" onclick="MM_showHideLayers('edit-yw','','hide')">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body" onclick="MM_showHideLayers('edit-yw','','hide')">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m closebesinesswin">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+<div class="sh-window" style=" visibility:hidden;" id="l-show">
+<div class="t-window">
+    <div class="b-window">
+        <div class="m-window">
+          <span onclick="MM_showHideLayers('l-show','','hide','edit-yw','','show')"><a class="ico ico-edit"></a>编辑业务服务</span>
+          <span onclick="MM_showHideLayers('zt-dy','','show','l-show','','hide')"><a class="ico ico-mark"></a>状态定义</span>
+          <span onclick="MM_showHideLayers('waning-set','','show','l-show','','hide')"><a class="ico ico-preset"></a>告警设置</span>        </div>
+    </div>
+</div>
+</div>
+<div id="layout_left" class="zy-shrink-left">
+    <div class="subnav-window">
+        <span class=" ico ico-help locate-right margin-top8" title="业务向导" onclick="MM_showHideLayers('yw-xd','','show')"></span>
+        <span class=" ico ico-del locate-right margin-top8"></span>
+        <span class="ico ico-add locate-right margin-top8 openbesinesswin" title="新建业务"></span>
+        <ul class="accordion-main">
+            <li class="">
+                <a class="h-subnav "><span class="l-arrow l-arrow-down"></span><span>业务服务</span></a>
+            </li>
+            <ul class="according-content resourcetopmenu">
+                <li class="accordion-main on"><a class="h-secnav foxfrolist-top"   ><span class=" light-ico redlight">1、ERP系统</span> <span class="ico ico-rightarrow locate-right" onclick="MM_showHideLayers('l-show','','show')"></span></a></li>
+              <li> <a class="h-secnav foxfrolist-top"><span class="light-ico greenlight">2、采购系统</span><span class="ico ico-rightarrow locate-right"></span></a></li>
+                <li> <a class="h-secnav foxfrolist-top"><span class="light-ico greenlight">3、考勤系统</span><span class="ico ico-rightarrow locate-right"></span></a></li>
+                <li> <a class="h-secnav foxfrolist-top"><span class="light-ico redlight">4、审批系统</span><span class="ico ico-rightarrow locate-right"></span></a></li>
+                <li> <a class="h-secnav foxfrolist-top"><span class="light-ico orangelight">5、报销系统</span><span class="ico ico-rightarrow locate-right"></span></a></li>
+                 <li> <a class="h-secnav foxfrolist-top"><span class="light-ico yellowlight">6、CRM系统</span><span class="ico ico-rightarrow locate-right"></span></a></li>
+                  <li> <a class="h-secnav foxfrolist-top"><span class="light-ico greenlight">7、财务系统</span><span class="ico ico-rightarrow locate-right"></span></a></li>
+            </ul>
+      </ul>
+    </div>
+</div>
+
+
+
+    <div class="module moduleleft" style="width: 79%;height: 100%;">
+    <div class="w-full-top-l">
+        <div class="w-full-top-r">
+            <div class="w-full-top-m">
+            <div class="slide">
+            <a href="business-haveinfo.html" class="s-browse"><span class="ico ico-found"></span>浏览</a>
+             <a class="s-edit on"><span class="ico ico-edit"></span>编辑</a>            </div>
+            <a class="r-h-ico r-h-ok" style="top:-6px; position:relative;" title="保存"></a></div>
+        </div>
+    </div>
+    <div class="w-full-middle">
+    <div class="w-full-content">
+    <div id="content">
+      <div style="width: 100%; text-align:center; height:530px; overflow:auto;" align="center" class="subnav-window"> <img src="../../images/ex/ywst.png"/> </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    
+  <div class="ce-shrink-right">
+     <div class="sh-top"><a class="left"></a><span class="font">绘图工具</span></div>
+     <div class="sh-conbg">
+     <div class="h-sh"><a class="h-business clickobjtarget" href=".tab1">已有业务</a><span class="ico ico-leftarrow"></span></div>
+     <div class="h-sh"><a class="h-resource clickobjtarget" href=".tab2">资源</a><span class="ico ico-leftarrow"></span></div>
+     <div class="h-sh"><a class="h-unit clickobjtarget" href=".tab3">业务单位</a><span class="ico ico-leftarrow"></span></div>
+     <div class="h-sh"><a class="h-user-defined clickobjtarget" href=".tab4">自定义元素</a><span class="ico ico-leftarrow"></span></div>
+
+     </div>
+</div>
+
+        <div class=" sh-show min-180 resours-modelall tab1" style="margin-top:37px; ">
+        <div class="m-show">
+        <div class="m-showcon">
+                <a class="sys-erp"><span>ERP系统</span></a>
+                 <a class="sys-procurement"><span>采购系统</span></a>
+                  <a class="sys-attendance"><span>考勤系统</span></a>
+                   <a class="sys-audit"><span>审计系统</span></a>
+                    <a class="sys-refund"><span>报销系统</span></a>
+                     <a class="sys-monitoring"><span>监控系统</span></a>
+                      <a class="sys-crm"><span>CRM系统</span></a>
+                       <a class="sys-finance"><span>财务系统</span></a>
+                        <a class="sys-custom"><span>自定义图标</span></a>
+                        </div>
+             
+            </div>
+        </div>
+        
+        <div class="sh-show min-210 resours-modelall tab2" style="margin-top:37px; ">
+        <div class="m-zyshow">
+        <div class="m-showcon">
+        <div class="h-type">
+        <div class="select-body">
+                        <div class="select-l">
+                          <div class="select-r">
+                            <div class="select-m"> <span class="select_txt min-150">Windows</span>
+                                <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="option min-180"> <a>Solaris</a> <a>AIX</a> <a>Linux</a> <a>SCO</a><a>FreeBSD</a><a>HP-UX</a><a>其它主机</a> </div>
+                      </div>
+        </div>
+        <div class="h-type">
+        <div class="select-body position " style="top:2px;">
+                          <div class="select-l">
+                            <div class="select-r">
+                              <div class="select-m"> <span class="select_txt minb-20">主机</span>
+                                  <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="display: none;" class="option min-50"> <a>主机</a><a>网络</a> <a>应用</a> <a>存储</a> </div>
+                </div> <input name="textfield" type="text" class="main-input min-80" style="margin-left:-3px;" id="textfield" value="请输入IP地址">
+                <a title="查询" style="top:9px; right:5px; position:relative;" class="r-h-ico r-h-ok"></a>
+        </div>
+        <div class="tree margin-top8">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-shrinkage position" style="top:5px; right:-14px;"></span></td>
+            <td width="83%" height="28"> windows服务器(23)</td>
+          </tr>
+          <tr>
+            <td height="28">&nbsp;</td>
+            <td height="28"><table width="95%" border="0" align="right" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="91%" height="20">SeverA</td>
+              </tr>
+              <tr>
+                <td height="20">SeverB</td>
+              </tr>
+              <tr>
+                <td height="20">SeverC</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table>
+        
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-unfold position" style="top:1px; right:-14px;"></span></td>
+            <td width="83%" height="28">Linux服务器（11）</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-unfold position" style="top:1px; right:-14px;"></span></td>
+            <td width="83%" height="28">AIX服务器（15）</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-unfold position" style="top:1px; right:-14px;"></span></td>
+            <td width="83%" height="28">Solaris服务器（9）</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-unfold position" style="top:1px; right:-14px;"></span></td>
+            <td width="83%" height="28">CO Unix服务器（5）</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-unfold position" style="top:1px; right:-14px;"></span></td>
+            <td width="83%" height="28">HP-UX服务器（7）</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-unfold position" style="top:1px; right:-14px;"></span></td>
+            <td width="83%" height="28">HP-OpenVMS服务器（8）</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="17%" height="28"><span class="ico ico-unfold position" style="top:1px; right:-14px;"></span></td>
+            <td width="83%" height="28">AS400服务器（5）</td>
+          </tr>
+        </table>
+        </div>
+        </div>
+             
+            </div>
+        </div>
+        
+        <div class="sh-show min-180 resours-modelall tab3" style="margin-top:37px; display:none; ">
+        <div class="m-show">
+        <div class="m-showcon">
+                <a class="oper-unit"><span></span></a>
+                 <a class="oper-add"><span></span></a>
+                        </div>
+             
+            </div>
+        </div>
+        
+        <div class="sh-show min-180 resours-modelall tab4" style="margin-top:37px; display:none; " >
+        <div class="m-zyshow">
+        <div class="m-showcon accordion-main">
+               <span class="sh-btn on accordion-list">基本形状</span>
+               <div class="ht-con accordion-content">
+                <span class="shape shape-square"></span>
+                <span class="shape shape-moresquare"></span>
+                <span class="shape shape-and"></span>
+                <span class="shape shape-moreside"></span>
+                <span class="shape shape-circle"></span>
+                <span class="shape shape-semicircle"></span>
+                <span class="shape shape-triangle"></span>
+                <span class="shape shape-brokeline"></span>
+                
+                
+               </div>
+               <span class="sh-btn accordion-list">流程</span>
+               <div class="ht-con accordion-content" style="display:none;">
+                 <span class="shape shape-jc"></span>
+                <span class="shape shape-ydy"></span>
+                <span class="shape shape-start"></span>
+                <span class="shape shape-end"></span>
+               </div>
+               <span class="sh-btn accordion-list">区域与节点</span>
+               <div class="ht-con accordion-content" style="display:none;">
+                <div class="margin-top5"><img src="../../images/comm/icon/house.png" /></div>
+               </div>
+               <span class="sh-btn accordion-list">地图</span>
+               <div class="ht-con accordion-content" style="display:none;">
+               <div class="select-body">
+                        <div class="select-l">
+                          <div class="select-r">
+                            <div class="select-m"> <span class="select_txt min-120">中国地图</span>
+                                <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="option min-150" style="display: none;"> <a>中国地图</a><a>世界地图</a> </div>
+                      </div>
+               </div>
+               <span class="sh-btn accordion-list">背景</span>
+               <div class="ht-con accordion-content" style="display:none;">
+               <div class="margin-top5"><img src="../../images/comm/icon/bj.png" /></div
+               </div>
+                        </div>
+             
+            </div>
+        </div>
+
+
+
+
+
+
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+
+</body>
+</html>

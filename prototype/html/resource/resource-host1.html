@@ -1,0 +1,1149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+<script type="text/javascript" src="../../js/demo.js"></script>
+
+</head>
+<body>
+<div id="r-move" class="pop" style=" position:absolute;left: 40%;top:15%; z-index:999; visibility:hidden; ">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+          <div class="pop-top-m">
+            <div class="pop-close-r">
+              <a class="pop-close-ico" onclick="MM_showHideLayers('r-move','','hide')"></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+      <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    
+                    <div class="pop-content">
+                      <div class="tab-con">
+                        <ul class="answer">
+                          <li>
+                                    <div class="question-body">
+                                        <div class="q-l">
+                                            <div class="q-r">
+                                                <div class="q-m">
+                                                  <span>您确定要移除该资源吗？</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                          </li>
+                            </ul>
+                        </div>
+                        <div class="pop-bottom-btn">
+                          <a class="btn-body" onclick="MM_showHideLayers('r-move','','hide')">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m yes">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                          </a>
+                          <a class="btn-body" onclick="MM_showHideLayers('r-move','','hide')">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m windowhide2_no">
+                                            <span class=""></span>取消<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                          </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="pop-bottom-l">
+      <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+        </div>
+    </div>
+</div>
+<div class="h-btn">
+<a class="btn-body locate-right" onclick="MM_showHideLayers('r-move','','show')">
+<div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class="ico ico-move"></span>
+                <span>移出资源组</span>
+                
+                <span class="pull"></span>
+            </div>
+        </div>
+  </div>
+</a>
+<a class="btn-body locate-right">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class="ico ico-found"></span>
+                <span>资源发现</span>
+                
+                <span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+
+
+
+</div>
+<div class="bodywindows">
+</div>
+<div class="common">
+  <div class="tab-header margin-top0">
+    <div class="tab-header-l">
+      <div class="tab-header-r">
+        <div class="tab-header-m">
+          <div class="theadpart" style="width:100%;">
+            <table>
+              <thead>
+                <tr>
+                  <th width="3%" class="tcenter"><span class="icon icon_uncheck">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                  </span></th>
+                  <th width="21%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank"></a> <span>资源名称</span> </th>
+                  <th width="12%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                  <th width="15%"><a class="rank-up"></a><a class="rank-pull"></a><span>监控类型</span></th>
+                  <th width="19%"><a class="rank-up"></a><span>CPU利用率</span></th>
+                  <th width="18%"><a class="rank-up"></a><span>内存利用率</span></th>
+                  <th width="8%" class="tcenter last"><span>响应时间</span></th>
+                  <th width="5%" class="tcenter last"><span>监控设置</span></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tbodypart">
+    <table>
+      <tbody>
+        <tr>
+          <td width="3%" class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox2" id="checkbox2" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class=" redlight">ITM-Server</span></td>
+          <td width="12%">192.168.0.100</td>
+          <td width="15%">Linux主机(SNMP)</td>
+          <td width="19%"><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%" >2ms</td>
+          <td width="5%" class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox3" id="checkbox3" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="greenlight">Cisco_6509-P</span> </td>
+          <td>192.168.0.100</td>
+          <td>Linux主机(SSH/Telnet)</td>
+          <td><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%" >2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox4" id="checkbox4" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class=" orangelight">PM-ZB_Switch_6509_1</span> </td>
+          <td>192.168.0.100</td>
+          <td>锐捷交换机</td>
+          <td width="19%" class=""><div class="rate rate-t-yellow"><span class="rate-yellow" style="width:70%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td class=""><div class="rate rate-t-green"><span class="rate-green" style="width:60%"></span></div>
+              <span class="rt">60%</span> </td>
+          <td width="6%" class="" >2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox5" id="checkbox5" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="orangelight">Kidcar Server3721_S2...</span> </td>
+          <td>192.168.0.100</td>
+          <td>Ping</td>
+          <td><div class="rate rate-t-yellow"><span class="rate-yellow" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%"><div class="rate rate-t-yellow"><span class="rate-yellow" style="width:75%"></span></div>
+              <span class="gt">75.00%</span> </td>
+          <td width="6%" >2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox6" id="checkbox6" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="redlight">ITM-Server</span> </td>
+          <td>192.168.0.100</td>
+          <td>URl</td>
+          <td width="19%" class=""><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%" class=""><div class="rate rate-t-green"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%" class="">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox7" id="checkbox7" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="redlight">CRM-1-ServerP1</span> </td>
+          <td>192.168.0.100</td>
+          <td>MYSQL</td>
+          <td><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox8" id="checkbox8" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="redlight">PM-ZB_Switch_6509_1</span> </td>
+          <td>192.168.0.100</td>
+          <td>URl</td>
+          <td width="19%" class=""><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%" class=""><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%" class="" >2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox9" id="checkbox9" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="orangelight">Kidcar Server3721_S2...</span> </td>
+          <td>192.168.0.100</td>
+          <td>MYSQL</td>
+          <td><div class="rate rate-t-yellow"><span class="rate-yellow" style="width:90%"></span></div>
+              <span class="rt">70.99%</span> </td>
+          <td width="18%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox10" id="checkbox10" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="greenlight">Cisco_6509-P</span> </td>
+          <td>192.168.0.100</td>
+          <td>URl</td>
+          <td width="19%" class=""><div class="rate rate-t-green"><span class="rate-green" style="width:20%"></span></div>
+              <span class="rt">20.99%</span> </td>
+          <td width="18%" class=""><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%" class="" >2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox11" id="checkbox11" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="redlight">Cisco_6509-P</span> </td>
+          <td>192.168.0.100</td>
+          <td>MYSQL</td>
+          <td><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="6%">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox12" id="checkbox12" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="redlight">Cisco_6509-P</span> </td>
+          <td>192.168.0.100</td>
+          <td>URl</td>
+          <td width="19%" class=""><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%" class=""><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%" class="">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox13" id="checkbox13" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="redlight">Cisco_6509-P</span> </td>
+          <td>192.168.0.100</td>
+          <td>MYSQL</td>
+          <td><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="6%">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox14" id="checkbox14" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="redlight">Cisco_6509-P</span> </td>
+          <td>192.168.0.100</td>
+          <td>URl</td>
+          <td width="19%" class=""><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+              <span class="rt">90.99%</span> </td>
+          <td width="18%" class=""><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%" class="">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox15" id="checkbox15" />
+          </span></td>
+          <td width="21%" class="cell_inner"><span class="greenlight">Cisco_6509-P</span> </td>
+          <td>192.168.0.100</td>
+          <td>MYSQL</td>
+          <td><div class="rate rate-t-green"><span class="rate-green" style="width:30%"></span></div>
+              <span class="rt">30.99%</span> </td>
+          <td width="18%"><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+              <span class="gt">45.00%</span> </td>
+          <td width="6%">2ms</td>
+          <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+        <tr>
+            <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox14" id="checkbox14" />
+          </span></td>
+            <td class="cell_inner"><span class="redlight">Cisco_6509-P</span> </td>
+            <td>192.168.0.100</td>
+            <td>URl</td>
+            <td width="19%"><div class="rate rate-t-red"><span class="rate-red" style="width:90%"></span></div>
+                <span class="rt">90.99%</span> </td>
+            <td><div class="rate rate-t"><span class="rate-green" style="width:45%"></span></div>
+                <span class="gt">45.00%</span> </td>
+          <td>2ms</td>
+            <td class="cell_inner"><span class="list-set resourcegetwin"></span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="font-page">
+      <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+          <div class="amount">第
+              <input type="text" class="page-number" name="input" />
+            页</div>
+        <a class="next">下一页</a> <a class="end">末页</a> </div>
+    </div>
+  </div>
+</div>
+
+<!--点击修该按钮出现的弹出层-------------------------------------------------------------->
+
+<div id="resourceupdatewin"  class="pop" style="position: fixed;left: 10%;top: 1%;; width:908px;">
+
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+
+            <span></span>
+
+            <div class="pop-close-r">
+                <a class="pop-help-ico"></a>
+                <a class="pop-set-ico"></a>
+                <a id="closewindow" class="pop-close-ico"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+
+<div class="pop-tittle">
+    <div class="pop-tittle-l"><div class="pop-tittle-m">资源名称</div>
+    </div>
+    <div class="pop-tittle-r">
+        <div class="pop-tittle-content locate-left"> ZB_Switch_8279_192.168.03.01</div>
+    </div>
+
+
+</div>
+<div class="pop-content">
+<div class="tab-btn">
+
+    <a class="tab-body button1 on">
+        <div class="tab-l left">
+            <div class="tab-r">
+                <div   id="pagewindow1btn" class="tab-m">
+                    <span >监控设置</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="tab-body button2">
+        <div class="tab-l left1">
+            <div class="tab-r right2">
+                <div   id="pagewindow2btn" class="tab-m">
+                    <span >报警设置</span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="tab-con">
+
+<table id="jiankongpage2"  width="100%"  border="0" cellspacing="0" cellpadding="0" class="table-pop">
+    <tr>
+        <td class="tab-l-tittle">规则名称</td>
+        <td><label>
+            <input type="text" name="textfield" id="textfield" class="text-box" />
+        </label><span class="signal">*</span></td>
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">报警方式</td>
+
+        <td>
+            <a id="buttoninfo" class="check-buttoninfo ">短信告警 </a>
+            <a id="buttoninfo1" class="check-buttoninfo1 ">短信告警</a>
+        </td>
+
+    </tr>
+    <tr>
+        <td class="tab-l-tittle">接收人员</td>
+        <td valign="middle" class="tdlisttable">
+            <a class="tab-arrow-ico tab-arrow-l resurceleftpage"></a>
+                                        <span  class="tab-con-m windowcontentpage1">
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉</a>
+                    </span>
+
+                                         <span  class="tab-con-m windowcontentpage2">
+                                            <a class="check-btn">史嘉莉2</a>
+                                            <a class="check-btn">史嘉莉2</a>
+                                            <a class="check-btn">史嘉莉2</a>
+                                            <a class="check-btn">史嘉莉2</a>
+                                            <a class="check-btn">史嘉莉2</a>
+                                            <a class="check-btn">史嘉莉2</a>
+                                            <a class="check-btn">史嘉莉</a>
+                                            <a class="check-btn">史嘉莉2</a>
+                    </span>
+            <a class="tab-arrow-ico tab-arrow-r resurcerightpage"></a> </td>
+    </tr>
+    <tr>
+        <td valign="middle" class="tab-l-tittle">告警级别</td>
+        <td>
+            <ul class="tab-tdul">
+                <li><input name="" type="checkbox" value="" />资源不可用时报警（级别：严重）</li>
+                <li><input name="" type="checkbox" value="" />资源的指标超过黄色阈值时报警（级别：警告）资源的指标超过红色阈值时报警（级别：主要）</li>
+                <li><input name="" type="checkbox" value="" />资源的指标超过红色阈值时报警（级别：主要）</li>
+            </ul>
+        </td>
+    </tr>
+    <tr style="height: 144px;">
+        <td class="tab-l-tittle">发送条件</td>
+        <td><div class="select-body">
+            <div class="select-l">
+                <div class="select-r">
+                    <div class="select-m"> <span class="select_txt">一分钟</span>
+                        <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"> <a>十分钟</a> <a>一小时</a> <a>一个月</a> </div>
+        </div></td>
+    </tr>
+</table>
+
+<!--点击报警设置的按钮==========================     -->
+
+
+<div class="pop-content"  id="baojingpage1">
+<div class="pop-con">
+<div class="h-nobg f-right-btn">
+
+
+<div class="twopage">
+
+<div class="h-nobg">
+
+    <div class="topmain">
+        <input type="radio" name="zhuziyuan" id="zhuziyuan" >&nbsp;<label for="zhuziyuan">主资源</label>
+        <input type="radio" checked name="zhuziyuan" id="ziziyuan">&nbsp;<label for="ziziyuan">子资源</label>
+    </div>
+
+    <div class="mainnavfrom" style="overflow: visible;">
+
+        <ul>
+            <li class="libg1">可用性</li>
+            <li class="libg2">CPU</li>
+            <li class="libg3">内存</li>
+            <li class="libg4">硬盘</li>
+            <li class="libg5">网络接口</li>
+            <li class="libg6">分区</li>
+
+        </ul>
+
+
+
+    </div>
+    <div class="getbutton">
+
+        <a class="btn-body" id="getjiekoubutton">
+            <div class="btn-l">
+                <div class="btn-r">
+                    <div class="btn-m">
+                        <span class="ico ico-excel"></span><span>获取接口状态</span><span class="pull"></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a class="btn-body">
+            <div class="btn-l">
+                <div class="btn-r">
+                    <div class="btn-m">
+                        <span class="ico ico-excel"></span><span>恢复为经验值</span><span class="pull"></span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<!--中间表格-->
+
+<div class="common">
+
+
+
+
+<!--点击li列表遍历选择层========================================-->
+
+<!--点击可用性     111111111111111111111111111111111-->
+
+<div class="window1">
+    <div class="theadpart">
+        <table>
+            <thead>
+            <tr>
+                <th width="1%" class="tcenter"><span class="icon icon_uncheck">  <input type="checkbox"></span></th>
+                <th width="8%">
+                    <a class="rank-down"></a>
+                    <a class="rank-pull" id="show_rank"></a>
+                    <span>监控</span>
+                </th>
+                <th width="1%"><a class="rank-up"></a><a class="rank-pull"></a><input type="checkbox"></th>
+                <th width="8%"><a class="rank-up"></a><a class="rank-pull"></a><span> 告警</span></th>
+                <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>指标</span></th>
+                <th width="20%"><a class="rank-up"></a><span>监控频度</span></th>
+                <th width="39%"><a class="rank-up"></a><span>阀值定义</span></th>
+                <th width="5%"><a class="rank-up"></a><span>抖动</span></th>
+                <th width="5%"><a class="rank-up"></a><span>重试次数</span></th>
+                <th width="10%"><a class="rank-up"></a><span>超时时间</span></th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="content-list tbodypart">
+        <table>
+            <tbody>
+            <tr>
+                <td width="1%" class="tcenter"><span class="icon icon_uncheck"> <input type="checkbox"> </span></td>
+                <td width="5%">     </td>
+                <td width="5%">
+                    <input type="checkbox">
+                </td>
+                <td width="10%"> </td>
+                <td width="10%">CPU利用率 </td>
+                <td width="20%">
+                    <div class="select_body">
+                        <div class="select_text">1分钟</div>
+                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                    </div>
+                    <!--<div class="select_boundtree"  style="display:block;">-->
+                    <!--<ul>-->
+                    <!--<li class="over"><a>十分钟</a></li>-->
+                    <!--<li><a>一小时</a></li>-->
+                    <!--<li><a>一个月</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                </td>
+                <td width="39%">
+                </td>
+                <td width="5%">3</td>
+                <td width="5%">1</td>
+                <td width="8%">10000ms</td>
+            </tr>
+            <tr  class="cbg">
+                <td width="1%" class="tcenter"><span class="icon icon_uncheck">  <input type="checkbox"></span></td>
+                <td width="5%">
+
+                </td>
+                <td width="5%">
+                    <input type="checkbox">
+                </td>
+                <td width="10%"> </td>
+                <td width="10%">CPU利用率 </td>
+                <td width="20%">
+                    <div class="select_body" >
+                        <div class="select_text">1分钟</div>
+                        <div  class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                    </div>
+                    <!--<div class="select_boundtree"  style="display:block;">-->
+                    <!--<ul>-->
+                    <!--<li class="over"><a>十分钟</a></li>-->
+                    <!--<li><a>一小时</a></li>-->
+                    <!--<li><a>一个月</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                </td>
+                <td width="39%">
+                </td>
+                <td width="5%">3</td>
+                <td width="5%">1</td>
+                <td width="8%">10000ms</td>
+            </tr>
+
+
+            <tr>
+                <td width="1%" class="tcenter"><span class="icon icon_uncheck"> <input type="checkbox"> </span></td>
+                <td width="5%">     </td>
+                <td width="5%">
+                    <input type="checkbox">
+                </td>
+                <td width="10%"> </td>
+                <td width="10%">CPU利用率 </td>
+                <td width="20%">
+                    <div class="select_body">
+                        <div class="select_text">1分钟</div>
+                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                    </div>
+                    <!--<div class="select_boundtree"  style="display:block;">-->
+                    <!--<ul>-->
+                    <!--<li class="over"><a>十分钟</a></li>-->
+                    <!--<li><a>一小时</a></li>-->
+                    <!--<li><a>一个月</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                </td>
+                <td width="39%">
+                </td>
+                <td width="5%">3</td>
+                <td width="5%">1</td>
+                <td width="8%">10000ms</td>
+            </tr>
+            <tr  class="cbg">
+                <td width="1%" class="tcenter"><span class="icon icon_uncheck">  <input type="checkbox"></span></td>
+                <td width="5%">
+
+                </td>
+                <td width="5%">
+                    <input type="checkbox">
+                </td>
+                <td width="10%"> </td>
+                <td width="10%">CPU利用率 </td>
+                <td width="20%">
+                    <div class="select_body" >
+                        <div class="select_text">1分钟</div>
+                        <div  class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                    </div>
+                    <!--<div class="select_boundtree"  style="display:block;">-->
+                    <!--<ul>-->
+                    <!--<li class="over"><a>十分钟</a></li>-->
+                    <!--<li><a>一小时</a></li>-->
+                    <!--<li><a>一个月</a></li>-->
+                    <!--</ul>-->
+                    <!--</div>-->
+                </td>
+                <td width="39%">
+                </td>
+                <td width="5%">3</td>
+                <td width="5%">1</td>
+                <td width="8%">10000ms</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+        <div class="font-page">
+            <div class="fontpage-btnbox">
+                <a class="first">首页</a>
+                <a class="last">上一页</a>
+                <div class="amount">第<input type="text" class="page-number" name="">页</div>
+                <a class="next">下一页</a>
+                <a class="end">末页</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--点击CPU      222222222222222222222222222222222222222-->
+
+<div class="windowpage window2">
+    CPU
+</div>
+<div class="windowpage window3">
+    内存
+</div>
+
+<div class="windowpage window4">
+    硬盘
+</div>
+
+
+<!--点击内存       33333333333333333333333333333333333333-->
+<!--点击硬盘     44444444444444444444444444444444444444-->
+
+<!--点击网络接口5555555555555555555555555555555555555555555555-->
+<div class="windowpage window5">
+<div id="mainBox" class="window5left">
+
+
+    <div id="content" class="contentslider">
+        <ul>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+            <li><span>X-Tfbug001/2</span><a></a></li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+<div class="window5right">
+
+<div class="theadpart">
+    <table>
+        <thead>
+        <tr>
+            <th width="1%" class="tcenter"><span class="icon icon_uncheck">  <input type="checkbox"></span></th>
+            <th width="10%">
+                <a class="rank-down"></a>
+                <a class="rank-pull"></a>
+                <span>监控</span>
+            </th>
+            <th width="1%"><a class="rank-up"></a><a class="rank-pull"></a><input type="checkbox"></th>
+            <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span> 告警</span></th>
+            <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>指标</span></th>
+            <th width="10%"><a class="rank-up"></a><span>监控频度</span></th>
+            <th width="35%"><a class="rank-up"></a><span>阀值定义</span></th>
+            <th width="5%"><a class="rank-up"></a><span>抖动</span></th>
+            <th width="5%"><a class="rank-up"></a><span>重试次数</span></th>
+            <th width="8%"><a class="rank-up"></a><span>超时时间</span></th>
+        </tr>
+        </thead>
+    </table>
+</div>
+<div class="content-list tbodypart">
+
+<table>
+<tbody>
+<tr>
+    <td width="1%" class="tcenter"><span class="icon icon_uncheck"> <input type="checkbox"> </span></td>
+    <td width="5%">     </td>
+    <td width="1%"> <input type="checkbox"> </td>
+    <td width="5%"> </td>
+    <td width="10%">CPU利用率 </td>
+    <td width="15%">
+        <div class="select_body" style="width: 70px;">
+            <div class="select_text">1分钟</div>
+            <div class="select_trigger_wrap" style="margin-top: -22px;"> <a class="select_trigger"></a></div>
+        </div>
+        <!--<div class="select_boundtree"  style="display:block;">-->
+        <!--<ul>-->
+        <!--<li class="over"><a>十分钟</a></li>-->
+        <!--<li><a>一小时</a></li>-->
+        <!--<li><a>一个月</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+    </td>
+    <td width="35%">
+        <div class="leftbutton">
+
+            <a class="btn-body">
+                <div class="btn-l">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+
+        <div id="h-slider" class=" ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+             aria-disabled="false" style="width:70%; ">
+            <!--<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 17%; width: 1%;"></div>-->
+            <a class="leftbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 17%;margin-left: 0.1px;"></a>
+            <a class="rightbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 67%;"></a>
+        </div>
+        <!--<div class="gundongtiao">-->
+        <!--<div class="leftbg">-->
+
+        <!--</div>-->
+        <!--<div class="contentbg"></div>-->
+        <!--<div class="rightbg"></div>-->
+        <!--</div>-->
+
+        <div class="rightbutton">
+            <a class="btn-body">
+                <div class="btn-w">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </td>
+    <td width="5%">3</td>
+    <td width="5%">1</td>
+    <td width="8%">10000ms</td>
+</tr>
+<tr  class="cbg">
+    <td width="1%" class="tcenter"><span class="icon icon_uncheck">  <input type="checkbox"></span></td>
+    <td width="5%"> </td>
+    <td width="1%"><input type="checkbox"> </td>
+    <td width="5%"> </td>
+    <td width="10%">CPU利用率 </td>
+    <td width="15%">
+        <div class="select_body" style="width: 70px;">
+            <div class="select_text">1分钟</div>
+            <div  class="select_trigger_wrap" style="margin-top: -22px;"> <a class="select_trigger"></a></div>
+        </div>
+        <!--<div class="select_boundtree"  style="display:block;">-->
+
+        <!--<ul>-->
+        <!--<li class="over"><a>十分钟</a></li>-->
+        <!--<li><a>一小时</a></li>-->
+        <!--<li><a>一个月</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+    </td>
+    <td width="35%">
+        <div class="leftbutton">
+            <a class="btn-body">
+                <div class="btn-w">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="h-slider" class=" ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+             aria-disabled="false" style="width:70%; ">
+            <!--<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 17%; width: 1%;"></div>-->
+            <a class="leftbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 17%;margin-left: 0.1px;"></a>
+            <a class="rightbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 67%;"></a>
+        </div>
+        <div class="rightbutton">
+            <a class="btn-body">
+                <div class="btn-w">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+    </td>
+    <td width="5%">3</td>
+    <td width="5%">1</td>
+    <td width="8%">10000ms</td>
+</tr>
+
+
+
+
+
+
+
+<tr>
+    <td width="1%" class="tcenter"><span class="icon icon_uncheck"> <input type="checkbox"> </span></td>
+    <td width="5%">     </td>
+    <td width="1%"> <input type="checkbox"> </td>
+    <td width="5%"> </td>
+    <td width="10%">CPU利用率 </td>
+    <td width="15%">
+        <div class="select_body" style="width: 70px;">
+            <div class="select_text">1分钟</div>
+            <div class="select_trigger_wrap" style="margin-top: -22px;"> <a class="select_trigger"></a></div>
+        </div>
+        <!--<div class="select_boundtree"  style="display:block;">-->
+        <!--<ul>-->
+        <!--<li class="over"><a>十分钟</a></li>-->
+        <!--<li><a>一小时</a></li>-->
+        <!--<li><a>一个月</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+    </td>
+    <td width="35%">
+        <div class="leftbutton">
+
+            <a class="btn-body">
+                <div class="btn-l">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!--<div class="layout">-->
+
+        <!--<div class="layout-slider">-->
+        <!--<span style="display: inline-block; width: 400px; padding: 0 5px;">-->
+        <!--<input id="Slider1" type="slider" name="price" value="30000.5;60000" />-->
+        <!--</span>-->
+        <!--</div>-->
+        <!--<script type="text/javascript" charset="utf-8">-->
+        <!--jQuery("#Slider1").slider({ from: 1000, to: 100000, step: 500, smooth: true, round: 0, dimension: "&nbsp;$", skin: "plastic" });-->
+        <!--</script>-->
+        <!--</div>-->
+
+        <div id="h-slider" class=" ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+             aria-disabled="false" style="width:70%; ">
+            <!--<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 17%; width: 1%;"></div>-->
+            <a class="leftbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 17%;margin-left: 0.1px;"></a>
+            <a class="rightbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 67%;"></a>
+        </div>
+
+        <div class="rightbutton">
+            <a class="btn-body">
+                <div class="btn-w">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </td>
+    <td width="5%">3</td>
+    <td width="5%">1</td>
+    <td width="8%">10000ms</td>
+</tr>
+<tr  class="cbg">
+    <td width="1%" class="tcenter"><span class="icon icon_uncheck">  <input type="checkbox"></span></td>
+    <td width="5%"> </td>
+    <td width="1%"><input type="checkbox"> </td>
+    <td width="5%"> </td>
+    <td width="10%">CPU利用率 </td>
+    <td width="15%">
+        <div class="select-body">
+            <div class="select-l">
+                <div class="select-r">
+                    <div class="select-m"> <span class="select_txt">全部</span>
+                        <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="option">
+                <a>全部</a>
+                <a>主机</a>
+                <a>网络设备</a>
+
+            </div>
+        </div>
+    </td>
+    <td width="35%">
+        <div class="leftbutton">
+            <a class="btn-body">
+                <div class="btn-w">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>20%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div id="h-slider" class=" ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+             aria-disabled="false" style="width:70%; ">
+            <!--<div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 17%; width: 1%;"></div>-->
+            <a class="leftbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 17%;margin-left: 0.1px;"></a>
+            <a class="rightbg ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 67%;"></a>
+        </div>
+        <div class="rightbutton">
+            <a class="btn-body">
+                <div class="btn-w">
+                    <div class="btn-r">
+                        <div class="btn-num">
+                            <span>80%</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </td>
+    <td width="5%">3</td>
+    <td width="5%">1</td>
+    <td width="8%">10000ms</td>
+</tr>
+
+
+
+
+
+
+</tbody>
+</table>
+<div class="font-page">
+    <div class="fontpage-btnbox">
+        <a class="first">首页</a>
+        <a class="last">上一页</a>
+        <div class="amount">第<input type="text" class="page-number" name="">页</div>
+        <a class="next">下一页</a>
+        <a class="end">末页</a>
+    </div>
+</div>
+</div>
+
+</div>
+
+</div>
+<!--点击分区           6666666666666666666666666666666666666666666-->
+<div class="windowpage window6">
+    分区
+</div>
+
+
+
+
+
+
+<!-- ---------------------------------------------------结束------------------------------------------------------------------------------------------>
+</div>
+</div>
+
+<!--点击主资源和子资源的时候弹出层-->
+
+<!--主资源   页面-->
+
+<div class="onepage">
+    主资源
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+<!--点击报警设置的按钮    -->
+
+
+</div>
+<div class="pop-bottom-btn">
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m resourceclosewindow">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m resourceclosewindow">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript">
+
+
+//    //下拉按钮的JS
+//    $(".select_box").ready(function(){
+//        $(".select_box").click(function(event){
+//            event.stopPropagation();
+//            $(this).find(".option").toggle();
+//            $(this).parent().siblings().find(".option").hide();
+//        });
+//        $(document).click(function(event){
+//            var eo=$(event.target);
+//            if($(".select_box").is(":visible") && eo.attr("class")!="option" && !eo.parent(".option").length)
+//                $('.option').hide();
+//        });
+//        /*赋值给文本框*/
+//        $(".option a").click(function(){
+//            var value=$(this).text();
+//            $(this).parent().siblings(".select_txt").text(value);
+//            $("#select_value").val(value);
+//        });
+//    });
+
+</script>
+
+
+</body>
+</html>

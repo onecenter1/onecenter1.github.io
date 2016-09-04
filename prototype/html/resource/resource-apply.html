@@ -1,0 +1,979 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<link rel="stylesheet" type="text/css" href="../../css/widget.css">
+<script type="text/javascript" src="../../js/demo.js"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+    <style type="text/css">
+        .t1 {background-color:#272a37;width: 100px;height: 30px;}
+        .t1 span{font-weight: bold;}
+        .t2 {background-color:#2a2e3c;width: 130px;height: 30px;}
+
+    </style>
+    <script type="text/javascript">
+<!--
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3)
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+
+
+
+
+</head>
+<body>
+
+<div class="bodyobjbg">
+
+<!--告警列表的弹出层信息-->
+<div class="pop min-1108 tablelistobjwin2" style="position: absolute; z-index: 999; left: 11%; top: 10px;height: 630px;">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closethiswinobj"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m locate-center" style="height:630px;">
+                <div class="pop-tittle">
+                    <div class="pop-tittle-l">
+                        <div class="pop-tittle-m">资源名称</div>
+                    </div>
+                    <div class="pop-tittle-r">
+                        <div class="pop-tittle-content">ZB_Switch_8279_192.168.03.01</div>
+                    </div>
+
+                </div>
+                <div class="pop-middle-m-content">
+
+                    <div class="pop-content margin-top5">
+                        <div class="">
+
+
+                            <div class="">
+
+
+                                <div  class="" style="display: block;position: absolute;left: 10px;top: 50px;width: 98%;">
+                                    <div class="common f-right">
+                                        <div class="tablemaintop">
+                                            <span class="tablelefttopico"></span>
+                                            <span class="textcolor-limegreen">告警信息列表</span>
+                                        </div>
+                                        <div class="h-nobg h-btn">
+
+
+                                            <input name="check" type="radio" value="" />
+                                            <div class="select-body">
+                                                <div class="select-l">
+                                                    <div class="select-r">
+                                                        <div class="select-m"> <span class="select_txt min-120">最近1小时</span>
+                                                            <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="option min-150"> <a>最近2小时</a> <a>最近4小时</a> <a>最近1天</a> <a>最近7天</a> </div>
+                                            </div>
+                                            <input name="check" type="radio" value="" />
+                                            <div class="select-body">
+                                                <div class="select-l">
+                                                    <div class="select-r">
+                                                        <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="select-trigger-warp"> <a class="select-trigger-date"></a> </div>
+                                            </div>
+                                            <span>--</span>
+                                            <div class="select-body">
+                                                <div class="select-l">
+                                                    <div class="select-r">
+                                                        <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="select-trigger-warp"> <a class="select-trigger-date"></a> </div>
+                                            </div>
+                                            <a class="btn-body locate-right">
+                                                <div class="btn-l">
+                                                    <div class="btn-r">
+                                                        <div class="btn-m"> <span class="ico ico-search"></span> <span>搜 索</span></div>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+                                        <div class="tab-header margin-top5" style="width: 99%;position: relative;left: 0.5%;">
+                                            <div class="theadpart" style="width:100%;">
+                                                <table>
+                                                    <thead>
+                                                    <tr class="tablemainbg" style="height: 33px;">
+
+                                                        <th width="10%">  <span>级别</span> </th>
+                                                        <th width="10%"><span>告警时间</span></th>
+                                                        <th width="10%"><span>告警对象类型</span></th>
+                                                        <th width="10%"><a class="rank-up"></a><span>告警内容</span></th>
+                                                        <th width="10%"><span>操作</span></th>
+                                                    </tr>
+                                                    </thead>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="tbodypart" style="width: 99%;position: relative;left: 0.5%;height: 400px;">
+                                            <img src="../../images/ex/no-data.png" alt="" style="position: relative;left: 35%;top: 40%;">
+
+
+                                        </div>
+                                        <div class="locate-right" style="width: 172px;margin-top: 10px;">
+                                            <div style="float: left;">
+                                                <span>第1页</span>
+                                                <span>共7页&nbsp;&nbsp;&nbsp;</span>
+                                            </div>
+
+                                            <div class="">
+                                                <span class="blue-minbtnleftall"></span>
+                                                <span class="blue-minbtnleft"></span>
+                                                <span class="blue-minbtnright"></span>
+                                                <span class="blue-minbtnrightall"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--asg=========================================-->
+<div class="pop min-1108 ziyuanallwin" style="position: relative; left: 1%; top: 10px;display: block;height: 630px;">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+
+            <div class="pop-close-r">
+
+
+                <a class="pop-close-ico closeallwin"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m locate-center" style="height:630px;">
+<div class="pop-tittle">
+    <div class="pop-tittle-l">
+        <div class="pop-tittle-m">资源名称</div>
+    </div>
+    <div class="pop-tittle-r">
+        <div class="pop-tittle-content">ZB_Switch_8279_192.168.03.01</div>
+    </div>
+
+</div>
+<div class="pop-middle-m-content">
+
+<div class="pop-content margin-top5">
+<div class="">
+
+<div class="tab-btn tablenavobj">
+    <a href="#tab1" class="tab-body on clickobjtarget">
+        <div class="tab-l">
+            <div class="tab-r">
+                <div class="tab-m">
+                    <span>资源总览</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#tab2" class="tab-body ">
+        <div class="tab-l">
+            <div class="tab-r">
+                <div class="tab-m">
+                    <span>CPU</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#tab3" class="tab-body clickobjtarget">
+        <div class="tab-l">
+            <div class="tab-r">
+                <div class="tab-m">
+                    <span>分区</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#tab4" class="tab-body ">
+        <div class="tab-l">
+            <div class="tab-r">
+                <div class="tab-m">
+                    <span>网络接口</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#tab5" class="tab-body clickobjtarget">
+        <div class="tab-l">
+            <div class="tab-r">
+                <div class="tab-m">
+                    <span>进程</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#tab6" class="tab-body ">
+        <div class="tab-l">
+            <div class="tab-r">
+                <div class="tab-m">
+                    <span>服务</span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a href="#tab7" class="tab-body ">
+        <div class="tab-l">
+            <div class="tab-r">
+                <div class="tab-m">
+                    <span>硬盘</span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="resours-modeltop">
+<!--资源总览页-->
+<div id="tab1" class="resours-modelall" style="display: block;">
+    <div class="resours-modelmain">
+        <table id="test" class="table960list tableoneortwo" width="100%" border="1" align="center" cellpadding="0" cellspacing="0">
+            <tbody><tr>
+                <td class="t1"><span>资源名称</span></td>
+                <td class="t2"><span>WINserv00_12</span></td>
+                <td class="t1"><span>显示名称</span></td>
+                <td class="t2">
+                    <div class="textfocuson">WINserv00_12</div>
+                    <!--<input type="text" class="textfocuson" value="WINserv00_12">-->
+                    <span class="uodatethetext clicktheupdatetext" style="position: relative;left: 20px;;top: 1px;"></span></td>
+                <td class="t1"><span>IP地址</span></td>
+                <td class="t2"><span>192.178.0.12</span></td>
+                <td class="t1"><span>资源类型</span></td>
+                <td class="t2"><span>Windows</span></td>
+            </tr>
+            <tr>
+                <td class="t1"><span>操作系统</span></td>
+                <td class="t2"><span>Windows</span></td>
+                <td class="t1"><span>当前可用性</span></td>
+                <td class="t2"><span>可用</span></td>
+                <td class="t1"><span>运行时长</span></td>
+                <td class="t2"><span>20小时8分6秒</span></td>
+                <td class="t1">&nbsp;</td>
+                <td class="t2">&nbsp;</td>
+            </tr>
+            </tbody></table>
+    </div>
+    <div class="resouresviewmodel">
+        <div class="resouresviewmodelmain"><span>CPU平均利用率</span></div>
+
+        <div class="modelone"></div>
+
+    </div>
+    <div class="resouresviewmodel" style="margin-left: 3px;">
+        <div class="resouresviewmodelmain"><span style="float: right;position: relative;left: -10px;">总容量32G</span><span style="float: left;">内存利用率</span></div>
+
+        <div class="modeltwo"></div>
+
+    </div>
+
+    <div class="resouresviewmodel" style="margin-left: 3px;">
+        <div class="resouresviewmodelmain"><span>硬盘利用率</span></div>
+
+        <div class="resours-minmodel" style="margin-left: 1px">
+            <span>分区：C</span>
+            <div class="baifenbi1">
+
+            </div>
+            <div class="d-page" style="position: relative;left: 101px;top: 73px;">
+                <a class="d-page-ico d-page-nl"></a>
+                <a class="d-page-ico  d-page-greendot"></a>
+                <a class="d-page-ico d-page-dot"></a>
+                <a class="d-page-ico d-page-dot"></a>
+                <a class="d-page-ico d-page-dot"></a>
+                <a class="d-page-ico d-page-r"></a>
+            </div>
+
+        </div>
+        <div class="resours-minmodel" style="margin-left: 1%">
+            <span>分区：D</span>
+            <div class="baifenbi2">
+
+            </div>
+        </div>
+        <div class="resours-minmodel" style="margin-left: 1px">
+            <span>分区：E</span>
+            <div class="baifenbi3">
+
+            </div>
+        </div>
+        <div class="resours-minmodel" style="margin-left: 1%">
+            <span>分区：F</span>
+            <div class="baifenbi4">
+
+            </div>
+        </div>
+
+
+        <!--<div class="modelsthree"></div>-->
+
+    </div>
+
+
+    <div class="resouresviewmodel" style="overflow: hidden;width: 100%;height: 220px;">
+        <div class="resouresviewmodelmain"><span>指标一览</span></div>
+
+        <div class="btnlistarryleft " style="width: 15%;margin-left: 3px;">
+            <ul class="accordion-main">
+                <li class="bg-lilist"><span style="display: inline-block;">性能指标</span>
+                    <!--<span class="toptheul"></span>-->  </li>
+                <!--<ul class="btnlistarryleft-content accordion-content" style="display: block;">-->
+                    <!--<li>CPU利用率</li>-->
+                    <!--<li>内存利用率</li>-->
+                    <!--<li>硬盘平均等待队列</li>-->
+                    <!--<li>Ping时延</li>-->
+                    <!--<li>接收和发送的ICMP包率</li>-->
+                <!--</ul>-->
+                <li class="bg-lilist"><span style="display: inline-block;">信息指标</span> </li>
+                <!--<ul style="display: none;">-->
+                    <!--<li></li>-->
+                    <!--<li></li>-->
+                    <!--<li></li>-->
+                    <!--<li></li>-->
+                    <!--<li></li>-->
+                <!--</ul>-->
+            </ul>
+        </div>
+        <div class="tab-header" style="width: 50%;display: inline-block;float: left;border: 1px #222530 solid;">
+            <div class="theadpart" style="width:100%;">
+                <table width="100%">
+                    <thead>
+                    <tr class="tablemainbg" style="height: 33px;">
+
+                        <th width="15%">  <span>指标名称</span> </th>
+                        <th width="8%"><span>状态</span></th>
+                        <th width="20%"><span>阈值</span></th>
+                        <th width="20%"><a class="rank-up"></a><span>当前值</span></th>
+                        <th width="20%"><span>最近采集时间</span></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="tbodypart" style="width: 100%;float: left;display: inline-block">
+                <table class="tablenewborder">
+                    <tbody>
+                    <tr class="">
+                        <td width="15%"><a>系统CPU利用率</a> </td>
+                        <td width="5%">
+                            <div class="cell_inner">
+                                <span class="orangelight" style="width: 45px;"></span>
+                            </div>
+                        </td>
+                        <td width="20%"><span class="sliderimgbg"></span></td>
+                        <td width="20%" style="text-align: center;"><span>1.47%</span> <span class="tableformobj"></span></td>
+                        <td width="20%"><span>2014/06/26 08:00:00</span></td>
+                    </tr>
+                    <tr class="">
+                        <td width="10%"><a>内存利用率</a> </td>
+                        <td width="2%">
+                            <div class="cell_inner">
+                                <span class="orangelight" style="width: 45px;"></span>
+                            </div>
+                        </td>
+                        <td width="10%"><span class="sliderimgbg"></span></td>
+                        <td width="10%" style="text-align: center;"><span>1.47%</span><span class="tableform"></span> </td>
+                        <td width="10%"><span>2014/06/26 08:00:00</span></td>
+                    </tr>
+                    <tr class="">
+                        <td width="10%"><a>硬盘平均等待队列</a> </td>
+                        <td width="2%">
+                            <div class="cell_inner">
+                                <span class="orangelight" style="width: 45px;"></span>
+                            </div>
+                        </td>
+                        <td width="10%"><span class="sliderimgbg"></span></td>
+                        <td width="10%" style="text-align: center;"><span>1.47%</span><span class="tableform"></span> </td>
+                        <td width="10%"><span>2014/06/26 08:00:00</span></td>
+                    </tr>
+                    <tr class="">
+                        <td width="10%"><a>Ping时延</a> </td>
+                        <td width="2%">
+                            <div class="cell_inner">
+                                <span class="orangelight" style="width: 45px;"></span>
+                            </div>
+                        </td>
+                        <td width="10%"><span class="sliderimgbg"></span></td>
+                        <td width="10%" style="text-align: center;"><span>1.47%</span><span class="tableform"></span> </td>
+                        <td width="10%"><span>2014/06/26 08:00:00</span></td>
+                    </tr>
+                    <tr class="">
+                        <td width="10%"><a>接收和发送的ICMP包率</a> </td>
+                        <td width="2%">
+                            <div class="cell_inner">
+                                <span class="orangelight" style="width: 45px;"></span>
+                            </div>
+                        </td>
+                        <td width="10%"><span class="sliderimgbg"></span></td>
+                        <td width="10%" style="text-align: center;"><span>1.47%</span><span class="tableform"></span> </td>
+                        <td width="10%"><span>2014/06/26 08:00:00</span></td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="modelfiveliushui" style="height: 20%;display: inline-block;float: left;width: 20%;">
+
+
+            <img src="../../images/ex/no-chart.jpg" alt="" width="370" height="190">
+
+
+
+        </div>
+
+    </div>
+
+    <!--nav导航-->
+    <div class="clearfix"></div>
+    <div class="modelnavlist" style="margin-top: 1px;float: right;">
+        <div class="" style="padding: 4px;">
+            <span class="navmodelseting"><a></a></span>
+            <ul>
+                <li>telnet</li>
+                <li>SSH</li>
+                <li>Ping</li>
+                <li>Remote ping</li>
+                <li>ARP表</li>
+                <li>路由表</li>
+                <li>SNMP Test</li>
+                <li>WEB管理</li>
+                <li>Traceroute</li>
+                <li>MIB</li>
+            </ul>
+            <span class="navmodelleftorright clicktheleft"><a class="left"></a></span>
+        </div>
+
+    </div>
+    <div class="btn-statusbar clickthelisttable" style="float: left;">
+        告警列表
+    </div>
+</div>
+<!--CPU-->
+<!--进程-->
+<div id="tab5" class="resours-modelall" style="display: none;">
+<div class="common f-right">
+<div style="text-align: right;">
+    <div class="h-nobg ">
+
+        <a class="btn-body locate-right openfindtablecek">
+            <div class="btn-l">
+                <div class="btn-r">
+                    <div class="btn-m"> <span class=""></span>扫描<span class="pull"></span> </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</div>
+<!--点击扫描的弹出层-->
+<div class="tbodypartwin scanwinsour" style="width: 1082px;height: 305px; position: absolute; display: none; z-index: 999;left:10px;top: 113px; ">
+    <div class="tablemainnavinfo" style="width: 97.5%;margin-left: 2px;margin-top: 4px;">
+        <span class="textcolor-limegreen" style="left: 1px;">账户资源列表</span>
+    </div>
+    <div class="tab-header margin-top5" style="width: 97.5%;margin-left: 14px;">
+        <div class="theadpart" style="width:100%;">
+            <table>
+                <thead>
+                <tr class="tablemainbg" style="height: 33px;">
+                    <th width="10%"><input type="checkbox" name="checkbox7"></th>
+                    <th width="10%">  <span>进程名称</span> </th>
+                    <th width="10%"><span>进程状态</span></th>
+                    <th width="10%"><span>进程ID</span></th>
+                    <th width="10%"><a class="rank-up"></a><span>CPU利用率</span></th>
+                    <th width="10%"><span>物理内存</span></th>
+                    <th width="10%"><span>虚拟内存</span></th>
+                    <th width="10%"><span>标记</span><span>用户</span></th>
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="tbodypart" style="width: 97.5%;margin-left: 14px;">
+        <table class="tablenewborder">
+            <tbody class="tablenewborderactive">
+            <tr class="">
+                <td width="10%"><input type="checkbox" name="checkbox7"></td>
+                <td width="10%"> <span>oracle.exe</span> </td>
+                <td width="10%">  正在运行 </td>
+                <td width="10%">1000</td>
+                <td width="10%"> 10% </td>
+                <td width="10%">20M</td>
+                <td width="10%">10M</td>
+                <td width="10%">oracle</td>
+            </tr>
+            <tr class="">
+                <td width="10%"><input type="checkbox" name="checkbox7"></td>
+                <td width="10%"> oracle.exe</td>
+                <td width="10%">  正在运行 </td>
+                <td width="10%">1000</td>
+                <td width="10%"> 10% </td>
+                <td width="10%">20M</td>
+                <td width="10%">10M</td>
+                <td width="10%">oracle</td>
+            </tr>
+            <tr class="">
+                <td width="10%"><input type="checkbox" name="checkbox7"></td>
+                <td width="10%"> oracle.exe</td>
+                <td width="10%">  正在运行 </td>
+                <td width="10%">1000</td>
+                <td width="10%"> 10% </td>
+                <td width="10%">20M</td>
+                <td width="10%">10M</td>
+                <td width="10%">oracle</td>
+            </tr>
+            <tr class="">
+                <td width="10%"><input type="checkbox" name="checkbox7"></td>
+                <td width="10%"> oracle.exe</td>
+                <td width="10%">  正在运行 </td>
+                <td width="10%">1000</td>
+                <td width="10%"> 10% </td>
+                <td width="10%">20M</td>
+                <td width="10%">10M</td>
+                <td width="10%">oracle</td>
+            </tr>
+            <tr class="">
+                <td width="10%"><input type="checkbox" name="checkbox7"></td>
+                <td width="10%"> oracle.exe</td>
+                <td width="10%">  正在运行 </td>
+                <td width="10%">1000</td>
+                <td width="10%"> 10% </td>
+                <td width="10%">20M</td>
+                <td width="10%">10M</td>
+                <td width="10%">oracle</td>
+            </tr>
+
+
+
+
+            </tbody>
+        </table>
+
+        <div class="locate-right" style="width: 172px;margin-top: 10px;">
+            <div style="float: left;">
+                <span>第1页</span>
+                <span>共7页&nbsp;&nbsp;&nbsp;</span>
+            </div>
+
+            <div class="">
+                <span class="blue-minbtnleftall"></span>
+                <span class="blue-minbtnleft"></span>
+                <span class="blue-minbtnright"></span>
+                <span class="blue-minbtnrightall"></span>
+            </div>
+        </div>
+
+
+    </div>
+    <div style="clear: right"></div>
+    <div style="text-align: right;position: relative;left: -15px;top: 4px;">
+        <div class="h-nobg ">
+            <a class="btn-body locate-right yesbyscan">
+                <div class="btn-l">
+                    <div class="btn-r">
+                        <div class="btn-m"> <span class=""></span>取消<span class="pull"></span> </div>
+                    </div>
+                </div>
+            </a>
+            <a class="btn-body locate-right yesbyscan">
+                <div class="btn-l">
+                    <div class="btn-r">
+                        <div class="btn-m"> <span class=""></span>加入监控<span class="pull"></span> </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="tablemaintop">
+    <span class="tablelefttopico"></span>
+    <span class="textcolor-limegreen">进程信息列表</span>
+</div>
+<div class="tab-header margin-top5" style="width: 99%;position: relative;left: 0.5%;">
+    <div class="theadpart" style="width:100%;">
+        <table>
+            <thead>
+            <tr class="tablemainbg" style="height: 33px;">
+                <th width="10%"><input type="checkbox" name="checkbox7"></th>
+                <th width="10%"> <span>进程名称</span><span class="openlisttable"></span> <span class="thislistsort"></span> </th>
+                <th width="10%"><span>进程状态</span><span class="openlisttable"></span> <span class="thislistsort"></span></th>
+                <th width="10%"><span>进程ID</span><span class="openlisttable"></span> <span class="thislistsort"></span></th>
+                <th width="10%"><a class="rank-up"></a><span>CPU利用率</span><span class="openlisttable"></span> <span class="thislistsort"></span></th>
+                <th width="10%"><span>物理内存</span><span class="openlisttable"></span> <span class="thislistsort"></span></th>
+                <th width="10%"><span>虚拟内存</span><span class="openlisttable"></span> <span class="thislistsort"></span></th>
+                <th width="10%"><span>用户</span><span class="openlisttable"></span> <span class="thislistsort"></span></th>
+            </tr>
+            <!--<div class="select-bodylist">-->
+                <!--<div class="select-l">-->
+                    <!--<div class="select-r">-->
+                        <!--<div class="select-m">-->
+                            <!--<span class="select_txt min-120" id="select_txt">windows(WMI)</span>-->
+                            <!--<div class="select-trigger-wrap"><a class="select-trigger"></a></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<ul id="suckertree1" class="suckerdiv optionlist min-150" style="display: block;">-->
+                    <!--<li><a href="#" class="subfolderstyle">主机 </a><a class="sthreeliston"></a>-->
+                        <!--<ul class="optionlist" style="display: none;">-->
+                            <!--<li><a href="#">windows(SNMP)</a></li>-->
+                            <!--<li><a href="#">windows(WMI)</a></li>-->
+                            <!--<li><a href="#">windows(SNMP)</a></li>-->
+                            <!--<li><a href="#">windows(WMI)</a></li>-->
+                            <!--<li><a href="#">windows(SNMP)</a></li>-->
+                            <!--<li><a href="#">windows(WMI)</a></li>-->
+                        <!--</ul>-->
+
+                    <!--</li>-->
+                    <!--<li><a href="#">网络设备</a><a class="sthreelistup"></a></li>-->
+                    <!--<li><a href="#">应用</a><a class="sthreelistup"></a>-->
+
+                    <!--</li>-->
+                    <!--<li><a href="#">基础服务</a><a class="sthreelistup"></a></li>-->
+
+                    <!--<li><a href="#" class="subfolderstyle">Folder 2&gt;</a><a class="sthreeliston"></a>-->
+                        <!--<ul class="optionlist" style="display: none;">-->
+                            <!--<li><a href="#">Sub Item 2.1</a></li>-->
+                            <!--<li><a href="#">Folder 2.1&gt;</a>-->
+                                <!--&lt;!&ndash;<ul class="option">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="#">Sub Item 2.1.1</a></li>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="#">Sub Item 2.1.2</a></li>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="#">Sub Item 2.1.3</a></li>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<li><a href="#">Sub Item 2.1.4</a></li>&ndash;&gt;-->
+                                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
+                    <!--</li>-->
+                    <!--<li><a href="#">Item 4</a><a class="sthreelistup"></a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+
+
+            </thead>
+        </table>
+    </div>
+</div>
+<div class="tbodypart" style="width: 99%;position: relative;left: 0.5%;">
+    <table class="tablenewborder">
+        <tbody class="tablenewborderactive">
+        <tr class="">
+            <td width="10%"><input type="checkbox" name="checkbox7"></td>
+            <td width="10%"> oracle.exe</td>
+            <td width="10%">  正在运行 </td>
+            <td width="10%">1000</td>
+            <td width="10%"> 10% <span class="tableformobj"></span></td>
+            <td width="10%">20M<span class="tableform"></span></td>
+            <td width="10%">10M<span class="tableform"></span></td>
+            <td width="10%">oracle</td>
+        </tr>
+        <tr class="">
+            <td width="10%"><input type="checkbox" name="checkbox7"></td>
+            <td width="10%"> oracle.exe</td>
+            <td width="10%">  正在运行 </td>
+            <td width="10%">1000</td>
+            <td width="10%"> 10% <span class="tableform"></span></td>
+            <td width="10%">20M<span class="tableform"></span></td>
+            <td width="10%">10M<span class="tableform"></span></td>
+            <td width="10%">oracle</td>
+        </tr>
+        <tr class="">
+            <td width="10%"><input type="checkbox" name="checkbox7"></td>
+            <td width="10%"> oracle.exe</td>
+            <td width="10%">  正在运行 </td>
+            <td width="10%">1000</td>
+            <td width="10%"> 10% <span class="tableform"></span></td>
+            <td width="10%">20M<span class="tableform"></span></td>
+            <td width="10%">10M<span class="tableform"></span></td>
+            <td width="10%">oracle</td>
+        </tr>
+        <tr class="">
+            <td width="10%"><input type="checkbox" name="checkbox7"></td>
+            <td width="10%"> oracle.exe</td>
+            <td width="10%">  正在运行 </td>
+            <td width="10%">1000</td>
+            <td width="10%"> 10% <span class="tableform"></span></td>
+            <td width="10%">20M<span class="tableform"></span></td>
+            <td width="10%">10M<span class="tableform"></span></td>
+            <td width="10%">oracle</td>
+        </tr>
+        <tr class="">
+            <td width="10%"><input type="checkbox" name="checkbox7"></td>
+            <td width="10%"> oracle.exe</td>
+            <td width="10%">  正在运行 </td>
+            <td width="10%">1000</td>
+            <td width="10%"> 10% <span class="tableform"></span></td>
+            <td width="10%">20M<span class="tableform"></span></td>
+            <td width="10%">10M<span class="tableform"></span></td>
+            <td width="10%">oracle</td>
+        </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <div class="locate-right" style="width: 172px;margin-top: 10px;">
+        <div style="float: left;">
+            <span>第1页</span>
+            <span>共7页&nbsp;&nbsp;&nbsp;</span>
+        </div>
+
+        <div class="">
+            <span class="blue-minbtnleftall"></span>
+            <span class="blue-minbtnleft"></span>
+            <span class="blue-minbtnright"></span>
+            <span class="blue-minbtnrightall"></span>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="tablemaintop" style="margin-top: 38px;">
+    <span class="tablelefttopico"></span>
+    <span class="textcolor-limegreen">进程信息列表</span>
+</div>
+<div class="" style="width: 100%;height: 185px;">
+
+    <div class="modelfiveliushui" style="height: 100%;">
+
+
+
+        <div class="btnlistarry" style="width: 22%;left: 78%;top: 8%;">
+            <ul>
+                <li>1H</li>
+                <li>1D</li>
+                <li>7D</li>
+                <li>14D</li>
+                <li>30D</li>
+                <li>365D</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+<!--<div id="tab2"></div>-->
+<!--分区-->
+<div id="tab3" class="resours-modelall" style="display: none;">
+    <div class="common f-right">
+        <div class="tablemaintop">
+            <span class="tablelefttopico"></span>
+            <span class="textcolor-limegreen">分区信息列表</span>
+        </div>
+        <div class="tab-header margin-top5" style="width: 99%;position: relative;left: 0.5%;">
+            <div class="theadpart" style="width:100%;">
+                <table>
+                    <thead>
+                    <tr class="tablemainbg" style="height: 33px;">
+
+                        <th width="10%">  <span>分区名称</span> </th>
+                        <th width="10%"><span>分区大小</span></th>
+                        <th width="10%"><span>分区利用率</span></th>
+                        <th width="10%"><a class="rank-up"></a><span>分区空间增长率</span></th>
+                        <th width="10%"><span>使用策略</span></th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <div class="tbodypart" style="width: 99%;position: relative;left: 0.5%;">
+            <table class="tablenewborder">
+                <tbody>
+                <tr class="">
+                    <td width="10%">C：\ </td>
+                    <td width="10%">  50G </td>
+                    <td width="10%">30%</td>
+                    <td width="11%"> 100KB/分钟 </td>
+                    <td width="10%">默认分区策略</td>
+                </tr>
+                <tr class="">
+                    <td width="10%">C：\ </td>
+                    <td width="10%">  50G </td>
+                    <td width="10%">30%</td>
+                    <td width="11%"> 100KB/分钟 </td>
+                    <td width="10%">默认分区策略</td>
+                </tr>
+                <tr class="">
+                    <td width="10%">C：\ </td>
+                    <td width="10%">  50G </td>
+                    <td width="10%">30%</td>
+                    <td width="11%"> 100KB/分钟 </td>
+                    <td width="10%">默认分区策略</td>
+                </tr>
+                <tr class="">
+                    <td width="10%">C：\ </td>
+                    <td width="10%">  50G </td>
+                    <td width="10%">30%</td>
+                    <td width="11%"> 100KB/分钟 </td>
+                    <td width="10%">默认分区策略</td>
+                </tr>
+                <tr class="">
+                    <td width="10%">C：\ </td>
+                    <td width="10%">  50G </td>
+                    <td width="10%">30%</td>
+                    <td width="11%"> 100KB/分钟 </td>
+                    <td width="10%">默认分区策略</td>
+
+                </tr>
+
+
+
+
+                </tbody>
+            </table>
+
+            <div class="locate-right" style="width: 172px;margin-top: 10px;">
+                <div style="float: left;">
+                    <span>第1页</span>
+                    <span>共7页&nbsp;&nbsp;&nbsp;</span>
+                </div>
+
+                <div class="">
+                    <span class="blue-minbtnleftall"></span>
+                    <span class="blue-minbtnleft"></span>
+                    <span class="blue-minbtnright"></span>
+                    <span class="blue-minbtnrightall"></span>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="bodythequxianobj">
+            <div class="tablemaintop" style="margin-top: 38px;">
+                <span class="tablelefttopico"></span>
+                <span class="textcolor-limegreen">分区信息列表</span>
+            </div>
+            <div class="" style="width: 100%;height: 210px;">
+
+                <div class="modelfiveliushui" style="height: 97%;">
+
+
+
+                    <div class="btnlistarry" style="width: 22%;left: 78%;top: 8%;">
+                        <ul>
+                            <li>1H</li>
+                            <li>1D</li>
+                            <li>7D</li>
+                            <li>14D</li>
+                            <li>30D</li>
+                            <li>365D</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<!--<script type="text/javascript" src="../../js/public/public.js"></script>-->
+
+
+<script type="text/javascript">
+
+    $(".mainnavfrom ul li").click(function(){
+        $(".mainnavfrom ul li").removeClass("clickon");
+        $(this).addClass("clickon");
+    });
+
+    // 资源管理弹出层表格封装
+     var t= $(".tableoneortwo td");
+
+    var cellIndex=0;
+    for(var i=0;i<t.length;i++){
+        (t[i].cellIndex%2==0)?(t[i].className="t1"):(t[i].className = "t2");
+    }
+
+</script>
+</body>
+</html>
+

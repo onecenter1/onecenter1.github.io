@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script type="text/javascript" src="../../js/demo.js"></script>
+</head>
+<body>
+
+<div class="h-btn">
+        <span class="h-tittle">配置变更管理-告警一览</span>
+    <a class="btn-body locate-right">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span>删除</span><span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a class="btn-body locate-right" id="getwindow">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span>添加</span><span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="bodywindows">
+
+</div>
+
+
+<div class="common">
+  <div class="tab-header margin-top0">
+    <div class="tab-header-l">
+      <div class="tab-header-r">
+        <div class="tab-header-m">
+          <div class="theadpart" style="width:100%;">
+            <table>
+              <thead>
+                <tr>
+                  <th width="4%" class="tcenter"><span class="icon icon_uncheck">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                  </span></th>
+                  <th width="23%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank"></a> <span>任务名称</span> </th>
+                  <th width="11%"><a class="rank-up"></a><a class="rank-pull"></a><span>创建人</span></th>
+                  <th width="18%"><a class="rank-up"></a><a class="rank-pull"></a><span>创建时间</span></th>
+                  <th width="21%"><a class="rank-up"></a><span>备份周期</span></th>
+                  <th width="23%"><a class="rank-up"></a><span>描述</span></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tbodypart">
+    <table>
+      <tbody>
+        <tr>
+          <td width="4%" class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox2" id="checkbox2" />
+          </span></td>
+          <td width="25%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="12%">系统管理员</td>
+          <td width="17%">2014-05-06 20:14:20</td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a> </td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox3" id="checkbox3" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);"></a></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox4" id="checkbox4" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-netport.html','',1366,768);"></a></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox5" id="checkbox5" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-ping.html','',1366,768);"></a></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox6" id="checkbox6" />
+          </span></td>
+          <td width="25%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="12%">系统管理员</td>
+          <td width="17%">2014-05-06 20:14:20</td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a> </td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox7" id="checkbox7" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);"></a></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox8" id="checkbox8" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-netport.html','',1366,768);"></a></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox9" id="checkbox9" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-ping.html','',1366,768);"></a></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox10" id="checkbox10" />
+          </span></td>
+          <td width="25%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="12%">系统管理员</td>
+          <td width="17%">2014-05-06 20:14:20</td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a> </td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox11" id="checkbox11" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);"></a></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox12" id="checkbox12" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-netport.html','',1366,768);"></a></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox13" id="checkbox13" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-ping.html','',1366,768);"></a></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox14" id="checkbox14" />
+          </span></td>
+          <td width="25%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="12%">系统管理员</td>
+          <td width="17%">2014-05-06 20:14:20</td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">每日</a> </td>
+          <td width="21%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a> </td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox15" id="checkbox15" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">每周</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);"></a></td>
+        </tr>
+        <tr>
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox16" id="checkbox16" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">每月</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-netport.html','',1366,768);"></a></td>
+        </tr>
+        <tr class="cbg">
+          <td class="tcenter"><span class="icon icon_uncheck">
+            <input type="checkbox" name="checkbox17" id="checkbox17" />
+          </span></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td width="12%">系统管理员</td>
+          <td>2014-05-06 20:14:20</td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">每年</a></td>
+          <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">--</a><a onclick="javascript:openwindow('smart3-ping.html','',1366,768);"></a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="font-page">
+      <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+        <div class="amount">第
+          <input type="text" class="page-number" name="input" />
+        页</div>
+        <a class="next">下一页</a> <a class="end">末页</a> </div>
+    </div>
+  </div>
+</div>
+
+
+<div  class="w-pop peizhibeifnewin" style="position: fixed;left: 5%;top: 1%;width:908px">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>新建备份任务</span>
+                <div class="pop-close-r">
+                    <a id="closewindow" class="pop-close-ico"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+
+                    <div class="pop-content">
+
+                        <div class="tab-con">
+
+<div class="h-nobg  f-right-btn">
+    <ul class="fieldlist">
+        <li>
+            <span class="fixedvalue">任务名称</span><span class="colon">：</span><input type="text" class="text-box">
+        </li>
+        <li>
+            <span class="fixedvalue">任务时间</span><span class="colon">：</span>
+            <input type="text" class="text-box" value="2014-05-06" readonly> - <input type="text" class="text-box" value="2014-12-06" readonly>
+        </li>
+        <li>
+            <span class="fixedvalue">备份类型</span><span class="colon">：</span>
+            <span class="fixedvaluefrom">
+
+                                      <div class="select-body">
+                                          <div class="select-l"><div class="select-r"><div class="select-m">
+                                              <span class="select_txt min-120">每日</span> <div class="select-trigger-wrap">
+                                              <a class="select-trigger"> </a></div>
+                                          </div></div></div>
+                                          <div class="option min-150" style="display: none;">
+                                              <a href=".tab1" class="clickobjtarget">每日</a>
+                                              <a href=".tab2" class="clickobjtarget" style="color: yellow;">每周</a>
+                                              <a href=".tab3" class="clickobjtarget">每月</a>
+                                              <a href=".tab4" class="clickobjtarget" style="color: yellow;">每年</a>
+                                          </div>
+                                      </div>
+                                </span>
+
+        </li>
+
+        <li>
+        <span class="fixedvalue" style="margin-left: 10px;"></span>
+          <div class="tab1 resours-modelall pollingtime" style="display: none;top: 0px;height: 0px;">
+                                   <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>00</a>
+                                             <a>01</a>
+                                             <a>02</a>
+                                             <a>03</a>
+                                             <a>04</a>
+                                             <a>05</a>
+                                         </div>
+                                     </div>
+                                </span>时
+                                 <span>
+                                       <div class="select-body">
+                                           <div class="select-l"><div class="select-r"><div class="select-m">
+                                               <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                           </div></div></div>
+                                           <div class="option min-80" style="display: none;">
+                                               <a>00</a>
+                                               <a>01</a>
+                                               <a>02</a>
+                                               <a>03</a>
+                                               <a>04</a>
+                                               <a>05</a>
+                                           </div>
+                                       </div>
+                                 </span>分
+        </div>
+          <div class="tab2 resours-modelall pollingtime" style="display: none;top: 0px;height: 0px;">
+                                     <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">周一</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>周一</a>
+                                             <a>周二</a>
+                                             <a>周三</a>
+                                             <a>周四</a>
+                                             <a>周五</a>
+                                             <a>周六</a>
+                                         </div>
+                                     </div>
+                                </span>周
+                                     <span>
+                                     <div class="select-body">
+                                         <div class="select-l"><div class="select-r"><div class="select-m">
+                                             <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                         </div></div></div>
+                                         <div class="option min-80" style="display: none;">
+                                             <a>00</a>
+                                             <a>01</a>
+                                             <a>02</a>
+                                             <a>03</a>
+                                             <a>04</a>
+                                             <a>05</a>
+                                         </div>
+                                     </div>
+                                </span>时
+                                 <span>
+                                       <div class="select-body">
+                                           <div class="select-l"><div class="select-r"><div class="select-m">
+                                               <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                           </div></div></div>
+                                           <div class="option min-80" style="display: none;">
+                                               <a>00</a>
+                                               <a>01</a>
+                                               <a>02</a>
+                                               <a>03</a>
+                                               <a>04</a>
+                                               <a>05</a>
+                                           </div>
+                                       </div>
+                                 </span>分
+        </div>
+          <div class="tab3 resours-modelall pollingtime" style="display: none;top: 0px;height: 0px;">
+
+                                       <span>
+                                                 <div class="select-body">
+                                                     <div class="select-l"><div class="select-r"><div class="select-m">
+                                                         <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                     </div></div></div>
+                                                     <div class="option min-80" style="display: none;">
+                                                         <a>00</a>
+                                                         <a>01</a>
+                                                         <a>02</a>
+                                                         <a>03</a>
+                                                         <a>04</a>
+                                                         <a>05</a>
+                                                     </div>
+                                                 </div>
+                                            </span>月
+                                                     <span>
+                                                 <div class="select-body">
+                                                     <div class="select-l"><div class="select-r"><div class="select-m">
+                                                         <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                     </div></div></div>
+                                                     <div class="option min-80" style="display: none;">
+                                                         <a>00</a>
+                                                         <a>01</a>
+                                                         <a>02</a>
+                                                         <a>03</a>
+                                                         <a>04</a>
+                                                         <a>05</a>
+                                                     </div>
+                                                 </div>
+                                            </span>日
+                                                     <span>
+                                                   <div class="select-body">
+                                                       <div class="select-l"><div class="select-r"><div class="select-m">
+                                                           <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                       </div></div></div>
+                                                       <div class="option min-80" style="display: none;">
+                                                           <a>00</a>
+                                                           <a>01</a>
+                                                           <a>02</a>
+                                                           <a>03</a>
+                                                           <a>04</a>
+                                                           <a>05</a>
+                                                       </div>
+                                                   </div>
+                                             </span>时
+                                  <span>
+                                                   <div class="select-body">
+                                                       <div class="select-l"><div class="select-r"><div class="select-m">
+                                                           <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                       </div></div></div>
+                                                       <div class="option min-80" style="display: none;">
+                                                           <a>00</a>
+                                                           <a>01</a>
+                                                           <a>02</a>
+                                                           <a>03</a>
+                                                           <a>04</a>
+                                                           <a>05</a>
+                                                       </div>
+                                                   </div>
+                                             </span>分
+        </div>
+          <div class="tab4 resours-modelall pollingtime" style="display: none;top: 0px;height: 0px;">
+                                                     <span>
+                                                 <div class="select-body">
+                                                     <div class="select-l"><div class="select-r"><div class="select-m">
+                                                         <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                     </div></div></div>
+                                                     <div class="option min-80" style="display: none;">
+                                                         <a>00</a>
+                                                         <a>01</a>
+                                                         <a>02</a>
+                                                         <a>03</a>
+                                                         <a>04</a>
+                                                         <a>05</a>
+                                                     </div>
+                                                 </div>
+                                            </span>年
+                                                     <span>
+                                                   <div class="select-body">
+                                                       <div class="select-l"><div class="select-r"><div class="select-m">
+                                                           <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                       </div></div></div>
+                                                       <div class="option min-80" style="display: none;">
+                                                           <a>00</a>
+                                                           <a>01</a>
+                                                           <a>02</a>
+                                                           <a>03</a>
+                                                           <a>04</a>
+                                                           <a>05</a>
+                                                       </div>
+                                                   </div>
+                                             </span>月
+                                  <span>
+                                                   <div class="select-body">
+                                                       <div class="select-l"><div class="select-r"><div class="select-m">
+                                                           <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                       </div></div></div>
+                                                       <div class="option min-80" style="display: none;">
+                                                           <a>00</a>
+                                                           <a>01</a>
+                                                           <a>02</a>
+                                                           <a>03</a>
+                                                           <a>04</a>
+                                                           <a>05</a>
+                                                       </div>
+                                                   </div>
+                                             </span>日
+                                  <span>
+                                                   <div class="select-body">
+                                                       <div class="select-l"><div class="select-r"><div class="select-m">
+                                                           <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                       </div></div></div>
+                                                       <div class="option min-80" style="display: none;">
+                                                           <a>00</a>
+                                                           <a>01</a>
+                                                           <a>02</a>
+                                                           <a>03</a>
+                                                           <a>04</a>
+                                                           <a>05</a>
+                                                       </div>
+                                                   </div>
+                                             </span>时
+                                  <span>
+                                                   <div class="select-body">
+                                                       <div class="select-l"><div class="select-r"><div class="select-m">
+                                                           <span class="select_txt min-60">00</span> <div class="select-trigger-wrap"><a class="select-trigger"> </a></div>
+                                                       </div></div></div>
+                                                       <div class="option min-80" style="display: none;">
+                                                           <a>00</a>
+                                                           <a>01</a>
+                                                           <a>02</a>
+                                                           <a>03</a>
+                                                           <a>04</a>
+                                                           <a>05</a>
+                                                       </div>
+                                                   </div>
+                                             </span>分
+
+        </div>
+        </li>
+
+        <li>
+            <span class="fixedvalue">描述</span><span class="colon">：</span>
+            <textarea style="height: 100px;" rows="400" cols="50" ></textarea>
+        </li>
+
+    </ul>
+
+    <!--表格-->
+    <div class="common tableleft" style="width: 50%;">
+    <div class="theadpart">
+        <table>
+            <thead>
+            <tr>
+                <th width="3%" class="tcenter"><span class="icon icon_uncheck"><input type="checkbox"></span></th>
+                <th width="5%">
+                    <a class="rank-down"></a>
+                    <a class="rank-pull"></a>
+                    <span>资源名称</span>
+                </th>
+                <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                <th width="8%"><a class="rank-up"></a><a class="rank-pull"></a><span>监控类型</span></th>
+                <th width="8%"><a class="rank-up"></a><span>CPU利用率</span></th>
+                <th width="8%"><a class="rank-up"></a><span>内存利用率</span></th>
+
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="tbodypart">
+    <table>
+    <tbody>
+    <tr>
+        <td width="3%" class="tcenter"><span class="icon icon_uncheck"><input type="checkbox"> </span></td>
+        <td width="5%">
+            <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">Kid</a> </td>
+        <td width="10%">192.168.0.100</td>
+        <td width="8%">Linux</td>
+        <td width="8%">
+            <span class="rt">90.99%</span>
+        </td>
+        <td width="8%">
+            <span class="gt">45.00%</span>
+        </td>
+
+    </tr>
+
+    <tr class="cbg">
+        <td width="3%" class="tcenter"><span class="icon icon_uncheck"><input type="checkbox"> </span></td>
+        <td width="5%">
+            <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">Kid</a> </td>
+        <td width="10%">192.168.0.100</td>
+        <td width="8%">Linux</td>
+        <td width="8%">
+            <span class="rt">90.99%</span>
+        </td>
+        <td width="8%">
+            <span class="gt">45.00%</span>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+
+    <div style="float: left;width: 3%;position: relative;left: 3%;top: 85px;">
+        <div class="tab-tree-arrow"> <a class="tree-arrow-right"></a>
+            <a class="tree-arrow-left"></a> </div>
+    </div>
+    <div class="common tableright" style="width: 50%;">
+        <div class="theadpart">
+            <table>
+                <thead>
+                <tr>
+                    <th width="3%" class="tcenter"><span class="icon icon_uncheck"><input type="checkbox"></span></th>
+                    <th width="5%">
+                        <a class="rank-down"></a>
+                        <a class="rank-pull"></a>
+                        <span>资源名称</span>
+                    </th>
+                    <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                    <th width="8%"><a class="rank-up"></a><a class="rank-pull"></a><span>监控类型</span></th>
+                    <th width="8%"><a class="rank-up"></a><span>CPU利用率</span></th>
+                    <th width="8%"><a class="rank-up"></a><span>内存利用率</span></th>
+
+                </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="tbodypart">
+            <table>
+                <tbody>
+                <tr>
+                    <td width="3%" class="tcenter"><span class="icon icon_uncheck"><input type="checkbox"> </span></td>
+                    <td width="5%">
+                        <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">Kid</a> </td>
+                    <td width="10%">192.168.0.100</td>
+                    <td width="8%">Linux</td>
+                    <td width="8%">
+                        <span class="rt">90.99%</span>
+                    </td>
+                    <td width="8%">
+                        <span class="gt">45.00%</span>
+                    </td>
+
+                </tr>
+
+                <tr class="cbg">
+                    <td width="3%" class="tcenter"><span class="icon icon_uncheck"><input type="checkbox"> </span></td>
+                    <td width="5%">
+                        <a onclick="javascript:openwindow('smart3-info.html','',1366,718);">Kid</a> </td>
+                    <td width="10%">192.168.0.100</td>
+                    <td width="8%">Linux</td>
+                    <td width="8%">
+                        <span class="rt">90.99%</span>
+                    </td>
+                    <td width="8%">
+                        <span class="gt">45.00%</span>
+                    </td>
+                </tr>
+
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--结束 -->
+</div>
+
+
+
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>取消<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="set3" style="left:164px; visibility:hidden;top:135px; " class="sh-window">
+<div class="t-window">
+    <div class="b-window">
+        <div class="m-window">
+          <span >设为拓扑首页</span>
+          <span onclick="MM_showHideLayers('set3','','hide','topufind','','show')" >新建子拓扑</span>  </div>
+    </div>
+</div>
+</div>
+  <div class="l-menu-shink" style=" visibility:hidden;" id="l-show"><img src="../../images/ex/l-menu.png" width="165" height="359" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+    
+      <area shape="rect" coords="5,321,149,349" href="#" onclick="MM_showHideLayers('zt-dy','','show')" />
+      <area shape="rect" coords="3,293,147,321" href="#" onclick="MM_showHideLayers('topufind1','','show')" />
+      <area shape="rect" coords="3,262,147,290" href="topo-PORT.html" /><area shape="rect" coords="151,128,163,258" href="#" onclick="MM_showHideLayers('l-show','','hide')"/>
+      <area shape="rect" coords="3,230,147,258" href="bbgl.html" />
+      <area shape="rect" coords="4,199,148,227" href="#" onclick="MM_showHideLayers('r-t-linesetconvention','','show')" />
+      <area shape="rect" coords="139,80,148,89" href="#" onclick="MM_showHideLayers('topufind','','show')" />
+    <area shape="rect" coords="3,6,150,35" href="topoll.html" />
+    </map>
+</div>
+  <div class="shink-left" id="l-arrow" onclick="MM_showHideLayers('l-show','','show')"></div>
+<div class="pop-content">
+<div class="mtab-btn">
+    <div class="mtab-con-l">
+        <div class="mtab-con-r">
+            <div class="mtab-con-m"><a href="topo-PORT.html" class="main-tab-body windowbtn2">
+  <div class="tab-l">
+                        <div class="tab-r">
+                          <div class="tab-m">
+                                <span>实时表</span>
+                          </div>
+                        </div>
+            </div>
+              </a><a href="topo-jzlist.html" class="main-tab-body ">
+              <div class="tab-l">
+                <div class="tab-r">
+                  <div class="tab-m"> <span>基准表</span> </div>
+                </div>
+              </div>
+              </a><a class="main-tab-body" href="history-change.html">
+
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>历史变更表</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+              <a href="add-historylist.html" class="main-tab-body windowbtn4">
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>新增MAC表</span>
+                            </div>
+                        </div>
+                    </div>
+              </a>
+                <a href="topo-wset.html" class="main-tab-body windowbtn4  on">
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>告警设置</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+          </div>
+      </div>
+    </div>
+</div>
+<!--第一块页面---------------------------------------->
+<div class="windowspage1"></div>
+</div>
+<div class="common">
+<div class="tab-header margin-top0">
+                                 <div class="tab-header-l">
+                                       <div class="tab-header-r">
+                                               <div class="tab-header-m">
+                                                 <div style="width:100%;" class="theadpart">
+                              <table width="100%">
+                                <thead>
+                                  <tr>
+                                    <th width="31%"><a class="rank-up"></a><span>告警名称</span></th>
+                                    <th width="33%"><a class="rank-up"></a><span>事件级别</span></th>
+                                    <th width="36%"><span>事件描述</span></th>
+                                  </tr>
+                            </thead>
+                        </table>
+                        </div>
+                                               </div>
+                                   </div>
+               </div>
+  </div>
+  <div class="tbodypart">
+                              <table>
+                                <tbody class="alltbody">
+                                <tr>
+                                    <td width="14%">IP地址变动</td>
+                                    <td width="15%"><div class="select-body">
+              <div class="select-l">
+                <div class="select-r">
+                  <div class="select-m"> <span class="select_txt min-120">严重</span>
+                      <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div style="display: none;" class="option min-150"> <a>严重</a> <a>告警</a> </div>
+            </div></td>
+                                    <td width="19%">绑定IP地址发生变化 <span class="rt"></span> </td>
+                                  </tr>
+                                <tr>
+                                  <td>IP地址变动</td>
+                                  <td><div class="select-body">
+                                      <div class="select-l">
+                                        <div class="select-r">
+                                          <div class="select-m"> <span class="select_txt min-120">严重</span>
+                                              <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div style="display: none;" class="option min-150"> <a>严重</a> <a>告警</a> </div>
+                                  </div></td>
+                                  <td>绑定IP地址发生变化 <span class="rt"></span> </td>
+                                </tr>
+
+                                <tr>
+                                  <td>IP地址变动</td>
+                                  <td><div class="select-body">
+                                      <div class="select-l">
+                                        <div class="select-r">
+                                          <div class="select-m"> <span class="select_txt min-120">严重</span>
+                                              <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div style="display: none;" class="option min-150"> <a>严重</a> <a>告警</a> </div>
+                                  </div></td>
+                                  <td>绑定IP地址发生变化 <span class="rt"></span> </td>
+                                </tr>
+                                <tr>
+                                  <td>IP地址变动</td>
+                                  <td><div class="select-body">
+                                      <div class="select-l">
+                                        <div class="select-r">
+                                          <div class="select-m"> <span class="select_txt min-120">严重</span>
+                                              <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div style="display: none;" class="option min-150"> <a>严重</a> <a>告警</a> </div>
+                                  </div></td>
+                                  <td>绑定IP地址发生变化 <span class="rt"></span> </td>
+                                </tr>
+                                <tr>
+                                  <td>IP地址变动</td>
+                                  <td><div class="select-body">
+                                    <div class="select-l">
+                                      <div class="select-r">
+                                        <div class="select-m"> <span class="select_txt min-120">严重</span>
+                                          <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    <div style="display: none;" class="option min-150"> <a>严重</a> <a>告警</a> </div>
+                                  </div></td>
+                                  <td>绑定IP地址发生变化 <span class="rt"></span> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="font-page">
+                        <div class="fontpage-btnbox" style="display:none;">
+    <a class="first">首页</a>
+    <a class="last">上一页</a>
+    <div class="amount">第<input type="text" name="" class="page-number">页</div>
+    <a class="next">下一页</a>
+    <a class="end">末页</a>
+    </div>
+                        </div>
+  </div>
+</div>
+<div class="h-bg">
+  <div class="h-con">
+    <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="24%" rowspan="5" align="center" valign="middle"><img src="../../images/comm/table/gj-oic.png" width="132" height="133" /></td>
+    <td width="50%" height="36"><input type="checkbox" name="checkbox" id="checkbox" />
+      对以下IP不启动IP-MAC告警</td>
+    <td width="26%" height="36">&nbsp;</td>
+    </tr>
+  <tr>
+    <td height="36"><input type="checkbox" name="checkbox2" id="checkbox2" />
+      IP地址：
+      <input name="textfield2" type="text" class="main-input min-210" id="textfield2" value="     -            -               -" /></td>
+    <td width="26%"><a style="top:6px; position:relative;" class="r-h-ico r-h-add"></a></td>
+    </tr>
+  <tr>
+    <td height="36"><input type="checkbox" name="checkbox3" id="checkbox3" />
+IP地址：
+  <input name="textfield3" type="text" class="main-input min-210" id="textfield3" value="     -            -               -" /></td>
+    <td><a style="top:6px; position:relative;" class="r-h-ico r-h-delete"></a></td>
+    </tr>
+  <tr>
+    <td height="36"><input type="checkbox" name="checkbox4" id="checkbox4" />
+IP地址：
+  <input name="textfield4" type="text" class="main-input min-210" id="textfield4" value="     -            -               -" /></td>
+    <td><a style="top:6px; position:relative;" class="r-h-ico r-h-edit"></a></td>
+    </tr>
+  <tr>
+    <td height="36"><input type="checkbox" name="checkbox5" id="checkbox5" />
+IP地址：
+  <input name="textfield5" type="text" class="main-input min-210" id="textfield5" value="     -            -               -" /></td>
+    <td height="36">&nbsp;</td>
+    </tr>
+</table>
+
+  </div>
+</div>
+
+<div class="h-bg">
+  <div class="h-con">
+    <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td width="24%" rowspan="5" align="center"><img src="../../images/comm/table/fs-oic.png" width="132" height="133" /></td>
+        <td width="56%" height="36"><input type="checkbox" name="checkbox8" id="checkbox9" />
+          邮件
+          <input type="checkbox" name="checkbox8" id="checkbox10" />
+        短信</td>
+        <td width="20%">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="56%" rowspan="4" valign="top"><div class="darkcolor-b min-300">
+                            <ul class="fieldlist">
+                             <li><input type="checkbox" value="" name="">
+                             admin</li>
+                            </ul>
+        </div></td>
+        <td width="20%" height="36"><a style="top:6px; position:relative;" class="r-h-ico r-h-add"></a></td>
+      </tr>
+      <tr>
+        <td height="36"><a style="top:6px; position:relative;" class="r-h-ico r-h-delete"></a></td>
+      </tr>
+      <tr>
+        <td height="36">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="36">&nbsp;</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!--日志告警页面------------------------------------------>
+
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+<script type="text/javascript">
+    var concealtr=$(".concealtr");
+    concealtr.ready(function(){
+        concealtr.hide();
+    });
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

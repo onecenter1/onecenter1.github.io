@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script type="text/javascript" src="../../js/demo.js"></script>
+</head>
+<body>
+
+
+<div  class="w-pop" style="width: 650px;height: 450px;;; position:fixed;left: 0;top: 0; ">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>SNMP Test</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico" onclick="MM_showHideLayers('r-customadd','','hide')"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con tab-con">
+                            <div class=" h-nobg f-right-btn">
+                                <ul class="fieldlist">
+                                    <li> <span class="colon">输入要连接的IP地址及端口号，进行SNMP Test操作。</span></li>
+                                </ul>
+                          </div>
+                      <div class="tab-con">
+                                <ul  class="fieldlist">
+                                    <li>
+                                        <span class="colon">IP地址或域名：</span><input type="text" class="text-box" value="192.168.1.1">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=" h-nobg f-right-btn">
+                                <ul class="fieldlist">
+                                    <li> <span class="colon">SNMP设置</span></li>
+
+                                </ul>
+                            </div>
+
+
+                            <table class="snmptable" width="100%" style="background:#272934">
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                    </tr>
+
+                                <tr>
+
+                                    <td style="padding-left: 47px;">
+                                      <span>版本：</span>
+                                        <div class="select-body" style="width: 100px;">
+                                            <div class="select-l">
+                                                <div class="select-r">
+                                                    <div class="select-m">
+                                                        <span class="select_txt">V1</span> <div class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                                                    </div></div></div>
+
+                                            <div class="option" style="width: 100px;">
+                                                <a >V1</a>
+                                                <a>V2.0</a>
+                                                <a>V3.0</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+
+
+
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>只读共同体名：</span><input style="width: 75px;" type="text" class="text-box unitywidth">
+
+                                    </td>
+                                    <td>
+                                        <span>读写共同体名：</span><input style="width: 75px;"  type="text" class="text-box unitywidth">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  style="padding-left: 32px;">
+                                        <span>用户名：</span> <input  type="text" class="text-box unitywidth">
+                                    </td>
+                                    <td style="padding-left: 23px;">
+                                        <span>安全级别：</span>
+                                        <div class="select-body" style="width: 100px;">
+                                            <div class="select-l">
+                                                <div class="select-r">
+                                                    <div class="select-m">
+                                                        <span class="select_txt">V1</span> <div class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                                                    </div></div></div>
+
+                                            <div class="option" style="width: 100px;">
+                                                <a >V1</a>
+                                                <a>V2.0</a>
+                                                <a>V3.0</a>
+                                            </div>
+                                        </div>
+                                        <span>端口：</span> <input type="text" class="text-box unitywidth" value="161">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td    style="padding-left: 21px;">
+                                        <span>认证协议：</span>
+                                        <div class="select-body" style="width: 100px;">
+                                            <div class="select-l">
+                                                <div class="select-r">
+                                                    <div class="select-m">
+                                                        <span class="select_txt">请选择</span>
+                                                        <div class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                                                    </div></div></div>
+
+                                            <div class="option" style="width: 100px;">
+                                                <a >V1</a>
+                                                <a>V2.0</a>
+                                                <a>V3.0</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding-left: 20px;">
+                                        <span>认证密码：</span> <input type="text" class="text-box unitywidth" value="****">
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="padding-left: 21px;">
+                                        <span>私有协议：</span>
+                                        <div class="select-body" style="width: 100px;">
+                                            <div class="select-l">
+                                                <div class="select-r">
+                                                    <div class="select-m">
+                                                        <span class="select_txt">请选择</span> <div class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                                                    </div></div></div>
+
+                                            <div class="option" style="width: 100px;">
+                                                <a >V1</a>
+                                                <a>V2.0</a>
+                                                <a>V3.0</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="padding-left: 20px;">
+                                        <span>私有密码：</span> <input  type="text" class="text-box unitywidth" value="****">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 20px;">
+                                    <span>等待时间：</span> <input  type="text" class="text-box unitywidth" value="****">
+                                </td>
+                                    <td style="padding-left: 22px;">
+                                        <span style="position: relative;top: -5px;">重试次数：</span>
+                                        <div class="select-body" style="width: 105px;">
+                                            <div class="select-l">
+                                                <div class="select-r">
+                                                    <div class="select-m">
+                                                        <span class="select_txt">1</span>
+                                                        <div class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                                                    </div></div></div>
+
+                                            <div class="option" style="width: 105px;">
+                                                <a >1</a>
+                                                <a>2</a>
+                                                <a>3</a>
+                                            </div>
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <div class="pop-bottom-btn locate-right">
+                                            <a class="btn-body">
+                                                <div class="btn-l">
+                                                    <div class="btn-r">
+                                                        <div class="btn-m">
+                                                            <span class=""></span>测试<span class="pull"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </table>
+
+
+
+                        </div>
+                        <div class="snmppage">
+                            <label>测试结果：</label><br/>
+                       <span>
+                          只读共同体名 public 测试通过。<br/>
+                          读写共同体名 private 测试未通过。
+                       </span>
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+
+
+</body>
+</html>

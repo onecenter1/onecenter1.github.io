@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+</head>
+<body>
+  <div class="l-menu-shink" style=" visibility:hidden" id="l-show"><img src="../../images/ex/l-menu.png" width="165" height="359" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="5,321,149,349" href="#" onclick="MM_showHideLayers('zt-dy','','show')" />
+      <area shape="rect" coords="3,293,147,321" href="#" onclick="MM_showHideLayers('topufind1','','show')" />
+      <area shape="rect" coords="3,262,147,290" href="topo-PORT.html" /><area shape="rect" coords="151,128,163,258" href="#" onclick="MM_showHideLayers('l-show','','hide')"/>
+      <area shape="rect" coords="3,230,147,258" href="bbgl.html" />
+      <area shape="rect" coords="4,199,148,227" href="#" onclick="MM_showHideLayers('r-t-linesetconvention','','show')" />
+      <area shape="rect" coords="139,80,148,89" href="#" onclick="MM_showHideLayers('set3','','show')" />
+    </map>
+  </div>
+  <div class="shink-left" id="l-arrow" onclick="MM_showHideLayers('l-show','','show')"></div>
+<div class="pop-content">
+<div class="mtab-btn">
+    <div class="mtab-con-l">
+        <div class="mtab-con-r">
+            <div class="mtab-con-m"><a href="topo-PORT.html" class="main-tab-body windowbtn2">
+  <div class="tab-l">
+                        <div class="tab-r">
+                          <div class="tab-m">
+                                <span>实时表</span>
+                          </div>
+                        </div>
+            </div>
+              </a><a href="topo-jzlist.html" class="main-tab-body ">
+              <div class="tab-l">
+                <div class="tab-r">
+                  <div class="tab-m"> <span>基准表</span> </div>
+                </div>
+              </div>
+              </a><a class="main-tab-body" href="history-change.html">
+
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>历史变更表</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+              <a href="" class="main-tab-body windowbtn4  on">
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>新增MAC表</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="topo-wset.html" class="main-tab-body windowbtn4">
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>告警设置</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+          </div>
+      </div>
+    </div>
+</div>
+<!--第一块页面---------------------------------------->
+<div class="windowspage1">
+    <div class="h-btn margin-top0">
+      <div class="locate-left">
+              <div class="select-body">
+                <div class="select-l">
+                  <div class="select-r">
+                    <div class="select-m"> <span class="select_txt min-120">IP地址</span>
+                        <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="option min-150"> <a>Mac地址</a> </div>
+              </div>
+      </div>
+      <input type="text" name="textfield2" id="textfield2" class="text-box" />
+
+<a class="btn-body locate-right openCustomindicatorswin">
+<div class="btn-l">
+  <div class="btn-r">
+    <div class="btn-m"> <span class="ico ico-refrash"></span> <span>刷新</span> <span class="pull"></span> </div>
+  </div>
+</div>
+</a>
+<a class="btn-body locate-right openCustomindicatorswin">
+<div class="btn-l">
+  <div class="btn-r">
+    <div class="btn-m"> <span class="ico ico-add"></span> <span>加入基准表</span> <span class="pull"></span> </div>
+  </div>
+</div>
+</a>
+<a class="btn-body locate-right openCustomindicatorswin">
+<div class="btn-l">
+  <div class="btn-r">
+    <div class="btn-m"> <span class="ico ico-add"></span> <span>全部加入基准表</span> <span class="pull"></span> </div>
+  </div>
+</div>
+</a>
+      
+    </div>
+    <div class="common tabletop">
+        <div class="tab-header margin-top0">
+            <div class="tab-header-l">
+                <div class="tab-header-r">
+                    <div class="tab-header-m">
+                        <div class="theadpart">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th width="4%" class="tcenter" ><input name="input18" type="checkbox" value="" /></th>
+                                  <th width="17%"><a class="rank-up"></a><a class="rank-pull"></a><span>MAC</span></th>
+                                  <th width="14%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                                  <th width="17%"><a class="rank-up"></a><span>上联设备名称</span></th>
+                                  <th width="18%"><a class="rank-up"></a><span>上联设备IP</span></th>
+                                  <th width="14%"><a class="rank-up"></a><span>上联设备接口</span></th>
+                                  <th width="16%"><span>更新时间</span></th>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-list tbodypart">
+          <table>
+            <tbody id="gettrclick">
+              <tr>
+                <td width="4%"  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td width="17%">bc:30:5b:a7:e2:cb</td>
+                <td width="14%">172.16.36.1</td>
+                <td width="17%">S3760</td>
+                <td width="18%"><div class="select-body">
+              <div class="select-l">
+                <div class="select-r">
+                  <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                      <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+            </div></td>
+                <td width="14%" >GigabitEthernet 0/24</td>
+                <td width="16%" >2014-05-29 13:25:20</td>
+              </tr>
+              <tr class="cbg">
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr>
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr class="cbg">
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr>
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr class="cbg">
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr>
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr class="cbg">
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr>
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr class="cbg">
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr>
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr class="cbg">
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr>
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr class="cbg">
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+              <tr>
+                <td  class="tcenter"><input name="input4" type="checkbox" value="" /></td>
+                <td>bc:30:5b:a7:e2:cb</td>
+                <td>172.16.36.1</td>
+                <td>S3760</td>
+                <td><div class="select-body">
+                    <div class="select-l">
+                      <div class="select-r">
+                        <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                            <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+                </div></td>
+                <td >GigabitEthernet 0/24</td>
+                <td >2014-05-29 13:25:20</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="font-page">
+            <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+              <div class="amount">第
+                <input type="text" class="page-number" name="input" />
+              页</div>
+              <a class="next">下一页</a> <a class="end">末页</a> </div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--日志告警页面------------------------------------------>
+
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+<script type="text/javascript">
+    var concealtr=$(".concealtr");
+    concealtr.ready(function(){
+        concealtr.hide();
+    });
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

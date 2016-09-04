@@ -1,0 +1,94 @@
+.time-bar{ width:182px; position:absolute; margin-top:-6px; margin-left:5px;}
+.time{ height:14px;}
+.time-bar .time span.hour,.day,.week{ width:60px; text-align:center; display:inline-block; zoom:1; *display:inline; float:left;}
+.over{ color:#00CC00; width:60px; text-align:center; display:inline-block; zoom:1; *display:inline; float:left; }
+.t-bg{ background:url(../images/widget/timebar.png) no-repeat 0 0; width:182px; height:10px; margin-top:8px;}
+.t-bg a{ width:20px; height:24px; background:url(../images/widget/timebar.png) no-repeat -6px -26px; position:relative; float:left; margin-left:18px; margin-top:-8px;}
+/*------------------------select �����б� css style---------------------------------------*/
+.pop-content .tab-con .select-body{ background:url(../images/widget/input-text.png) repeat-x; border-left:1px solid #272b38; border-right:1px solid #272b38; border-top:1px solid #212430; border-bottom:0px solid #313544;position:relative;  position:relative;cursor:pointer;font-size:12px; display:inline-block; margin:0 5px;}
+.pop-content .tab-con .select-body .select-l{ background:none;}
+.pop-content .tab-con .select-body .select-r{background:none;}
+.pop-content .tab-con .select-body .select-m{background:none; padding:0;}
+
+.pop-content .tab-con .select-bodylist{ background:url(../images/widget/input-text.png) repeat-x; border-left:1px solid #272b38; border-right:1px solid #272b38; border-top:1px solid #212430; border-bottom:1px solid #313544;position:relative;  position:relative;cursor:pointer;font-size:12px; display:inline-block; margin:0 5px; }
+.pop-content .tab-con .select-bodylist .select-l{ background:none; padding-left:10px;}
+.pop-content .tab-con .select-bodylist .select-r{background:none;}
+.pop-content .tab-con .select-bodylist .select-m{background:none; padding:0;}
+
+
+.pop-content .tab-con .selet_open{ cursor: pointer;background-image: url(../images/widget/select.png);background-position: 0 -19px;;display:inline-block;border-left:solid 1px #E5E5E5;position:absolute;right:0;top:0;width:30px;height:24px;}
+.pop-content .tab-con .select-trigger-wrap {
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    margin-top: 0px !important;
+    position: absolute;
+    right: 0;
+    width: 21px; top:21px;}
+	.pop-content .tab-con .tbodypart a.select-trigger { }
+.pop-content .tab-con a.select-trigger { display: inline-block; *display:inline;zoom: 1; float: left; cursor: pointer; }
+a.pop-content .tab-con .select-trigger_del { display: inline-block; *display:inline;zoom: 1; background-image: url(../images/widget/select.png);background-position: 0 -300px; width: 18px; height: 18px; float: left; cursor: pointer; }
+.pop-content .tab-con a.select-trigger:hover {}
+
+
+.pop-content .tab-con a.select-trigger-date{background:url(../images/widget/checkboxbg.png) no-repeat 0 -89px; cursor:pointer; height:22px; width:21px; zoom:1;display:inline-block; *display:inline;}
+.pop-content .tab-con .select-trigger-warp{ width:21px; height:22px; float:right; margin-top:-22px;}
+ .selet_open_del{background-image: url(../images/widget/select.png);background-position: 0 -300px; width: 18px; height: 18px;}
+ .selet_open:hover{ background-position: 0 -19px; border-bottom-color: #7eadd9}
+ .select_txt{line-height:19px;height:22px;cursor:text; border: none;z-index: 1; display:inline-block; zoom:1; *display:inline;cursor: pointer; }
+
+.option{position:absolute;top:21px;left:-1px;z-index:990;display:none; background: #191b23; border: 1px solid #12121A; display: none;border-radius:0px 0px 3px 3px;
+width:100px;}
+ .option a{ line-height: 26px; padding: 0 5px; display: block; height: 26px; o-text-overflow: ellipsis; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background:url(../images/widget/select-line.png) repeat-x bottom; }
+.option a:hover{ color:#00CC00; font-weight:bold;}
+
+.optionlist{position:absolute;top:21px;left:-1px;z-index:990;display:none; background: #191b23; border: 1px solid #12121A; display: none;border-radius:0px 0px 3px 3px;
+    width:100px;}
+.optionlist a{ line-height: 26px; padding: 0 5px; display: block; height: 26px; o-text-overflow: ellipsis; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background:url(../images/widget/select-line.png) no-repeat bottom; }
+.optionlist a:hover{font-weight:bold;}
+.overflow-hidden{ overflow:hidden;}
+
+
+/*-------------------------select css width style-----------------------------*/
+.min-50{ width:50px !important;}
+.min-60{ width:60px !important;}
+.min-120{ width:120px !important;text-overflow: ellipsis; white-space:nowrap;}
+.min-300{ width:300px !important;text-overflow: ellipsis; white-space:nowrap;}
+/*---------------select conbox css style-------------------*/
+.min-150{ width:150px !important;text-overflow: ellipsis; white-space:nowrap;}
+.min-160{ width:160px !important;text-overflow: ellipsis; white-space:nowrap;}
+.min-180{ width:180px !important;}
+.min-210{width:210px !important;text-overflow: ellipsis; white-space:nowrap;}
+.min-310{width:300px !important;text-overflow: ellipsis; white-space:nowrap;}
+.min-80{ width:80px !important;}
+.top5{ top:5px!important;}
+.top8{ top:8px!important;}
+.right5{ right:5px!important;}
+.position{ position:relative;}
+
+/*--------------------------------checkbox style---------------------------------------*/
+.select-body{ position:relative;cursor:pointer;font-size:12px; display:inline-block; margin:0 5px; }
+.select-body .select-l{ background:url(../images/widget/checkboxbg.png) no-repeat left 0; padding-left:5px; height:22px;}
+.select-body .select-r{ background:url(../images/widget/checkboxbg.png) no-repeat right -45px; padding-right:5px; height:22px;}
+.select-body .select-m{ background:url(../images/widget/checkboxbg.png) repeat-x left -22px; height:22px; line-height:22px; padding-right:20px;}
+.select-body .select-m span{ line-height:22px;}
+.select-trigger-warp{ width:21px; height:22px; float:right; margin-top:-22px;}
+.select-trigger{background:url(../images/widget/checkboxbg.png) no-repeat 0 -67px; cursor:pointer; height:22px; width:21px; zoom:1;display:inline-block; *display:inline; position:absolute; margin-top:-21px; right:0;}
+.select-trigger-date{background:url(../images/widget/checkboxbg.png) no-repeat 0 -89px; cursor:pointer; height:22px; width:21px; zoom:1;display:inline-block; *display:inline;}
+
+.tbodypart .select-body{ position:relative;cursor:pointer;font-size:12px; display:inline-block; margin:0 5px; }
+.tbodypart .select-body .select-l{ background:url(../images/widget/checkboxbg.png) no-repeat left 0; padding-left:5px; height:22px;}
+.tbodypart .select-body .select-r{ background:url(../images/widget/checkboxbg.png) no-repeat right -45px; padding-right:5px; height:22px;}
+.tbodypart .select-body .select-m{ background:url(../images/widget/checkboxbg.png) repeat-x left -22px; height:22px; line-height:22px; padding-right:20px;}
+.tbodypart .select-body .select-m span{ line-height:22px;}
+.tbodypart .select-trigger-warp{ width:21px; height:22px; float:right; margin-top:-22px;}
+.tbodypart a.select-trigger{background:url(../images/widget/checkboxbg.png) no-repeat 0 -67px; cursor:pointer; height:22px; width:21px; zoom:1;display:inline-block; *display:inline; position:absolute; margin-top:-21px; right:0;}
+.tbodypart a.select-trigger-date{background:url(../images/widget/checkboxbg.png) no-repeat 0 -89px; cursor:pointer; height:22px; width:21px; zoom:1;display:inline-block; *display:inline;}
+
+.h-caption{ padding:6px 0px 5px 0px; margin-top:5px; height:29px;}
+.r-td-height{ line-height:29px;}
+.time-select { width:14px; height:22px;display:inline-block; zoom:1; *display:inline; position:relative; top:8px; margin-right:5px; margin-left:-9px;}
+.time-select a{ width:14px; height:11px; display:inline-block; zoom:1; *display:inline; background:url(../images/ico/time-select.png) no-repeat;}
+.time-select a:hover{opacity:0.8;}
+.time-select a.time-s-up{ background-position:0 0;}
+.time-select a.time-s-down{ background-position:0 -11px;}

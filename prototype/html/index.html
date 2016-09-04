@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Onecenter4.0</title>
+<link  href="../css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+</head>
+
+
+<body class="home">
+
+<div id="container">
+ <div id="header">
+  <div id="logo"></div>
+  <div id="topmenu">
+  <div id="topmenu-group">
+    <div id="topmenu-scroll">
+       <ul id="navmenu1">
+        <li class="on"><a class="home" href="content.html" target="allcontent">首页</a></li>
+        <li><a class="business" href="business/business.html" target="allcontent">业务管理</a></li>
+        <li><a class="topology"  href="topology/topology.html" target="allcontent">拓扑管理</a></li>
+        <li><a class="resources"  href="resource/resource.html" target="allcontent">资源管理</a></li>
+        <li><a class="warning" href="warning/warning-norecover.html"  target="allcontent">告警管理</a></li>
+           <li><a class="analysis" href="trafficaNalysis/trafficNnalysis.html"  target="allcontent">流量分析</a></li>
+
+           <li><a class="configuration"  href="configuration/configuration.html" target="allcontent">配置文件管理</a></li>
+        <li><a class="inspection" href="inspection/inspection.html"  target="allcontent">巡检管理</a></li>
+        <li><a class="report" href="report/report.html"  target="allcontent">报表管理</a></li>
+       </ul>
+        <!--第二页导航----------------->
+        <ul id="navmenu2">
+            
+            <li><a class="system" href="system/system.html"  target="allcontent">系统管理</a></li>
+
+        </ul>
+        <!--第二页导航----------------->
+    </div>
+  </div>
+  <div id="header-page">
+   <a class="header-pageup"></a>
+   <a class="header-pagedown"></a>
+  </div>
+  <div id="topset">
+  <a>XXX,您好！欢迎使用onecenter4.0系统！</a>
+  <span id="topset-content">
+  <ul>
+  <li><a class="about"></a></li>
+  <li><a class="password"></a></li>
+  <li><a class="user"></a></li>
+  <li><a class="skin"></a></li>
+  <li><a class="help"></a></li>
+  <li><a class="close"></a></li>
+  </ul>
+
+  </span>
+    </div>
+  </div>
+ </div>
+ <div id="content">
+    	<iframe  src="content.html" width="100%" height="625" scrolling="no" frameborder="0" marginwidth="0" marginheight="0"  id="allcontent" name="allcontent"></iframe>
+    </div>
+    <div id="footer"></div>
+
+</div>
+
+
+<script type="text/javascript" src="../js/jquery-1.6.2.min.js"></script>
+<!--<script type="text/javascript" src="../js/index.js"></script>-->
+<script type="text/javascript" src="../js/dedicated/dedicated.js"></script>
+
+
+<script type="text/javascript">
+    $("#navmenu1 li").bind("click",function(){
+        $("#navmenu1 li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+
+    $("#navmenu2 li").bind("click",function(){
+        $("#navmenu2 li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+
+
+
+
+</script>
+</body>
+</html>

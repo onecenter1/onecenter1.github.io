@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<link rel="stylesheet" type="text/css" href="../../css/widget.css">
+<script type="text/javascript" src="../../js/demo.js"></script>
+
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+<!--
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body>
+
+<div class="bodywindows"></div>
+
+<!--点击部署的弹出层-->
+<div class="w-pop typel-setwin modelwin-set" style="margin-top: 50px;display: none; width: 770px; position: absolute; z-index: 899; left: 150px;" id="r-customadd">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>部署模型</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closetypelwin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con">
+                            <div class="f-right-btn">
+                                <ul class="fixedvaluefromul">
+                                    <li><span class="fixedvaluefrom">资源</span>
+                                        <span class="color-red">*</span>
+                                        <input type="text" class="main-input min-300"></span>
+                                        <a class="btn-body">
+                                            <div class="btn-l">
+                                                <div class="btn-r">
+                                                    <div class="btn-m">
+                                                        <span class=""></span>浏览<span class="pull"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <span class="color-red">*</span>
+                                        <span class="color-red">请上传模型压缩包，格式为zip，大小不能超过5MB。</span>
+
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body closetypelwin">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="btn-body closetypelwin">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>取消<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="main-content">
+  <div class="h-btn margin-top0">
+
+      <a class="btn-body locate-right">
+        <div class="btn-l">
+          <div class="btn-r">
+            <div class="btn-m"> <span class="ico ico-release"></span> <span>删除</span></div>
+          </div>
+        </div>
+    </a>
+          <a class="btn-body locate-right openmodel-set">
+        <div class="btn-l">
+          <div class="btn-r">
+            <div class="btn-m"> <span class="ico ico-add"></span> <span>部署</span></div>
+          </div>
+        </div>
+        </a>
+
+      <span>模型名称：</span>
+    <div class="select-body">
+              <div class="select-l">
+                <div class="select-r">
+                  <div class="select-m"> <span class="select_txt min-120">请选择...</span>
+                      <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="option min-150" style="display: none;">
+                  <a>DellHardware_snmp</a>
+              </div>
+    </div>
+
+
+             <span>部署时间：</span>
+      从
+                 <div class="select-body">
+                  <div class="select-l">
+                    <div class="select-r">
+                      <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+                    </div>
+                  </div>
+                  <div class="select-trigger-warp"><a class="select-trigger-date"></a></div>
+                </div>
+到
+      <div class="select-body">
+          <div class="select-l">
+              <div class="select-r">
+                  <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+              </div>
+          </div>
+          <div class="select-trigger-warp"><a class="select-trigger-date"></a></div>
+      </div>
+关键字：     <input name="input" type="text" class="main-input" />
+      <a class="btn-body">
+          <div class="btn-l">
+              <div class="btn-r">
+                  <div class="btn-m"> <span class="ico ico-search"></span> <span>搜 索</span></div>
+              </div>
+          </div>
+      </a>
+</div>
+<div class="common">
+  <div class="tab-header margin-top0">
+    <div class="tab-header-l">
+      <div class="tab-header-r">
+        <div class="tab-header-m">
+          <div class="theadpart" style="width:100%;">
+            <table>
+              <thead>
+                <tr>
+                  <th width="4%" class="tcenter"><span class="icon icon_uncheck">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                  </span></th>
+                  <th width="16%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank"></a> <span>模型名称</span> </th>
+                  <th width="14%"><a class="rank-up"></a><a class="rank-pull"></a><span>资源类型</span></th>
+                  <th width="14%"><a class="rank-up"></a><a class="rank-pull"></a><span>来源</span></th>
+                  <th width="17%"><a class="rank-up"></a><span>部署人员</span></th>
+                  <th width="17%"><a class="rank-up"></a><span>最近部署时间</span></th>
+
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tbodypart">
+    <table>
+      <tbody>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+          </tr>
+        <tr class="cbg">
+          <td class="tcenter">&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+
+          </tr>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr>
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+
+        </tr>
+      </tbody>
+    </table>
+    <div class="font-page">
+      <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+          <div class="amount">第
+            <input type="text" class="page-number" name="input2" />
+          页</div>
+        <a class="next">下一页</a> <a class="end">末页</a> </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!--点击修该按钮出现的弹出层-------------------------------------------------------------->
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+
+
+<script type="text/javascript">
+    $(".mainnavfrom ul li").click(function(){
+        $(".mainnavfrom ul li").removeClass("clickon");
+        $(this).addClass("clickon");
+    })
+
+</script>
+</body>
+</html>

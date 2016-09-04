@@ -1,0 +1,767 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Onecenter4.0</title>
+    <link  href="../../css/common.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css">
+    <script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+
+    <style type="text/css">
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+
+
+<div class="fulltool">
+    <ul>
+        <a href="../index.html" target="_parent"><li class="full-ico full-ico-scroon"></li></a>
+        <li class="full-ico full-ico-min"></li>
+        <li class="full-ico full-ico-edit costombtn"></li>
+    </ul>
+
+</div>
+
+
+
+
+<div id="content">
+
+    <div class="module moduleleft" style="width: 75%;height: 100%;">
+        <div class="w-full-top-l">
+            <div class="w-full-top-r">
+                <div class="w-full-top-m locate-center">
+                    <span class="">告警一览</span>
+                    <span class=" ico ico-max locate-right goswitch"></span>
+                </div>
+            </div>
+        </div>
+        <div class="w-full-middle">
+            <div class="w-full-content">
+
+
+
+            <div  class="w-pop" style="margin-top:50px; width:400px; position:absolute; z-index:999;left:500px; visibility:hidden" id="pop-host">
+                <div class="pop-top-l">
+                    <div class="pop-top-r">
+                        <div class="pop-top-m">
+                            <span>主机</span>
+                            <div class="pop-close-r">
+                                <a class="pop-close-ico" onclick="MM_showHideLayers('pop-host','','hide')"></a>                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop-middle-l">
+                    <div class="pop-middle-r">
+                        <div class="pop-middle-m">
+                            <div class="pop-middle-m-content">
+                                <div class="pop-content">
+                                    <div class="pop-content">
+                                        <div class="tab-con">
+                                            <div class="h-nobg f-right-btn" >
+                                                <ul class="fieldlist">
+                                                    <li class="i-host-tittle"><a class="i-host-ico"></a><a>Windows</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                </ul>
+                                                <ul class="fieldlist">
+                                                    <li class="i-host-tittle"><a class="i-host-ico"></a><a>Solaris</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                </ul>
+                                                <ul class="fieldlist">
+                                                    <li class="i-host-tittle"><a class="i-host-ico"></a><a>Aix</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                    <li class="i-host-bg"><a><input name="check" type="radio" value="" /></a><a>(192.168.1.216) R04733</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="pop-bottom-btn">
+                                        <a class="btn-body">
+                                            <div class="btn-l">
+                                                <div class="btn-r">
+                                                    <div class="btn-m">
+                                                        <span class=""></span>确定<span class="pull"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="btn-body">
+                                            <div class="btn-l">
+                                                <div class="btn-r">
+                                                    <div class="btn-m">
+                                                        <span class=""></span>取消<span class="pull"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop-bottom-l">
+                    <div class="pop-bottom-r">
+                        <div class="pop-bottom-m">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="w-pop" style="margin-top:50px; left:500px; width:400px; position:absolute; z-index:999; visibility:hidden;" id="topn">
+                <div class="pop-top-l">
+                    <div class="pop-top-r">
+                        <div class="pop-top-m">
+                            <span>TOPN</span>
+                            <div class="pop-close-r">
+                                <a class="pop-close-ico" onclick="MM_showHideLayers('topn','','hide')" ></a>                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop-middle-l">
+                    <div class="pop-middle-r">
+                        <div class="pop-middle-m">
+                            <div class="pop-middle-m-content">
+                                <div class="pop-content">
+                                    <div class="pop-content">
+                                        <div class="tab-con locate-center">
+                                            <a class="i-equi on"> <span class="icu-ico"></span> <span>CPU</span> </a>
+                                            <a class="i-equi"> <span class="memory-ico"></span> <span>内存</span> </a>
+                                            <div class="h-slide position-none margin-bottom12">
+                                                <div class="h-slide-l">
+                                                    <div class="h-slide-r">
+                                                        <div class="h-slide-m">
+                                                            <div class="h-slide-m-con"> <a class="on">主机</a> <a>应用</a> <a>网络设备</a> </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pop-bottom-btn">
+                                        <a class="btn-body">
+                                            <div class="btn-l">
+                                                <div class="btn-r">
+                                                    <div class="btn-m">
+                                                        <span class=""></span>确定<span class="pull"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="btn-body">
+                                            <div class="btn-l">
+                                                <div class="btn-r">
+                                                    <div class="btn-m">
+                                                        <span class=""></span>取消<span class="pull"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pop-bottom-l">
+                    <div class="pop-bottom-r">
+                        <div class="pop-bottom-m">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content" style="height: 100%;">
+
+
+                <img style="width: 100%;height: 100%;" src="../../images/ex/imgqieindexview.png" alt="">
+
+            </div>
+            </div>
+            <div class="w-full-bottom-m locate-center">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="module moduleright" style="width: 20%;height: 100%;">
+
+            <DIV class="slide-pic Downsizingview" id=slidePic>
+                <A class="gray" id=prev hideFocus href="javascript:;">前移</A>
+                <DIV class="pic_zzjs Downsizingview-content" >
+
+                    <UL class="" style="height: 100%;margin-top: -30px;">
+                        <LI class="">
+                            <div class="Downsizingview-view firstview viewclick">
+                                <img style="width: 100%;height: 100%;" src="../../images/ex/imgqieindexview.png" alt="">
+                            </div>
+                        </li>
+                        <LI class="">
+                            <div class="Downsizingview-view secondview">
+
+                            </div>
+                        </li>
+                        <LI class="">
+                            <div class="Downsizingview-view thirdview">
+
+                            </div>
+                        </li>
+                        <LI class="">
+                            <div class="Downsizingview-view fourthview">
+
+                            </div>
+                        </li>
+                        <LI class="">
+                            <div class="Downsizingview-view fourthview">
+
+                            </div>
+                        </li>
+                    </UL>
+
+                </DIV>
+                <A id=next hideFocus href="javascript:;">后移</A>
+            </DIV>
+
+
+    </div>
+
+
+
+</div>
+<!--点击设置按钮定制主页-->
+<div class="pop custompage" style="position: fixed;left: 3%;top: 1%; width:1300px;">
+
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span></span>
+            <div class="pop-close-r">
+                <a class="pop-help-ico"></a>
+                <a class="pop-set-ico"></a>
+                <a id="indexclosewindow" class="pop-close-ico"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+
+<div class="pop-tittle">
+    <div class="pop-tittle-l" style="width: 245px">
+        <div class="pop-tittle-m">
+            <span style="position: relative;top: -7px;font-weight: bold;">我的工作台窗口设置</span>
+
+            <span class="indexviewcruent">
+                <span class="full-ico-scroon indexviewcruent-scroon indexclickleftview"></span>
+                <span class="full-ico-min indexviewcruent-min indexclickrightview"></span>
+            </span>
+        </div>
+
+    </div>
+
+
+
+</div>
+<!--！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！第一总块！！！！！！！！！！！！！！！！！！-->
+<div class="pop-content indextc-contentone">
+<div class="tab-con" style="text-align: right;height: 260px;overflow: hidden;">
+    <div class="indexview" style="width: 98.5%;height: 250px;overflow: hidden;padding-left: 10px;padding-top: 5px;padding-bottom: 5px;padding-right: 20px;;">
+        <div class="" style="background-color: #272a37;width: 100%;height: 100%;">
+            <div class="indexleftview">
+                <!--<a class="tab-arrow-ico tab-arrow-l indexviewleftbtn"></a>-->
+                <!--<a class="tab-arrow-ico tab-arrow-r indexviewrightbtn"></a>-->
+                <ul>
+                    <li class="indexleftviewziyuan" style="background: url('../../images/ex/gaojingyilantop1.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>告警一览</span>
+                            <!--<span class="currentpage currentpageclick"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewtopn" style="background: url('../../images/ex/gaojinyilantop2.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>TOPN</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewgaojin" style="background: url('../../images/ex/gaojinyilantop3.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>关注主机</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewliyongl" style="background: url('../../images/ex/gaojinyilantop4.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>关注网络设备</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+
+                    <!--靠靠靠靠靠靠靠靠靠-->
+                    <li class="indexleftviewziyuan" style="background: url('../../images/ex/gaojinyilantop5.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>关注应用</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewtopn" style="background: url('../../images/ex/gaojinyilantop6.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>可用性一览</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewgaojin" style="background: url('../../images/ex/gaojinyilantop2.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>资源一览</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewliyongl" style="background: url('../../images/ex/gaojingyilantop1.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>资源一览</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+
+                    <!--噢噢噢噢噢噢噢噢噢噢噢噢噢噢噢-->
+                    <li class="indexleftviewziyuan" style="background: url('../../images/ex/gaojinyilantop3.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>资源一览</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewtopn" style="background: url('../../images/ex/gaojinyilantop4.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>资源一览</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <li class="indexleftviewgaojin" style="background: url('../../images/ex/gaojinyilantop6.png')0 0 no-repeat">
+                        <div class="indexviewlitext">
+                            <span>资源一览</span>
+                            <!--<span class="currentpage"></span>-->
+                            <span class="currentdel"></span>
+                        </div>
+                    </li>
+                    <!--视图添加到此-->
+                    <li class="toaddindexview">
+
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div style="clear: left;"></div>
+
+
+
+</div>
+
+<span>
+      <div class="d-page" style="height: 30px;margin-top: 5px;">
+          <span style="position: relative;left: -33%;top: -7px;"> 单击"+"号添加类型/拖动排序</span>
+          <a class="d-page-ico d-page-nl"></a>
+
+          <a class="d-page-ico  d-page-greendot"></a>
+          <a class="d-page-ico d-page-dot" href="content-n.html"></a>
+          <a class="d-page-ico d-page-dot"></a>
+          <a class="d-page-ico d-page-dot"></a>
+
+          <a class="d-page-ico d-page-r"></a>
+
+
+          <a class="btn-body locate-right">
+              <div class="btn-l">
+                  <div class="btn-r">
+                      <div class="btn-m indexclosewindow">
+                          <span class=""></span>取消<span class="pull"></span>
+                      </div>
+                  </div>
+              </div>
+          </a>
+          <a class="btn-body locate-right">
+              <div class="btn-l">
+                  <div class="btn-r">
+                      <div class="btn-m indexclosewindow">
+                          <span class=""></span>提交<span class="pull"></span>
+                      </div>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+
+</span>
+<div class="tab-con" style="text-align: right">
+    <div class="" style="width: 100%;height: 100%;">
+
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN1.png')0 0 no-repeat;">
+
+            <div class="butviewtext" style="z-index: 1">
+                <span>告警一览</span>
+            </div>
+
+            <div class="butlistwindow"  style="z-index: 1">
+
+            </div>
+
+            <div class="addviewto"  style="z-index: 1">
+                <img src="../../images/comm/icon/addindexico.png" alt="">
+            </div>
+
+            <!--<img style="position: absolute;left: 5;top: 5;width:100%;height:100%;z-index:-99;" src="../images/ex/TOPN6.png" />-->
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN6.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>TOPN</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN2.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>关注主机</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>关注网络设备</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN4.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>关注应用</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN5.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>可用性一览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN4.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>资源概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>告警概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN2.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>设备概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+        <div class="indexviewbut" style="background: url('../../images/ex/TOPN1.png')0 0 no-repeat; ">
+            <div class="butviewtext">
+                <span>应用概览</span>
+            </div>
+            <div class="butlistwindow"></div>
+            <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+        </div>
+
+    </div>
+    <div style="clear: left;"></div>
+</div>
+
+</div>
+
+<!--！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！第二总块！！！！！！！！！！！！！！！！！！！！-->
+
+<div class="pop-content indextc-contenttwo">
+
+    <div class="indexviewcontenttwo">
+        <div class="indexviewtwo">
+            <div class="indexviewtwotwo">
+                <div class="indexleftviewtwo">
+                    <!--<a class="tab-arrow-ico tab-arrow-l indexviewleftbtn"></a>-->
+                    <!--<a class="tab-arrow-ico tab-arrow-r indexviewrightbtn"></a>-->
+                    <div class="indexviewcontenttwo2">
+                        <ul>
+                            <li class="indexleftviewziyuan" style="background: url('../../images/ex/gaojingyilantop1.png')0 0 no-repeat">
+                                <div class="indexviewlitext">
+                                    <span>告警一览</span>
+                                    <!--<span class="currentpage currentpageclick"></span>-->
+                                    <span class="currentdel"></span>
+                                </div>
+                            </li>
+                            <li class="indexleftviewtopn" style="background: url('../../images/ex/gaojinyilantop2.png')0 0 no-repeat">
+                                <div class="indexviewlitext">
+                                    <span>TOPN</span>
+                                    <!--<span class="currentpage"></span>-->
+                                    <span class="currentdel"></span>
+                                </div>
+                            </li>
+                            <li class="indexleftviewgaojin" style="background: url('../../images/ex/gaojinyilantop3.png')0 0 no-repeat">
+                                <div class="indexviewlitext">
+                                    <span>关注主机</span>
+                                    <!--<span class="currentpage"></span>-->
+                                    <span class="currentdel"></span>
+                                </div>
+                            </li>
+
+                            <!--视图添加到此-->
+                            <li class="toaddindexview">
+
+                            </li>
+
+
+                        </ul>
+
+
+
+                    </div>
+
+                    <div class="d-page" style="position: relative;top: 94%;left: 14%;">
+
+
+                        <a class="btn-body locate-right">
+                            <div class="btn-l">
+                                <div class="btn-r">
+                                    <div class="btn-m indexclosewindow">
+                                        <span class=""></span>取消<span class="pull"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="btn-body locate-right">
+                            <div class="btn-l">
+                                <div class="btn-r">
+                                    <div class="btn-m indexclosewindow">
+                                        <span class=""></span>提交<span class="pull"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div style="clear: left;"></div>
+
+
+
+    </div>
+
+    <div class="tab-con">
+        <div class="tab-conrightcontent" style="width: 58%;height:519px;float: left;background-color: #272a37;margin-top: 4px;">
+
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN6.png')100% 100% no-repeat;">
+
+                <div class="butviewtext" style="z-index: 1">
+                    <span>告警一览</span>
+                </div>
+
+                <div class="butlistwindow"  style="z-index: 1">
+
+                </div>
+
+                <div class="addviewto"  style="z-index: 1">
+                    <img src="../../images/comm/icon/addindexico.png" alt="">
+                </div>
+
+                <!--<img style="position: absolute;left: 5;top: 5;width:100%;height:100%;z-index:-99;" src="../images/ex/TOPN6.png" />-->
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN5.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>TOPN</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN1.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>关注主机</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN2.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>关注网络设备</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>关注应用</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN4.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>可用性一览</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN6.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>资源概览</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>告警概览</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>设备概览</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>应用概览</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>设备概览</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+            <div class="indexviewbut" style="background: url('../../images/ex/TOPN3.png')100% 100% no-repeat; ">
+                <div class="butviewtext">
+                    <span>应用概览</span>
+                </div>
+                <div class="butlistwindow"></div>
+                <div class="addviewto"><img src="../../images/comm/icon/addindexico.png" alt=""></div>
+            </div>
+
+        </div>
+
+        <div style="clear: left;"></div>
+
+
+
+    </div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+<!--<script type="text/javascript" src="../js/index.js"></script>-->
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<!--<script type="text/javascript" src="../../js/public/public.js"></script>-->
+<script type="text/javascript" language="JavaScript" src="../../js/AnyChart/AnyChart.js"></script>
+
+<script type="text/javascript">
+
+    var viewall= $(".Downsizingview-view");
+    viewall.each(function(e){
+        $(viewall[e]).click(function(){
+            viewall.removeClass("viewclick");
+            $(this).addClass("viewclick");
+        });
+        $(viewall[0]).click(function(){
+            window.location.href="#";
+        });
+        $(viewall[1]).click(function(){
+            window.location.href="thesecondview.html";
+        });
+        $(viewall[2]).click(function(){
+            window.location.href="thethirdview.html";
+        });
+        $(viewall[3]).click(function(){
+            window.location.href="thefourthview.html";
+        });
+
+
+
+    });
+
+
+</script>
+
+  <script type="text/javascript" language="JavaScript">
+    var chart = new AnyChart('../../js/AnyChartswf/AnyChart.swf', '../../js/AnyChartswf/Preloader.swf');
+    chart.width = "100%";
+    chart.height = "100%";
+    //    chart.wmode="transparent";
+    chart.setXMLFile("../config.xml");
+    chart.write("chartContainer");
+
+</script>
+
+<SCRIPT type=text/javascript>
+
+</SCRIPT>
+
+
+</body>
+</html>

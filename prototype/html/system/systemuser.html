@@ -1,0 +1,727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script type="text/javascript" src="../../js/demo.js"></script>
+    <script type="text/javascript">
+        //点击发现设备按钮出现弹出层
+        function MM_showHideLayers() { //v9.0
+            var i,p,v,obj,args=MM_showHideLayers.arguments;
+            for (i=0; i<(args.length-2); i+=3)
+                with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+                    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+                    obj.visibility=v; }
+        }
+    </script>
+</head>
+<body>
+<div class="bodywindows"></div>
+<!--点击添加新角色-->
+<div class="w-pop addRolewin" style="margin-top: 50px; width: 770px; display: none; position: fixed;left: 10%;top: 5%; z-index: 999; " id="r-customadd">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <span>添加新角色</span>
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closeaddRolewin"></a>                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+                    <div class="pop-content">
+                        <div class="pop-con" style="overflow: hidden;">
+                            <div class="f-right-btn">
+                                <ul class="fieldlist">
+                                    <li> <span class="fixedvalue">角色名称</span> <span class="colon">：</span>
+                                        <input type="text" class="text-box"> </li>
+                                </ul>
+                            </div>
+
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td width="47%" class="tree-views" style="overflow-y: auto;">
+                                       <div style="width: 100%;height: 30px;line-height: 30px;text-align: center;background-color: #525768;">页面权限</div>
+                                        <ul class="li-vertical">
+                                            <li>
+
+                                                <span><input type="checkbox"></span><span>首页</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>业务管理</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>网络管理</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>监控管理</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>告警管理</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>巡检管理</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>流量分析</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>报表管理</span></li>
+                                            <li>
+                                                <span><input type="checkbox"></span><span>系统管理</span></li>
+                                        </ul>
+                                    </td>
+                                    <td width="6%" style="vertical-align:middle;">
+                                        <div class="tab-tree-arrow">      </div>
+                                    </td>
+
+                                    <td width="47%" class="tree-views" style="overflow-y: auto;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <div style="width: 100%;height: 30px;line-height: 30px;text-align: center;background-color: #525768;">资源权限</div>
+
+                                        <tbody>
+                                        <tr valign="middle">
+                                            <td width="18" align="center" valign="middle"><input type="checkbox" name="checkbox12" id="checkbox12"></td>
+                                            <td width="18" align="center"><a class="tree-a-down"></a></td>
+                                            <td width="299" valign="middle">全部资源</td>
+                                        </tr>
+                                        <tr valign="middle">
+                                            <td>&nbsp;</td>
+                                            <td height="22" colspan="2">
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox13" id="checkbox13"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-a-down"></a></td>
+                                                        <td width="269">主机</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>&nbsp;</td>
+                                                        <td colspan="2" align="center" valign="middle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                            <tbody><tr>
+                                                                <td width="18"><input type="checkbox" name="checkbox14" id="checkbox14"></td>
+                                                                <td height="22">Windows</td>
+                                                            </tr>
+                                                            </tbody></table>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody><tr>
+                                                                    <td width="18"><input type="checkbox" name="checkbox15" id="checkbox15"></td>
+                                                                    <td height="22">Linux</td>
+                                                                </tr>
+                                                                </tbody></table>
+                                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody><tr>
+                                                                    <td width="18"><input type="checkbox" name="checkbox16" id="checkbox16"></td>
+                                                                    <td height="22">HP-ux</td>
+                                                                </tr>
+                                                                </tbody></table></td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox17" id="checkbox17"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                                        <td width="269">AIX</td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox18" id="checkbox21"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                                        <td width="269" height="22">网络</td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox19" id="checkbox22"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                                        <td width="269" height="22">应用</td>
+                                                    </tr>
+                                                    </tbody></table>
+                                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                    <tbody><tr>
+                                                        <td width="30"><input type="checkbox" name="checkbox20" id="checkbox23"></td>
+                                                        <td width="16" align="center" valign="middle"><a class="tree-arrow"></a></td>
+                                                        <td width="269" height="22">基础服务</td>
+                                                    </tr>
+                                                    </tbody></table></td>
+                                        </tr>
+
+                                        </tbody></table>
+                                    </td>
+                                </tr>
+                                </tbody></table>
+
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body closeaddRolewin">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="btn-body closeaddRolewin">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m">
+                                            <span class=""></span>取消<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--点击添加弹出层添加用户-->
+<div id="adduserwin"  class="w-pop" style="position: fixed;left: 10%;top: 5%;; width:770px; display:none">
+
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>新建用户</span>
+            <div class="pop-close-r">
+                <a  class="pop-close-ico closewindowone"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+
+<div class="pop-content">
+
+<div class="tab-con">
+    <table id="page2"  width="100%"  border="0" cellspacing="0" cellpadding="0" class="table-pop">
+        <tr>
+            <td class="tab-l-tittle">用户类型</td>
+            <td>
+                <input checked type="radio" name="admin" id="noadmin"  href=".tab2" class="clickobjtarget"><label for="noadmin">非管理员</label>
+                <span>需要通过赋予劫色授权</span>
+                <a class="ico ico-help locate-right" title="需要通过赋予劫色授权 "></a>
+                <br>
+                <input type="radio" name="admin" id="admin" href=".tab1" class="clickobjtarget"><label for="admin" >管理员</label>
+                <span>能维护管理整个系统，拥有最高权限</span>
+                <a class="ico ico-help locate-right" title="能维护管理整个系统，拥有最高权限" style="position: relative;left: 7%;"></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="tab-l-tittle">用户名</td>
+            <td>      <input type="text" class="text-box min-120">  </td>
+            <td class="tab-l-tittle">姓名</td>
+            <td> <input type="text" class="text-box min-120"></td>
+        </tr>
+        <tr>
+            <td class="tab-l-tittle">密码</td>
+            <td>   <input type="text" class="text-box min-120">   </td>
+            <td class="tab-l-tittle">性别</td>
+            <td>  <input type="radio">男 <input type="radio">女   </td>
+        </tr>
+        <tr>
+            <td class="tab-l-tittle">确认密码</td>
+            <td>      <input type="text" class="text-box min-120">  </td>
+            <td class="tab-l-tittle">手机号</td>
+            <td> <input type="text" class="text-box min-120"></td>
+        </tr>
+        <tr>
+            <td class="tab-l-tittle"></td>
+            <td>  </td>
+            <td class="tab-l-tittle">电子邮件</td>
+            <td> <input type="text" class="text-box min-120"></td>
+        </tr>
+    </table>
+    <div class="resours-modeltop">
+        <div class="tab1 resours-modelall"></div>
+        <div class="tab2 resours-modelall">
+            <div style="padding: 5px;">
+                <span>角色设置：</span>
+            </div>
+            <div class="faxianinfo" style="border: 1px #626262 solid;">
+                <div style="float: left;width: 44%;margin-left: 1%;border: 1px #aaa solid;">
+                    <div class="common" style="width: 325px">
+                        <div class="tab-header margin-top0">
+                            <div class="tab-header-l">
+                                <div class="tab-header-r">
+                                    <div class="tab-header-m">
+                                        <div style="width:100%;" class="theadpart">
+                                            <table>
+                                                <thead>
+                                                <tr>
+                                                    <th width="40%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox21" name="checkbox"> </span></th>
+                                                    <th width="60%"> <span>角色名称</span> </th>
+                                                </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbodypart">
+                            <table>
+                                <tbody>
+                                <tr style="height: 30px;">
+                                    <td width="40%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox" name="checkbox">      </span>
+                                    </td>
+                                    <td width="60%"><span class=" redlight">IT服务经理</span></td>
+                                </tr>
+                                <tr class="cbg" style="height: 30px;">
+                                    <td width="40%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">      </span></td>
+                                    <td width="60%"><span class=" redlight">IT部门经理</span></td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td width="40%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox" name="checkbox">      </span>
+                                    </td>
+                                    <td width="60%"><span class=" redlight">IT高层管理者</span></td>
+                                </tr>
+                                <tr class="cbg" style="height: 30px;">
+                                    <td width="40%" class="tcenter"><span class="icon icon_uncheck">
+                                               <input type="checkbox" id="checkbox" name="checkbox">      </span></td>
+                                    <td width="60%"><span class=" redlight">配置管理员</span></td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td width="40%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox" name="checkbox">      </span>
+                                    </td>
+                                    <td width="60%"><span class=" redlight">监控人员</span></td>
+                                </tr>
+                                <tr class="cbg" style="height: 30px;">
+                                    <td width="40%" class="tcenter"><span class="icon icon_uncheck">
+                                                    </span></td>
+                                    <td width="60%"><span class=" redlight">&nbsp;</span></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--中间切换-->
+                <div style="float: left;width: 5%;position: relative;left: 0%;top: 110px;">
+                    <div class="tab-tree-arrow"> <a class="tree-arrow-right"></a>
+                        <a class="tree-arrow-left"></a> </div>
+                </div>
+                <!--右边表格-->
+                <div style="float: left;width: 44%;border: 1px #aaa solid;">
+                    <div class="common" style="width: 325px;">
+                        <div class="tab-header margin-top0">
+                            <div class="tab-header-l">
+                                <div class="tab-header-r">
+                                    <div class="tab-header-m">
+                                        <div style="width:100%;" class="theadpart">
+                                            <table>
+                                                <thead>
+                                                <tr>
+                                                    <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                                                       <input type="checkbox" id="checkbox26" name="checkbox">
+                                                     </span></th>
+                                                    <th width="41%"> <span>角色名称</span> </th>
+
+                                                </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbodypart">
+                            <table>
+                                <tbody>
+                                <tr style="height: 30px;">
+                                    <td width="15%" class="tcenter"><span class="icon icon_uncheck">      </span></td>
+                                    <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                                </tr>
+                                <tr class="cbg" style="height: 30px;">
+                                    <td width="15%" class="tcenter"><span class="icon icon_uncheck">     </span></td>
+                                    <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td width="15%" class="tcenter"><span class="icon icon_uncheck">      </span></td>
+                                    <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                                </tr>
+                                <tr class="cbg" style="height: 30px;">
+                                    <td width="15%" class="tcenter"><span class="icon icon_uncheck">     </span></td>
+                                    <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                                </tr>
+                                <tr style="height: 30px;">
+                                    <td width="15%" class="tcenter"><span class="icon icon_uncheck">      </span></td>
+                                    <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                                </tr>
+                                <tr class="cbg" style="height: 30px;">
+                                    <td width="15%" class="tcenter"><span class="icon icon_uncheck">     </span></td>
+                                    <td width="40%"><span class=" redlight">&nbsp;</span></td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div style="clear: left"></div>
+
+                <div style="padding: 5px;position: relative;left: 50%;">
+                    <a class="openRolewin">添加新角色</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<div class="pop-bottom-btn">
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body resetwin">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!--点击删除按钮出现删除层-->
+<div id="reourcedeletewin" class="pop" style="position: fixed;left: 35%;top:15%;">
+    <div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                <div class="pop-close-r">
+                    <a class="pop-close-ico closeuserdelwin"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+        <div class="pop-middle-r">
+            <div class="pop-middle-m">
+                <div class="pop-middle-m-content">
+
+                    <div class="pop-content">
+                        <div class="tab-con">
+                            <ul class="answer">
+                                <li>
+                                    <div class="question-body">
+                                        <div class="q-l">
+                                            <div class="q-r">
+                                                <div class="q-m">
+                                                    <span>您确定要删除此条信息吗？</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pop-bottom-btn">
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m yes">
+                                            <span class=""></span>确定<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="btn-body">
+                                <div class="btn-l">
+                                    <div class="btn-r">
+                                        <div class="btn-m windowhide2_no">
+                                            <span class=""></span>取消<span class="pull"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+            <div class="pop-bottom-m">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="h-btn">
+    <span class="h-tittle"></span>
+    <a class="btn-body locate-right usergetwindel">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m"> <span class="ico ico-del"></span> <span>删除</span> <span class="pull"></span> </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body locate-right getadduserwin">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m"> <span class="arrowaddget locate-left"></span>
+                    <span>添加</span> <span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+  <span>搜索：</span>
+    <input type="text" class="text-box min-300">
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m"> <span class="ico ico-search"></span> <span>搜 索</span></div>
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="common">
+<div class="tab-header margin-top0">
+    <div class="tab-header-l">
+        <div class="tab-header-r">
+            <div class="tab-header-m">
+                <div class="theadpart">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th width="3%" align="center" valign="middle" ><input name="" type="checkbox" value="" /></th>
+                            <th width="10%">
+                                <a class="rank-down"></a>
+                                <a class="rank-pull" id="show_rank"></a>
+                                <span>用户名</span>
+                            </th>
+                            <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>姓名</span></th>
+                            <th width="10%"><a class="rank-up"></a><a class="rank-pull"></a><span>用户类型</span></th>
+                            <th width="10%"><a class="rank-up"></a><span>手机号</span></th>
+                            <th width="10%"><a class="rank-up"></a><span>电子邮箱</span></th>
+
+
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-list tbodypart ">
+    <table>
+        <tbody>
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td&gt; </td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td&gt; </td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td&gt; </td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td&gt; </td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td&gt; </td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td&gt; </td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+        <tr>
+            <td width="3%" class="tcenter">
+                <input name="input" type="checkbox" value="" /></td>
+            <td width="10%">Administrator/td&gt; </td>
+            <td width="10%">Administrator</td>
+            <td width="10%">系统管理员</td>
+            <td width="10%">18600832125</td>
+            <td width="10%"></td>
+        </tr>
+        <tr class="cbg">
+            <td class="tcenter"><input name="input2" type="checkbox" value="" /></td>
+            <td>huy</td>
+            <td>胡云</td>
+            <td>管理员</td>
+            <td>15901479432</td>
+            <td>huy@chinawiser.com</td>
+        </tr>
+        </tbody>
+    </table>
+<div class="font-page">
+        <div class="fontpage-btnbox">
+            <a class="first">首页</a>
+            <a class="last">上一页</a>
+            <div class="amount">第<input type="text" class="page-number" name="">页</div>
+            <a class="next">下一页</a>
+            <a class="end">末页</a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+
+<script type="text/javascript">
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="r-knologe" style="margin-top: 100px; position: absolute; visibility: hidden; z-index: 999; left: 450px;" class="w-pop">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+             <span>知识关联</span>
+                <div class="pop-close-r">
+                  <a onclick="MM_showHideLayers('r-knologe','','hide')" class="pop-close-ico"></a>                </div>
+          </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+                <div class="pop-content">
+                   <div class="tab-con">
+                 
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="display:none" class="table-pop">
+  <tbody><tr>
+    <td class="tab-l-tittle">告警信息</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tab-l-tittle">知识关联结果</td>
+    <td>&nbsp;</td>
+  </tr>
+</tbody></table>
+<div style="padding:10px 10px; text-align:center;" class="table-pop"><span class="no-mespic">对不起，暂无知识关联信息！</span></div>
+                 </div>
+                 <div class="pop-bottom-btn">
+<a onclick="MM_showHideLayers('r-knologe','','hide')" class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>确定<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+<a onclick="MM_showHideLayers('r-knologe','','hide')" class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>取消<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+</div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+     </div>
+    </div>
+<div  class="w-pop min-908" style="margin-top:50px;position:absolute;  z-index:999; left:250px;visibility:hidden; " id="r-detail">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+             <span>告警详情</span>
+                <div class="pop-close-r">
+                  <a class="pop-close-ico" onclick="MM_showHideLayers('r-detail','','hide')"></a>                </div>
+          </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+                <div class="pop-content">
+              
+                  <div class="tab-con">
+                  <div class="h-nobg min-100">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-pop">
+                      <tr>
+                        <td class="tab-l-tittle">告警内容</td>
+                        <td colspan="5"><textarea name="textarea" id="textarea" cols="45" rows="3" class=" textarea min-99">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值>80%)</textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="tab-l-tittle">告警级别</td>
+                        <td width="15%" class="cell_inner">
+                <span class="orangelight">严重</span></td>
+                        <td  class="tab-l-tittle">产生时间</td>
+                        <td class="cell_inner">2014/04/15 13：38：52</td>
+                        <td  class="tab-l-tittle">IP地址</td>
+                        <td ><div class="select-body">
+              <div class="select-l">
+                <div class="select-r">
+                  <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                      <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="option min-150" style="display: none;"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+            </div></td>
+                      </tr>
+                      <tr>
+                        <td class="tab-l-tittle">监控类型</td>
+                        <td>Cisco交换机</td>
+                        <td class="tab-l-tittle">告警来源</td>
+                        <td colspan="3">ITM-Server</td>
+                      </tr>
+                    </table>
+                    </div>
+                    <div class="common margin-top6">
+                      <div class="tab-header margin-top0">
+                        <div class="tab-header-l">
+                          <div class="tab-header-r">
+                            <div class="tab-header-m">
+                              <div class="theadpart" style="width:100%;">
+                                <table>
+                                  <thead id="getchecedbox2">
+                                    <tr>
+                                      <th width="79%"><span>告警内容</span></th>
+                                      <th width="21%"><span>产生时间</span></th>
+                                    </tr>
+                                  </thead>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tbodypart">
+                        <table>
+                          <tbody id="windowliobj2">
+                            <tr>
+                              <td width="79%" class="cell_inner"><span class=" orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值>80%)</span></td>
+                              <td width="21%">2014/04/15 13：38：52</td>
+                            </tr>
+                            <tr class="cbg">
+                              <td width="79%" class="cell_inner"><span class=" redlight">PM-ZB_Switch_6509_1致命告警;设备无法连接</span></td>
+                              <td>2014/04/15 13：38：52</td>
+                            </tr>
+                            <tr>
+                              <td class="cell_inner"><span class=" orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值>80%)</span></td>
+                              <td>2014/04/15 13：38：52</td>
+                            </tr>
+                            <tr class="cbg">
+                              <td class="cell_inner"><span class=" redlight">PM-ZB_Switch_6509_1致命告警;设备无法连接</span></td>
+                              <td>2014/04/15 13：38：52</td>
+                            </tr>
+                            <tr>
+                              <td class="cell_inner"><span class=" orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span></td>
+                              <td>2014/04/15 13：38：52</td>
+                            </tr>
+                            <tr class="cbg">
+                              <td class="cell_inner"><span class=" orangelight">PM-ZB_Switch_6509_1致命告警;设备无法连接</span></td>
+                              <td>2014/04/15 13：38：52</td>
+                            </tr>
+                            <tr>
+                              <td class="cell_inner"><span class=" orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span></td>
+                              <td>2014/04/15 13：38：52</td>
+                            </tr>
+                            <tr class="cbg">
+                              <td class="cell_inner"><span class=" orangelight">PM-ZB_Switch_6509_1致命告警;设备无法连接</span></td>
+                              <td>2014/04/15 13：38：52</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="font-page">
+                          <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+                            <div class="amount">第
+                              <input type="text" class="page-number" name="input2" />
+                            页</div>
+                            <a class="next">下一页</a> <a class="end">末页</a> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 <div class="pop-bottom-btn" style="display:none;">
+<a class="btn-body" onclick="MM_showHideLayers('r-detail','','hide')">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>确定<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+<a class="btn-body" onclick="MM_showHideLayers('r-detail','','hide')">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>取消<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+</div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+
+     </div>
+    </div>
+<div  class="pop forword" style="margin-top:150px; width:908px;display: none; position:absolute; z-index:1000; left:250px;top: -65px;" id="foraw">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+            	 <span></span>
+                <div class="pop-close-r">
+                  <a class="pop-help-ico"></a>
+                  <a class="pop-set-ico"></a>
+                             </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+                <div class="pop-content">
+                   <div class="tab-con">
+                 
+                 <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-pop">
+  <tr>
+    <td class="tab-l-tittle">添加转发邮件地址</td>
+    <td><input type="text" name="textfield" id="" class="text-box addtexttoemail" /><a class="r-h-ico r-h-add ver-mid addinputtoemail"></a></td>
+  </tr>
+  <tr>
+    <td class="tab-l-tittle">转发邮件地址</td>
+    <td valign="middle" style="overflow: hidden">
+        <a class="tab-arrow-ico tab-arrow-l  smallpageleftoneobj" style="display: none;"></a>
+        <span  class="tab-con-m  addtextemail">
+
+        </span>
+
+         <span  class="tab-con-m  addtexttooemail" style="display: none;">
+
+
+        </span>
+
+        <a class="tab-arrow-ico tab-arrow-r  smallpagerighttwoobj" style="display: none;"></a>
+
+
+
+    </td>
+  </tr>
+  <tr>
+    <td class="tab-l-tittle">添加转发手机号码</td>
+    <td><input type="text" name="textfield" id="textfield" class="text-box addtexttomiddle" /><a class="r-h-ico r-h-add ver-mid addinputtomiddle"></a></td>
+  </tr>
+  <tr>
+    <td valign="middle" class="tab-l-tittle">转发手机号码</td>
+
+      <td valign="middle" style="overflow: hidden;">
+          <a class="tab-arrow-ico tab-arrow-l  smallpageleftone"  style="display: none;"></a>
+        <span  class="tab-con-m  addtext">
+
+
+        </span>
+
+         <span  class="tab-con-m  addtexttoo" style="display: none;">
+
+
+        </span>
+
+          <a class="tab-arrow-ico tab-arrow-r  smallpagerighttwo"  style="display: none;"></a>
+
+      </td>
+  </tr>
+</table>
+                 </div>
+                 <div class="pop-bottom-btn">
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m closeforword">
+                <span class=""></span>确定<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+<a class="btn-body">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m closeforword">
+                <span class=""></span>取消<span class="pull"></span>
+            </div>
+        </div>
+    </div>
+</a>
+</div>
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+     </div>
+    </div>
+<div  class="w-pop min-908" style="margin-top:50px; position:absolute; z-index:999; left:250px; visibility:hidden; " id="r-send">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+             <span>发送状态</span>
+                <div class="pop-close-r">
+                  <a class="pop-close-ico" onclick="MM_showHideLayers('r-send','','hide')"></a>                </div>
+          </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+                <div class="pop-content">
+                   <div class="tab-con">
+                   <div class="h-nobg min-100">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-pop">
+                      <tbody><tr>
+                        <td class="tab-l-tittle">告警内容</td>
+                        <td colspan="5"><textarea class=" textarea min-99" rows="3" cols="45" id="textarea" name="textarea">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</textarea></td>
+                      </tr>
+                      <tr>
+                        <td class="tab-l-tittle">告警级别</td>
+                        <td width="15%" class="cell_inner">
+                <span class="orangelight">严重</span></td>
+                        <td class="tab-l-tittle">产生时间</td>
+                        <td class="cell_inner">2014/04/15 13：38：52</td>
+                        <td class="tab-l-tittle">IP地址</td>
+                        <td><div class="select-body">
+              <div class="select-l">
+                <div class="select-r">
+                  <div class="select-m"> <span class="select_txt min-120">192.168.0.100</span>
+                      <div class="select-trigger-wrap"><a class="select-trigger"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div style="display: none;" class="option min-150"> <a>192.168.0.101</a> <a>192.168.0.102</a> <a>192.168.0.103</a> <a>192.168.0.104</a> </div>
+            </div></td>
+                      </tr>
+                      <tr>
+                        <td class="tab-l-tittle">监控类型</td>
+                        <td>Cisco交换机</td>
+                        <td class="tab-l-tittle">告警来源</td>
+                        <td colspan="3">ITM-Server</td>
+                      </tr>
+                    </tbody></table>
+                    </div>
+                   <div class="common margin-top6">
+                                   <div class="tab-header margin-top0">
+                                 <div class="tab-header-l">
+                                       <div class="tab-header-r">
+                                               <div class="tab-header-m">
+                                                 <div style="width:100%;" class="theadpart">
+<table>
+                                            <thead id="getchecedbox">
+                                            <tr>
+                                             
+                                          <th width="17%"><span>状态</span></th>
+                                              <th width="24%"><span>接收人</span></th>
+                                              <th width="31%"><span>接收方式</span></th>
+                                              <th width="28%"><span>接收地址</span></th>
+                                              </tr>
+                                            </thead>
+                                        </table>
+                                                     </div>
+                                               </div>
+                                   </div>
+                                     </div>
+                               </div>
+                                    <div class="tbodypart">
+                                        <table>
+                                            <tbody id="windowliobj">
+                                            <tr>
+                                              <td width="17%"><span class=" ico ico-already">已发送</span></td>
+                                              <td width="24%">孙雷</td>
+                                              <td width="31%"><span class="ico ico-email"></span></td>
+                                              <td width="28%">mass@chinawiserv.com</td>
+                                            </tr>
+                                            <tr class="cbg">
+                                              <td><span class=" ico ico-already">已发送</span></td>
+                                              <td>马山山</td>
+                                              <td><span class="ico ico-message"></span></td>
+                                              <td>18585858585</td>
+                                            </tr>
+                                            <tr>
+                                              <td><span class=" ico ico-noready">发送失败</span></td>
+                                              <td>胡云</td>
+                                              <td><span class="ico ico-message"></span></td>
+                                              <td>13408546712</td>
+                                            </tr>
+                                            <tr class="cbg">
+                                              <td><span class=" ico ico-noready">发送失败</span></td>
+                                              <td>孙雷</td>
+                                              <td><span class="ico ico-message"></span></td>
+                                              <td>18683572850</td>
+                                            </tr>
+                                            <tr>
+                                              <td><span class=" ico ico-already">已发送</span></td>
+                                              <td class="cbg">马山山</td>
+                                              <td><span class="ico ico-email"></span></td>
+                                              <td class="cbg">yangce@chinawiserv.com</td>
+                                            </tr>
+                                            <tr class="cbg">
+                                              <td><span class=" ico ico-already">已发送</span></td>
+                                              <td>胡云</td>
+                                              <td><span class="ico ico-email"></span></td>
+                                              <td>zhangy@chinawiserv.com</td>
+                                            </tr>
+                                            <tr>
+                                              <td><span class=" ico ico-already">已发送</span></td>
+                                              <td class="cbg">马山山</td>
+                                              <td><span class="ico ico-email"></span></td>
+                                              <td class="cbg">huy@chinawiserv.com</td>
+                                            </tr>
+                                            <tr class="cbg">
+                                              <td><span class=" ico ico-already">已发送</span></td>
+                                              <td>胡云</td>
+                                              <td><span class="ico ico-email"></span></td>
+                                                <td>sunl@chinawiserv.com</td>
+                                            </tr>
+                                            </tbody>
+                                      </table>
+                                      <div class="font-page">
+            <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+              <div class="amount">第
+                <input type="text" name="input" class="page-number">
+              页</div>
+              <a class="next">下一页</a> <a class="end">末页</a> </div>
+          </div>
+                     </div>
+                     </div>
+                   
+                  </div>
+                 
+                </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+     </div>
+    </div>
+
+<div class="pop" id="warning-event" style="margin-top:50px; width:700px; visibility:hidden; position:absolute; z-index:888;">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+                      <span></span>
+            	             <div class="pop-close-r">
+                  <a class="pop-help-ico"></a>
+                  <a class="pop-set-ico"></a>
+                  <a class="pop-close-ico" onclick="MM_showHideLayers('warning-event','','hide')" ></a>                                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+                   <div class="pop-tittle">
+                  <div class="pop-tittle-l"><div class="pop-tittle-m">资源名称</div>
+                  </div>
+                  <div class="pop-tittle-r">
+                  <div class="pop-tittle-content locate-left">(Windows) WIN-ITM-Server     172.16.0.81</div>
+                </div>
+                   
+                 </div>
+                 <div class="pop-content">
+                 <div class="tab-con">
+                  <div class=" h-nobg f-right-btn">
+                   <ul class="fieldlist background-darkgray">
+                   <li><span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span>
+                       <span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span></li>
+                   <li><span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span>
+                       <span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span></li>
+                   <li><span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span>
+                       <span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span></li>
+                   <li><span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span>
+                       <span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span></li>
+                   <li><span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span>
+                       <span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span></li>
+                   <li><span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span>
+                       <span class="fixedvalue">CPU利用率</span> <span class="colon">：</span><span class="fixwdvalue-w">75.46%  (黄色阈值>85%)</span></li>
+                   </ul>
+                  </div>
+                 </div>
+                 </div>
+            	</div>
+            </div>
+        </div>
+  </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+      </div>
+  </div>
+</div>
+<div class="pop-content">
+<div class="mtab-btn">
+    <div class="mtab-con-l">
+        <div class="mtab-con-r">
+            <div class="mtab-con-m"><a href="warning-norecover.html" class="main-tab-body on windowbtn2">
+  <div class="tab-l">
+                        <div class="tab-r">
+                          <div class="tab-m">
+                                <span>告警-未恢复</span>
+                          </div>
+                        </div>
+                    </div>
+              </a><a href="warning.html" class="main-tab-body">
+              <div class="tab-l">
+                <div class="tab-r">
+                  <div class="tab-m"> <span>告警-已恢复</span> </div>
+                </div>
+              </div>
+              </a><a class="main-tab-body" href="warning-log.html">
+
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>日志告警</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="thired-interface.html" class="main-tab-body windowbtn4">
+                    <div class="tab-l">
+                        <div class="tab-r">
+                            <div class="tab-m">
+                                <span>第三方告警</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+          </div>
+      </div>
+    </div>
+</div>
+<!--第一块页面---------------------------------------->
+<div class="windowspage1">
+    <div class="h-btn margin-top0">
+            <div class="cell_inner locate-left">
+                <span class="redlight">致命</span>
+                <span class="orangelight">严重</span>
+                <span class="yellowlight">警告</span>
+                <span class="greenlight">正常</span>
+              <span class="graylight">未知</span>
+            </div>
+            <div class="locate-left">
+              <div class="select-body">
+                <div class="select-l">
+                  <div class="select-r">
+                    <div class="select-m"> <span class="select_txt min-120">资源类型</span>
+                        <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="option min-150"> <a>主机</a> <a>网络</a> <a>应用</a> <a>基础服务</a> </div>
+              </div>
+              <div class="select-body">
+                <div class="select-l">
+                  <div class="select-r">
+                    <div class="select-m"> <span class="select_txt min-120">Windows</span>
+                        <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="option min-150"> <a>Solaris</a> <a>AIX</a> <a>Linux</a> <a>SCO</a><a>FreeBSD</a><a>HP-UX</a><a>其它主机</a> </div>
+              </div>
+            </div>
+              <input name="check" type="radio" value="" />
+            <div class="select-body">
+              <div class="select-l">
+                <div class="select-r">
+                  <div class="select-m"> <span class="select_txt min-120">最近1小时</span>
+                      <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="option min-150"> <a>最近2小时</a> <a>最近4小时</a> <a>最近1天</a> <a>最近7天</a> </div>
+            </div>
+              <input name="check" type="radio" value="" />
+              <div class="select-body">
+                <div class="select-l">
+                  <div class="select-r">
+                    <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+                  </div>
+                </div>
+                <div class="select-trigger-warp"> <a class="select-trigger-date"></a> </div>
+              </div>
+              <span>--</span>
+              <div class="select-body">
+                <div class="select-l">
+                  <div class="select-r">
+                    <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+                  </div>
+                </div>
+                <div class="select-trigger-warp"> <a class="select-trigger-date"></a> </div>
+              </div>
+            <a class="btn-body locate-right">
+<div class="btn-l">
+                    <div class="btn-r">
+                        <div class="btn-m"> <span class="ico ico-search"></span> <span>搜 索</span></div>
+                    </div>
+                </div>
+            </a>
+    </div>
+    <div class="common tabletop">
+        <div class="tab-header margin-top0">
+            <div class="tab-header-l">
+                <div class="tab-header-r">
+                    <div class="tab-header-m">
+                        <div class="theadpart">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th width="35%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank"></a> <span>告警内容</span> </th>
+                                    <th width="16%"><a class="rank-up"></a><a class="rank-pull"></a><span>告警来源</span></th>
+                                  <th width="12%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                                  <th width="13%"><a class="rank-up"></a><span>监控类型</span></th>
+                                  <th width="14%"><a class="rank-up"></a><span>产生时间</span></th>
+                                  
+                                  <th width="5%"><a class="rank-up"></a><span>发送记录</span></th>
+                                  <th width="5%"><a class="rank-up"></a><span>知识关联</span></th>
+                                  </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-list tbodypart">
+          <table>
+            <tbody id="gettrclick">
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class="orangelight" onclick="MM_showHideLayers('r-detail','','show')">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值>80%)</span> </div></td>
+                <td width="16%">ITM-Server</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr class="cbg">
+                <td><div class="cell_inner"> <span class="redlight">PM-ZB_Switch_6509_1致命告警;设备无法连接</span> </div></td>
+                <td>CRM-1-ServerP1</td>
+                <td>192.168.0.100</td>
+                <td>Cisco交换机</td>
+                <td>2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class=" orangelight">内存利用率严重超标; 内存平均度速率：15000Byte/s(红色阈值>10000Byte/s)...</span> </div></td>
+                <td width="16%">PM-ZB_Switch_6509_1</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" >&nbsp;</td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr class="cbg">
+                <td><div class="cell_inner"> <span class=" orangelight">内存利用率严重超标; 内存平均度速率：15000Byte/s(红色阈值&gt;10000Byte/s)...</span> </div></td>
+                <td>Kidcar Server3721_S2...</td>
+                <td>192.168.0.100</td>
+                <td>Cisco交换机</td>
+                <td>2014/04/15 13：38：52</td>
+                <td width="5%" >&nbsp;</td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class=" orangelight">内存利用率严重超标; 内存平均度速率：15000Byte/s(红色阈值&gt;10000Byte/s)...</span> </div></td>
+                <td width="16%">ITM-Server</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr class="cbg">
+                <td><div class="cell_inner"> <span class="status_g">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值>80%)</span> </div></td>
+                <td>CRM-1-ServerP1</td>
+                <td>192.168.0.100</td>
+                <td>Cisco交换机</td>
+                <td>2014/04/15 13：38：52</td>
+                <td width="5%" >&nbsp;</td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class=" orangelight">内存利用率严重超标; 内存平均度速率：15000Byte/s(红色阈值&gt;10000Byte/s)...</span> </div></td>
+                <td width="16%">ITM-Server</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr class="cbg">
+                <td><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td>ITM-Server</td>
+                <td>192.168.0.100</td>
+                <td>Cisco交换机</td>
+                <td>2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td width="16%">ITM-Server</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr class="cbg">
+                <td><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td>ITM-Server</td>
+                <td>192.168.0.100</td>
+                <td>Cisco交换机</td>
+                <td>2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td width="16%">ITM-Server</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" class="cbg" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr class="cbg">
+                <td><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td>ITM-Server</td>
+                <td>192.168.0.100</td>
+                <td>Cisco交换机</td>
+                <td>2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td width="16%">ITM-Server</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" class="cbg" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr class="cbg">
+                <td><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td>ITM-Server</td>
+                <td>192.168.0.100</td>
+                <td>Cisco交换机</td>
+                <td>2014/04/15 13：38：52</td>
+                <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+              <tr>
+                <td width="35%"><div class="cell_inner"> <span class="orangelight">CPU平均利用率警告超标;内存利用率:89.59%(黄色阈值&gt;80%)</span> </div></td>
+                <td width="16%">ITM-Server</td>
+                <td width="12%">192.168.0.100</td>
+                <td width="13%">Cisco交换机</td>
+                <td width="14%">2014/04/15 13：38：52</td>
+                <td width="5%" class="cbg" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+                <td width="5%" class="cbg" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="font-page">
+            <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+              <div class="amount">第
+                <input type="text" class="page-number" name="input" />
+              页</div>
+              <a class="next">下一页</a> <a class="end">末页</a> </div>
+          </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--日志告警页面------------------------------------------>
+
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+<script type="text/javascript">
+    var concealtr=$(".concealtr");
+    concealtr.ready(function(){
+        concealtr.hide();
+    });
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

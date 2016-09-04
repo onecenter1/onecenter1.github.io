@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <script type="text/javascript" src="../../js/demo.js"></script>
+
+    <script type="text/javascript">
+        <!--
+        function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+        {
+            Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+        }
+        function MM_showHideLayers() { //v9.0
+            var i,p,v,obj,args=MM_showHideLayers.arguments;
+            for (i=0; i<(args.length-2); i+=3)
+                with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+                    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+                    obj.visibility=v; }
+        }
+        //-->
+    </script>
+
+</head>
+<body>
+<div id="layout_left2" class="zy-shrink-left">
+    <div class="subnav-window" >
+        <ul  class="accordion-main">
+            <li class="accordion-list">
+                <a class="h-subnav "><span class="l-arrow l-arrow-down"></span><span>巡检管理</span></a>  </li>
+            <ul class="according-content resourcetopmenu">
+                <li class="accordion-main">
+                    <a href="inspection-report.html" class="h-secnav foxfrolist-top" target="rightcontent">
+                        <span class="l-arrow l-arrow-right foxfrolistico"></span>
+                        <span >巡检报告</span></a></li>
+                <li>
+                    <a href="inspection-task.html" class="h-secnav foxfrolist-top" target="rightcontent">
+                        <span class="l-arrow l-arrow-right foxfrolistico"></span>
+                        <span >巡检任务</span></a></li>
+            </ul>
+        </ul>
+    </div>
+  </div>
+
+<div class="zy-shrink-right ">
+    <iframe src="inspection-report.html" width="100%" height="625" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" id="rightcontent" name="rightcontent"></iframe>
+</div>
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+
+<script type="text/javascript">
+       
+    $("#topmenuul li").bind("click",function(){
+        $("#topmenuul li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+
+
+</script>
+</body>
+</html>

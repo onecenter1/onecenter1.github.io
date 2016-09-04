@@ -1,0 +1,832 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<script type="text/javascript" src="../../js/demo.js"></script>
+</head>
+<body>
+<div  class="w-pop min-908">
+	<div class="pop-top-l">
+        <div class="pop-top-r">
+            <div class="pop-top-m">
+            	<!--<span class="pop-ico pop-quit"></span>
+            	<span class="pop-title"></span>-->
+                <span>编辑监控策略 </span></div>
+      </div>
+    </div>
+    <div class="pop-middle-l">
+    	<div class="pop-middle-r">
+        	<div class="pop-middle-m">
+            	<div class="pop-middle-m-content">
+            	  <div class="pop-content">
+                   <div class="tab-con">
+                    <div class="p-left-150">
+                    <div class="p-left-tittle"><a></a><a>监控策略列表 </a></div>
+        <div class="dtree-menu">
+                       <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="24" valign="middle">&nbsp;</td>
+    <td height="24" valign="middle">默认策略AIX OS (Telnet/SSH)</td>
+  </tr>
+  <tr>
+    <td width="9%" height="24">&nbsp;</td>
+    <td width="91%" height="24"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="18%">&nbsp;</td>
+        <td width="82%" height="24">默认策略CPU</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略Paging Space</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略TelnetSSH</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略分区</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略卷组 </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略文件 </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略Paging Space</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略TelnetSSH</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略分区</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td height="24">默认策略卷组 </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+
+                    </div>
+                    </div>
+                    
+                    <div class="p-right-738">
+                      <div class="h-nobg f-right" >
+                        <div class="p-r-tittle"><span class=""></span><span>默认策略AIX OS (Telnet/SSH) </span></div>
+                        <ul class="fieldlist" >
+                         <li class="p-d-name"><span>常规信息</span></li>
+                         <ul class="ul-subbg padding-left10 min-height347" style="display:none">
+                         <li><span class="fixedvalue">策略名称</span><span class="colon">：</span><input type="text" name="textfield" id="textfield" class="text-box min200" /></li>
+                         <li><span class="fixedvalue">创建人</span><span class="colon">：</span><span>AIX OS (Telnet/SSH)  </span></li>
+                         <li><span class="fixedvalue">修改人</span><span class="colon">：</span><span>AIX OS (Telnet/SSH)  </span></li>
+                          <li><span class="fixedvalue">创建时间</span><span class="colon">：</span><span>AIX OS (Telnet/SSH)  </span></li>
+                           <li><span class="fixedvalue">修改时间</span><span class="colon">：</span><span>AIX OS (Telnet/SSH)  </span></li>
+                         </ul>
+                       
+                         <li class="p-d-name"><span>资源选择</span></li>
+                         <ul class="ul-subbg padding-left10 min-height347" style="display:none">
+                           <li>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+     <tr>
+     <td width="47%" class="tree-view min296"><div class="common">
+       <div class="tab-header margin-top0">
+         <div class="tab-header-l">
+           <div class="tab-header-r">
+             <div class="tab-header-m">
+               <div class="theadpart" style="width:100%;">
+                 <table>
+                   <thead>
+                     <tr>
+                       <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                         <input type="checkbox" name="checkbox12" id="checkbox21" />
+                       </span></th>
+                       <th width="46%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank6"></a> <span>显示名称</span> </th>
+                       <th width="39%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                       <th width="39%"><span>当前策略</span></th>
+                     </tr>
+                   </thead>
+                 </table>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="tbodypart">
+         <table>
+           <tbody>
+             <tr>
+               <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox2" id="checkbox2" />
+               </span></td>
+               <td width="40%">JINGBIN</td>
+               <td width="30%">192.168.0.1</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox3" id="checkbox3" />
+               </span></td>
+               <td>PC-201304242204</td>
+               <td>172.16.8.102</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox4" id="checkbox4" />
+               </span></td>
+               <td>PCWANGDENGJIE</td>
+               <td>172.16.8.108</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox5" id="checkbox5" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox4" id="checkbox4" />
+               </span></td>
+               <td>PCWANGDENGJIE</td>
+               <td>172.16.8.108</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox5" id="checkbox5" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox4" id="checkbox4" />
+               </span></td>
+               <td>PCWANGDENGJIE</td>
+               <td>172.16.8.108</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox5" id="checkbox5" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox6" id="checkbox6" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.16</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox5" id="checkbox5" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div></td>
+     <td width="6%" style="vertical-align:middle;">
+         <div class="tab-tree-arrow">
+             <a class="tree-arrow-right"></a>
+             <a class="tree-arrow-left"></a>         </div>     </td>
+     <td width="47%" class="tree-view min296"><div class="common">
+         <div class="tab-header margin-top0">
+           <div class="tab-header-l">
+             <div class="tab-header-r">
+               <div class="tab-header-m">
+                 <div class="theadpart" style="width:100%;">
+                   <table>
+                     <thead>
+                       <tr>
+                         <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                           <input type="checkbox" name="checkbox" id="checkbox" />
+                         </span></th>
+                         <th width="46%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank"></a> <span>显示名称</span> </th>
+                         <th width="39%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                         <th width="39%"><span>当前策略</span></th>
+                       </tr>
+                     </thead>
+                   </table>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       <div class="tbodypart">
+         <table>
+           <tbody>
+             <tr>
+               <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox8" />
+               </span></td>
+               <td width="40%">JINGBIN</td>
+               <td width="30%">192.168.0.1</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox9" />
+               </span></td>
+               <td>PC-201304242204</td>
+               <td>172.16.8.102</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox10" />
+               </span></td>
+               <td>PCWANGDENGJIE</td>
+               <td>172.16.8.108</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox11" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox10" />
+               </span></td>
+               <td>PCWANGDENGJIE</td>
+               <td>172.16.8.108</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox11" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox10" />
+               </span></td>
+               <td>PCWANGDENGJIE</td>
+               <td>172.16.8.108</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox11" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox12" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.16</td>
+               <td width="15%">-</td>
+             </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox11" />
+               </span></td>
+               <td>QWSERV-TEST38</td>
+               <td>192.168.0.10</td>
+               <td width="15%">-</td>
+             </tr>
+           </tbody>
+         </table>
+       </div>
+     </div></td>
+     </tr>
+     </table>
+                           </li>
+                          </ul>
+                         <li class="p-d-name"><span>指标定义</span></li>
+                         <ul class="ul-subbg padding-left10 min-height347" style="display:none">
+                          <li>
+                            <div class="common margin-top5">
+                              <div class="tab-header margin-top0">
+                                <div class="tab-header-l">
+                                  <div class="tab-header-r">
+                                    <div class="tab-header-m">
+                                      <div class="theadpart" style="width:100%;">
+                                        <table>
+                                          <thead>
+                                            <tr>
+                                              <th width="7%" class="tcenter"><span class="icon icon_uncheck">
+                                                <input type="checkbox" name="checkbox9" id="checkbox13" />
+                                              </span></th>
+                                              <th width="24%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank3"></a> <span>指标</span> </th>
+                                              <th width="18%"><a class="rank-up"></a><a class="rank-pull"></a><span>监控频度</span></th>
+                                              <th width="26%"><a class="rank-up"></a><a class="rank-pull"></a><span>阈值定义</span></th>
+                                              <th width="11%"><a class="rank-up"></a><span>重试次数</span></th>
+                                              <th width="14%"><a class="rank-up"></a><span>超时时间</span></th>
+                                            </tr>
+                                          </thead>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tbodypart">
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td width="7%" class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox14" />
+                                      </span></td>
+                                      <td width="24%"><a onclick="javascript:openwindow('smart3-info.html','',1366,718);">CPU平均利用率</a> </td>
+                                      <td width="18%"><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td width="26%">60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr class="cbg">
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox15" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-info-new.html','',1366,744);">CPU中断时间百分比</a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox16" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-netport.html','',1366,768);">CPU特权模式百分比</a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr class="cbg">
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox17" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">CPU用户模式百分比</a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox18" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">CPU空闲模式百分比</a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr class="cbg">
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox17" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">内存利用率 </a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox18" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">内存页面调进速率</a><a></a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr class="cbg">
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox17" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">内存页面调进速率</a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr>
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox18" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">硬盘平均写操作速率</a><a></a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                    <tr class="cbg">
+                                      <td class="tcenter"><span class="icon icon_uncheck">
+                                        <input type="checkbox" name="checkbox9" id="checkbox17" />
+                                      </span></td>
+                                      <td><span class="status_g"></span> <a onclick="javascript:openwindow('smart3-ping.html','',1366,768);">Ping 时延 </a></td>
+                                      <td><div class="select_body min80">
+                                        <div class="select_text">5分钟</div>
+                                        <div class="select_trigger_wrap"> <a class="select_trigger"></a></div>
+                                      </div></td>
+                                      <td>60  %          -          80  %</td>
+                                      <td width="11%">3</td>
+                                      <td width="14%">1000ms</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </li>
+                         </ul>
+                         <li class="p-d-name"><span>告警规则</span></li>
+                         <ul class="ul-subbg padding-left10 min-height347">
+                           <li>
+                             <div class="pop-bottom-btn locate-right">
+<a class="btn-body locate-right" >
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>编辑<span class="pull"></span>            </div>
+        </div>
+    </div>
+</a>
+
+<a class="btn-body locate-right">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>删除<span class="pull"></span>            </div>
+        </div>
+    </div>
+</a>
+<a class="btn-body locate-right">
+    <div class="btn-l">
+        <div class="btn-r">
+            <div class="btn-m">
+                <span class=""></span>新建<span class="pull"></span>            </div>
+        </div>
+    </div>
+</a></div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="33%">可选告警规则：</td>
+    <td width="21%">&nbsp;</td>
+    <td width="46%">已选告警规则：</td>
+  </tr>
+</table>
+
+                             <table width="100%" border="0" cellspacing="0" cellpadding="0" class="margin-top5">
+     <tr>
+     <td width="47%" class="tree-view min296"><div class="common">
+       <div class="tab-header margin-top0">
+         <div class="tab-header-l">
+           <div class="tab-header-r">
+             <div class="tab-header-m">
+               <div class="theadpart" style="width:100%;">
+                 <table>
+                   <thead>
+                     <tr>
+                       <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                         <input type="checkbox" name="checkbox10" id="checkbox19" />
+                       </span></th>
+                       <th width="46%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank4"></a> <span>告警规则名称</span> </th>
+                       <th width="39%"><a class="rank-up"></a><a class="rank-pull"></a><span>使用此规则的策略</span></th>
+                       </tr>
+                   </thead>
+                 </table>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="tbodypart">
+         <table>
+           <tbody>
+             <tr>
+               <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox2" id="checkbox2" />
+               </span></td>
+               <td width="46%">默认告警规则</td>
+               <td width="39%">26</td>
+               </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox3" id="checkbox3" />
+               </span></td>
+               <td>CRM组告警规则</td>
+               <td>5</td>
+               </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox4" id="checkbox4" />
+               </span></td>
+               <td>OA业务告警规则</td>
+               <td>4</td>
+               </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox5" id="checkbox5" />
+               </span></td>
+               <td>MISS系统告警规则</td>
+               <td>2</td>
+               </tr>
+             <tr>
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox4" id="checkbox4" />
+               </span></td>
+               <td>Cisco交换机告警规则</td>
+               <td>3</td>
+               </tr>
+             <tr class="cbg">
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+             <tr>
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+               <tr class="cbg">
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+           </tbody>
+         </table>
+       </div>
+     </div></td>
+     <td width="6%" style="vertical-align:middle;">
+         <div class="tab-tree-arrow">
+             <a class="tree-arrow-right"></a>
+             <a class="tree-arrow-left"></a>         </div>     </td>
+     <td width="47%" class="tree-view min296"><div class="common">
+         <div class="tab-header margin-top0">
+           <div class="tab-header-l">
+             <div class="tab-header-r">
+               <div class="tab-header-m">
+                 <div class="theadpart" style="width:100%;">
+                   <table>
+                     <thead>
+                       <tr>
+                         <th width="15%" class="tcenter"><span class="icon icon_uncheck">
+                           <input type="checkbox" name="checkbox11" id="checkbox20" />
+                         </span></th>
+                         <th width="85%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank5"></a> <span>告警规则名称</span> </th>
+                         </tr>
+                     </thead>
+                   </table>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       <div class="tbodypart">
+         <table>
+           <tbody>
+             <tr>
+               <td width="15%" class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox8" />
+               </span></td>
+               <td width="85%">AIX-Px告警规则</td>
+               </tr>
+             <tr class="cbg">
+               <td class="tcenter"><span class="icon icon_uncheck">
+                 <input type="checkbox" name="checkbox8" id="checkbox9" />
+               </span></td>
+               <td>AIX-Px告警规则</td>
+               </tr>
+             <tr>
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+             <tr class="cbg">
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+             <tr>
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+             <tr class="cbg">
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+             <tr>
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+               <tr class="cbg">
+               <td class="tcenter">&nbsp;</td>
+               <td>&nbsp;</td>
+               </tr>
+           </tbody>
+         </table>
+       </div>
+     </div></td>
+     </tr>
+     </table>
+                           </li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    <div class="pop-bottom-l">
+        <div class="pop-bottom-r">
+           <div class="pop-bottom-m">
+           </div>
+         </div>
+     </div>
+    </div>
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+
+
+//    点击按钮出现两个小按钮--------------------------
+   var buttom=  $(".arrowdown");
+   var chushitext=$(".digit");
+   var tempbuttom=$(".l-icon");
+var tempbuttomdelete=$(".l-icon-delete");
+
+   var mark=0;
+buttom.click(function(){
+    if(mark%2==0){
+        chushitext.animate({
+            opacity:0,
+            width:"0px"
+        },50);
+        tempbuttom.css({display:"block"});
+        mark++;
+    }else{
+        chushitext.animate({
+            opacity:1,
+            width:"37px"
+        },200);
+        tempbuttom.css({display:"none"});
+        mark--;
+    }
+});
+
+
+		$("#topmenuul li").bind("click",function(){
+			$("#topmenuul li").removeClass("on");
+			$(this).addClass("on");
+		});
+
+
+
+    $(".content_nav ul li").each(function(e){
+           $($(".content_nav ul li")[1]).click(function(){
+               $($(".content_nav ul li")[1]).css({
+                  backgroundImage: "url(../../images/comm/window/windowsnav.png)"
+               });
+               $($(".content_nav ul li")[0]).css({
+                   backgroundColor:"#181b1f !important"
+               });
+               $("#content_table").hide();
+           });
+        $($(".content_nav ul li")[0]).click(function(){
+            $("#content_table").show();
+        });
+
+
+    });
+
+
+
+
+
+
+
+
+
+//    点击弹出层
+
+        $(".bodywindows");
+        $(".windowhide1").ready(function(){
+            $(".windowhide1").hide();
+            $(".bodywindows").css({
+                display:'none'
+            });
+        });
+
+
+        var lilist= $("#topmenuul li");
+
+//点击修改小图标弹出层
+tempbuttom.each(function(e){
+            $(tempbuttom[e]).bind('click',function(){
+                $(".windowhide1").show(200);
+                $(".bodywindows").css({
+                    display:'block'
+                });
+                console.log(tempbuttom);
+            });
+
+        });
+
+//点击删除小图标出现弹出层
+  var deletewindow=$("#deletewindow");
+deletewindow.each(function(e){
+    $(deletewindow[e]).bind('click',function(){
+        $(".windowhide1").show(200);
+        $(".bodywindows").css({
+            display:'block'
+        });
+    });
+
+});
+
+
+
+        $(".pop-close").click(function(){
+            $(".windowhide1").hide(300);
+            $(".bodywindows").css({
+                display:'none'
+            },50);
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

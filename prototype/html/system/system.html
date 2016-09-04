@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <script type="text/javascript" src="../../js/demo.js"></script>
+</head>
+<body>
+<div id="layout_left" class="zy-shrink-left">
+  <div class="subnav-window" >
+
+
+      <ul  class="accordion-main">
+          <li class="accordion-list">
+              <a class="h-subnav "><span class="l-arrow l-arrow-down"></span><span>系统管理</span></a>  </li>
+          <ul class="according-content resourcetopmenu">
+              <li class="accordion-main">
+                  <a class="h-secnav foxfrolist-top">
+                      <span class="l-arrow l-arrow-right foxfrolistico"></span>
+                      <span >用户设置</span>
+
+                  </a>
+                  <ul class="according-content resourcetopmenu">
+                      <li>
+                          <a href="systemuser.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>用户</span></a> </li>
+                      <li>
+                          <a href="system-roleset.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>角色</span></a> </li>
+
+                </ul>
+              </li>
+              <li>
+                  <a href="warning-way.html" target="rightcontent" class="h-secnav foxfrolist-top">
+                      <span class="l-arrow l-arrow-right foxfrolistico"></span>
+            <span >告警方式设置</span></a></li>
+               <li>
+                  <a href="system-set.html" target="rightcontent" class="h-secnav foxfrolist-top">
+                      <span class="l-arrow l-arrow-right foxfrolistico"></span>
+            <span >系统设置</span></a>
+                  <ul class="according-content pageonobj">
+                      <li class="on">
+                          <a href="system-set.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>页签管理</span></a> </li>
+                    <li>
+                          <a href="pic-set.html"  target="rightcontent" class="h-third-nav">
+                    <span class="l-arrow l-arrow-dot"></span><span>图片管理</span></a> </li>
+                      <li>
+                          <a href="skin-set.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>换肤管理</span></a> </li>
+                              <li>
+                          <a href="typel-set.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>型号配置</span></a> </li>
+                              <li>
+                          <a href="model-set.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>模型部署</span></a> </li>
+
+                              <li>
+                          <a href="authentication.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>认证方式</span></a> </li>
+                              <li>
+                          <a href="access-set.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>访问设置</span></a> </li>
+                              <li>
+                          <a href="audit-log.html"  target="rightcontent" class="h-third-nav">
+                              <span class="l-arrow l-arrow-dot"></span><span>审计日志</span></a> </li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+      </ul>
+
+  </div>
+</div>
+<div class="zy-shrink-right ">
+    <iframe src="systemuser.html" width="100%" height="625" scrolling="no" frameborder="0" marginwidth="0" marginheight="0" id="rightcontent" name="rightcontent"></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+
+<script type="text/javascript">
+
+//    $(".resourcetopmenu li").bind("click",function(){
+//        $(".resourcetopmenu li").removeClass("on");
+//        $(this).addClass("on");
+//    });
+
+    $(".pageonobj li").bind("click",function(){
+        console.log("awt")
+        $(".pageonobj li").removeClass("on");
+        $(this).addClass("on");
+    });
+
+
+
+
+</script>
+</body>
+</html>

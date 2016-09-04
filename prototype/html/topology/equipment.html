@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>onecenter4.0</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/widget.css">
+    <script type="text/javascript" src="../../js/demo.js"></script>
+</head>
+<body>
+
+
+<div  class="w-pop" style="width: 750px;height: 450px;;; position:fixed;left: 0;top: 0;">
+<div class="pop-top-l">
+    <div class="pop-top-r">
+        <div class="pop-top-m">
+            <span>添加自定义资源组</span>
+            <div class="pop-close-r">
+                <a class="pop-close-ico" onclick="MM_showHideLayers('r-customadd','','hide')"></a>                </div>
+        </div>
+    </div>
+</div>
+<div class="pop-middle-l">
+<div class="pop-middle-r">
+<div class="pop-middle-m">
+<div class="pop-middle-m-content">
+<div class="pop-content">
+<div class="pop-con tab-con">
+    <br/>
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td style="width: 100%;height: 300px;;margin-left: 3%;" class="tree-views borderstyle">
+                <div class="findouttop">待选设备列表</div>
+
+                    <span>tu</span>
+                   <span>
+                        <div class="select-body" style="width: 80px;">
+                            <div class="select-l">
+                                <div class="select-r">
+                                    <div class="select-m" style="width: 80px;"> <span class="select_txt" style="width: 80px;">十分钟</span>
+                                        <div  class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option" style="width: 80px;"> <a>十分钟</a> <a>一小时</a> <a>一个月</a> </div>
+                        </div>
+                   </span>
+                    <span> <input type="text" class="text-box" style="width: 60px;margin-top: -11px;"></span>
+
+
+                   <span>s</span>
+                   <span><input type="checkbox" id="cheksearch"><label for="cheksearch">选中搜索结果</label></span>
+
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div class="theadpart" style="width:100%;">
+                                    <table>
+                                        <thead>
+                                        <tr>
+                                            <th width="4%" class="tcenter"><span class="icon icon_uncheck"><input type="checkbox" name="checkbox" id="checkbox" /></span></th>
+                                            <th width="14%">
+                                                <a class="rank-down"></a>
+                                                <a class="rank-pull" id="show_rank"></a>
+                                                <span>IP地址</span>                                    </th>
+                                            <th width="14%"><a class="rank-up"></a><a class="rank-pull"></a><span>设备名称</span></th>
+                                            <th width="14%"><a class="rank-up"></a><a class="rank-pull"></a><span>设备类型</span></th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table width="100%">
+
+                <tr class="findouttable">
+                    <td width="4%" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox2" id="checkbox2" />
+                                    </span></td>
+                    <td width="14%"> 192.168.1.1</td>
+                    <td width="14%">192.168.0.100</td>
+                    <td width="14%">其他</td>
+                </tr>
+                <tr class="findouttable">
+                    <td width="4%;" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox3" id="checkbox3" />
+                                    </span></td>
+                    <td width="14%;"> 172.61.1.100 </td>
+                    <td width="14%;">192.168.0.100</td>
+                    <td  width="14%">服务器</td>
+                </tr>
+                    <tr class="findouttable">
+                        <td width="4%" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox2" id="checkbox2" />
+                                    </span></td>
+                        <td width="14%"> 192.168.1.1</td>
+                        <td width="14%">192.168.0.100</td>
+                        <td width="14%">其他</td>
+                    </tr>
+                    <tr class="findouttable">
+                        <td width="4%;" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox3" id="checkbox3" />
+                                    </span></td>
+                        <td width="14%;"> 172.61.1.100 </td>
+                        <td width="14%;">192.168.0.100</td>
+                        <td  width="14%">服务器</td>
+                    </tr>
+                    <tr class="findouttable">
+                        <td width="4%" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox2" id="checkbox2" />
+                                    </span></td>
+                        <td width="14%"> 192.168.1.1</td>
+                        <td width="14%">192.168.0.100</td>
+                        <td width="14%">其他</td>
+                    </tr>
+                    <tr class="findouttable">
+                        <td width="4%;" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox3" id="checkbox3" />
+                                    </span></td>
+                        <td width="14%;"> 172.61.1.100 </td>
+                        <td width="14%;">192.168.0.100</td>
+                        <td  width="14%">服务器</td>
+                    </tr>
+                    <tr class="findouttable">
+                        <td width="4%" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox2" id="checkbox2" />
+                                    </span></td>
+                        <td width="14%"> 192.168.1.1</td>
+                        <td width="14%">192.168.0.100</td>
+                        <td width="14%">其他</td>
+                    </tr>
+
+
+
+
+
+
+
+
+                </table>
+
+            </td>
+
+            <td width="5%" style="position: relative;left: 1%;">
+                <div class="tab-tree-arrow">
+                    <a class="tree-arrow-right"></a>
+                    <a class="tree-arrow-left"></a>
+                </div>
+            </td>
+            <td style="width: 90%;height: 300px;margin-left:1%;" class="tree-views borderstyle" >
+                <div class="findouttop">待选设备列表</div>
+
+                <span>tu</span>
+                   <span>
+                        <div class="select-body" style="width: 80px;">
+                            <div class="select-l">
+                                <div class="select-r">
+                                    <div class="select-m" style="width: 80px;"> <span class="select_txt" style="width: 80px;">十分钟</span>
+                                        <div  class="select-trigger-wrap"><a  class="select-trigger"> </a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option" style="width: 80px;"> <a>十分钟</a> <a>一小时</a> <a>一个月</a> </div>
+                        </div>
+                   </span>
+                <span> <input type="text" class="text-box" style="width: 60px;margin-top: -11px;"></span>
+
+
+                <span>s</span>
+                <span><input type="checkbox" id="cheksearch2"><label for="cheksearch2">选中搜索结果</label></span>
+
+                <div class="tab-header margin-top0">
+                    <div class="tab-header-l">
+                        <div class="tab-header-r">
+                            <div class="tab-header-m">
+                                <div class="theadpart" style="width:100%;">
+                                    <table style="width: 100%;">
+                                        <thead>
+                                        <tr>
+                                            <th width="1%" class="tcenter"></th>
+                                            <th width="20%">
+                                                <input type="checkbox" name="checkbox"/>
+                                                <span>IP地址</span>
+                                            </th>
+                                            <th width="20%"><span>设备名称</span></th>
+                                            <th width="20%"><span>设备类型</span></th>
+                                            <th width="20%" class="tcenter">
+                                                <input type="checkbox" name="checkbox"/>是否关键</th>
+                                        </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table width="100%">
+
+                    <tr class="findouttable">
+                        <td width="4%" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox2" id="" />
+                                    </span></td>
+                        <td width="14%"> 192.168.1.1</td>
+                        <td width="14%">QWEVERV-TEST38</td>
+                        <td width="14%">路由器</td>
+                        <td width="14%"><input type="checkbox" name="checkbox"/></td>
+                    </tr>
+                    <tr class="findouttable">
+                        <td width="4%;" class="tcenter"><span class="icon icon_uncheck">
+                                      <input type="checkbox" name="checkbox3" id="" />
+                                    </span></td>
+                        <td width="14%;"> 172.61.1.100 </td>
+                        <td width="14%;">192.168.0.100</td>
+                        <td  width="14%">服务器</td>
+                        <td width="14%"><input type="checkbox" name="checkbox"/></td>
+                    </tr>
+
+
+
+
+
+
+
+
+
+                </table>
+
+            </td>
+        </tr>
+
+    </table>
+
+
+</div>
+<div class="pop-bottom-btn">
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>确定<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+    <a class="btn-body">
+        <div class="btn-l">
+            <div class="btn-r">
+                <div class="btn-m">
+                    <span class=""></span>取消<span class="pull"></span>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pop-bottom-l">
+    <div class="pop-bottom-r">
+        <div class="pop-bottom-m">
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+
+
+</body>
+</html>

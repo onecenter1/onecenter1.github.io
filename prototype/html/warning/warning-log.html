@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<link rel="stylesheet" type="text/css" href="../../css/widget.css">
+</head>
+<body>
+<div class="pop-content">
+  <div class="mtab-btn">
+ <div class="mtab-con-l">
+  <div class="mtab-con-r">
+     <div class="mtab-con-m"><a href="warning-norecover.html" class="main-tab-body">
+     <div class="tab-l">
+       <div class="tab-r">
+         <div class="tab-m"> <span>告警-未恢复</span> </div>
+       </div>
+     </div>
+     </a><a class="main-tab-body" href="warning.html">
+        <div class="tab-l">
+            <div class="tab-r">
+                 <div class="tab-m">
+                 <span>告警-已恢复</span>
+                   </div>
+            </div>
+        </div>
+      </a><a class="main-tab-body on">
+        <div class="tab-l">
+            <div class="tab-r">
+                 <div class="tab-m">
+                 <span>日志告警</span>
+                   </div>
+            </div>
+        </div>
+      </a>
+      <a href="thired-interface.html" class="main-tab-body">
+        <div class="tab-l">
+            <div class="tab-r">
+                 <div class="tab-m">
+                 <span>第三方告警</span>
+                   </div>
+            </div>
+        </div>
+      </a>
+     </div>
+  </div>
+ </div>
+</div>
+  <!--fd------------------------------------>
+  <div class="windowpagelog">
+    <div class="h-btn margin-top0">
+      <div class="locate-left">
+        <div class="select-body">
+          <div class="select-l">
+            <div class="select-r">
+              <div class="select-m"> <span class="select_txt">资源类型</span>
+                  <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="option"> <a>主机</a> <a>网络</a> <a>应用</a> <a>基础服务</a> </div>
+        </div>
+      </div>
+        <input name="check" type="radio" value="" />
+      <div class="select-body">
+        <div class="select-l">
+          <div class="select-r">
+            <div class="select-m"> <span class="select_txt">最近1小时</span>
+                <div class="select-trigger-wrap"><a  class="select-trigger"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="option"> <a>最近2小时</a> <a>最近4小时</a> <a>最近1天</a> <a>最近7天</a> </div>
+      </div>
+      <input name="check" type="radio" value="" />
+      <div class="select-body">
+        <div class="select-l">
+          <div class="select-r">
+            <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+          </div>
+        </div>
+        <div class="select-trigger-warp"> <a class="select-trigger-date"></a> </div>
+      </div>
+      <span>--</span>
+      <div class="select-body">
+        <div class="select-l">
+          <div class="select-r">
+            <div class="select-m"> <span class="select_txt">2014/03/22 18：07：28</span> </div>
+          </div>
+        </div>
+        <div class="select-trigger-warp"> <a class="select-trigger-date"></a> </div>
+      </div>
+      <a class="btn-body locate-right">
+      <div class="btn-l">
+        <div class="btn-r">
+          <div class="btn-m"> <span class="ico ico-search"></span> <span>搜 索</span></div>
+        </div>
+      </div>
+      </a> </div>
+  </div>
+    <div class="common tabletop">
+      <div class="tab-header margin-top0">
+        <div class="tab-header-l">
+          <div class="tab-header-r">
+            <div class="tab-header-m">
+              <div class="theadpart">
+                <table>
+                  <thead>
+                    <tr>
+                      <th width="37%"> <a class="rank-down"></a> <a class="rank-pull" id="show_rank"></a> <span>告警内容</span> </th>
+                      <th width="15%"><a class="rank-up"></a><a class="rank-pull"></a><span>告警来源</span></th>
+                      <th width="13%"><a class="rank-up"></a><a class="rank-pull"></a><span>IP地址</span></th>
+                      <th width="14%"><a class="rank-up"></a><span>监控类型</span></th>
+                      <th width="11%"><a class="rank-up"></a><span>产生时间</span></th>
+                      <th width="5%"><a class="rank-up"></a><span>发送记录</span></th>
+                      <th width="5%"><a class="rank-up"></a><span>知识关联</span></th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-list tbodypart">
+        <table>
+          <tbody id="gettrclick">
+            <tr>
+              <td width="37%"><div class="cell_inner"> <span class="orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">ITM-Server</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr class="cbg">
+              <td><div class="cell_inner"> <span class="redlight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td>CRM-1-ServerP1</td>
+              <td>192.168.0.100</td>
+              <td>通用日志</td>
+              <td>2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr>
+              <td width="37%"><div class="cell_inner"> <span class=" orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">PM-ZB_Switch_6509_1</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr class="cbg">
+              <td width="37%"><div class="cell_inner"> <span class="orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td>Kidcar Server3721_S2...</td>
+              <td>192.168.0.100</td>
+              <td>通用日志</td>
+              <td>2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr>
+              <td class="cbg"><div class="cell_inner"> <span class="redlight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">ITM-Server</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr class="cbg">
+              <td width="37%"><div class="cell_inner"> <span class=" orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td>CRM-1-ServerP1</td>
+              <td>192.168.0.100</td>
+              <td>通用日志</td>
+              <td>2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr>
+              <td width="37%"><div class="cell_inner"> <span class="orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">ITM-Server</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr class="cbg">
+              <td><div class="cell_inner"> <span class="redlight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td>ITM-Server</td>
+              <td>192.168.0.100</td>
+              <td>通用日志</td>
+              <td>2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr>
+              <td width="37%"><div class="cell_inner"> <span class=" orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">ITM-Server</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr class="cbg">
+              <td width="37%"><div class="cell_inner"> <span class="orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td>ITM-Server</td>
+              <td>192.168.0.100</td>
+              <td>通用日志</td>
+              <td>2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr>
+              <td class="cbg"><div class="cell_inner"> <span class="redlight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">ITM-Server</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" class="cbg" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr class="cbg">
+              <td width="37%"><div class="cell_inner"> <span class=" orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td>ITM-Server</td>
+              <td>192.168.0.100</td>
+              <td>通用日志</td>
+              <td>2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr>
+              <td width="37%"><div class="cell_inner"> <span class="orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">ITM-Server</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" class="cbg" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr class="cbg">
+              <td><div class="cell_inner"> <span class="redlight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td>ITM-Server</td>
+              <td>192.168.0.100</td>
+              <td>通用日志</td>
+              <td>2014/04/15 13：38：52</td>
+              <td width="5%" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+            <tr>
+              <td width="37%"><div class="cell_inner"> <span class=" orangelight">Error.关键字:Error,日志内容:/dev/null | cut -c1-500 | awk '{if($0~/Error/){print $0}}'</span> </div></td>
+              <td width="15%">ITM-Server</td>
+              <td width="13%">192.168.0.100</td>
+              <td width="14%">通用日志</td>
+              <td width="11%">2014/04/15 13：38：52</td>
+              <td width="5%" class="cbg" ><span class="ico ico-mark" onclick="MM_showHideLayers('r-send','','show')"></span></td>
+              <td width="5%" class="cbg" ><span onclick="MM_showHideLayers('r-knologe','','show')" class="ico ico-relevance "></span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="font-page">
+          <div class="fontpage-btnbox"> <a class="first">首页</a> <a class="last">上一页</a>
+            <div class="amount">第
+              <input type="text" class="page-number" name="input" />
+            页</div>
+            <a class="next">下一页</a> <a class="end">末页</a> </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+
+</body>
+</html>

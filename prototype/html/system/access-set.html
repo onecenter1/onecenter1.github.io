@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>onecenter4.0</title>
+<link rel="stylesheet" type="text/css" href="../../css/common.css">
+<link rel="stylesheet" type="text/css" href="../../css/icon.css" />
+<link rel="stylesheet" type="text/css" href="../../css/widget.css">
+<script type="text/javascript" src="../../js/demo.js"></script>
+
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+<!--
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+function MM_showHideLayers() { //v9.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  with (document) if (getElementById && ((obj=getElementById(args[i]))!=null)) { v=args[i+2];
+    if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+    obj.visibility=v; }
+}
+//-->
+</script>
+</head>
+<body>
+
+<div class="bodywindows">
+</div>
+<div class="main-content">
+
+<div class="h-btn margin-top0">
+
+    <span class="green">系统管理 - 访问设置</span>
+</div>
+
+    <div class="module min-100 system-con" style="height:520px;">
+        <div class="h-middle-l">
+            <div class="h-middle-r">
+                <div class="h-middle-m">
+                    <div class="content-middle-con" style="height:513px;">
+                        <div class="info-con margin-top5 min-100">
+                            <div class="info-top-l">
+                                <div class="info-top-r">
+                                    <div class="info-top-m"></div>
+                                </div>
+                            </div>
+                            <div class="info-middle-l">
+                                <div class="info-middle-r">
+                                    <div class="info-middle-m">
+                                        <ul class="fieldlist">
+                                            <li>
+                                                <span class="fixedvalue">IP过滤</span>
+                                                <span class="colon">：</span>
+                                                <input type="checkbox" id="open" class="radio-Control"><label for="open" class="cursor">开启</label>
+                                            </li>
+                                            <li>
+                                                <div class="" style="display: inline-block;">
+                                                    <input type="radio" name="textinfo" id="textinfo1" checked>
+                                                    <label for="textinfo1" class="cursor"> 仅允许以下列表中IP访问本系统</label><br><br>
+                                                    <textarea rows="5" cols="5" class="textarea" placeholder="请输入IP地址..."></textarea>
+                                                </div>
+
+                                                 <div class="" style="display: inline-block;">
+                                                    <input type="radio" name="textinfo" id="textinfo2" disabled class="radio-Control2" >
+                                                     <label for="textinfo2" class="cursor"> 仅允许以下列表中IP访问本系统</label><br><br>
+                                                    <textarea rows="5" cols="5" class="textarea" placeholder="请输入IP地址..."></textarea>
+                                                </div>
+
+                                                <div style="display: inline-block;">
+                                                    <ul>
+                                                        <li>1.多个IP地址或IP网段以“;”（分号）间隔。</li>
+                                                        <li>2.单个IP地址书写格式192.168.17.56。</li>
+                                                        <li>3.IP网段书写格式192.168.3。</li>
+                                                        <li>4.IP地址区间书写格式</li>
+                                                        <li>192.168.20.1-192.168.30.100。</li>
+                                                    </ul>
+                                                </div>
+
+                                            </li>
+                                            <li>
+                                                <a class="btn-body" style="position: relative;left: 75%;top: 10px;">
+                                                <div class="btn-l">
+                                                    <div class="btn-r">
+                                                        <div class="btn-m">
+                                                            <span class="ico ico-ok">   </span>
+                                                            <span>应用</span> <span class="pull"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                  </a>
+                                            </li>
+                                        </ul>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-bottom-l">
+                                <div class="info-bottom-r">
+                                    <div class="info-bottom-m"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-bottom-l">
+            <div class="h-bottom-r">
+                <div class="h-bottom-m"> </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<script type="text/javascript" src="../../js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="../../js/dedicated/dedicated.js"></script>
+<script type="text/javascript" src="../../js/public/public.js"></script>
+
+
+<script type="text/javascript">
+    $(".mainnavfrom ul li").click(function(){
+        $(".mainnavfrom ul li").removeClass("clickon");
+        $(this).addClass("clickon");
+    })
+
+</script>
+</body>
+</html>
